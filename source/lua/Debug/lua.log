@@ -1,0 +1,86 @@
+﻿Build started 2016/9/29 18:58:15.
+     1>Project "F:\MyTest\myTest\testCPP\server\server - 单锁\lua\lua.vcxproj" on node 2 (Rebuild target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(364,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt "..\3rd\lua-5.3.3\src\lapi.c" "..\3rd\lua-5.3.3\src\lauxlib.c" "..\3rd\lua-5.3.3\src\lbaselib.c" "..\3rd\lua-5.3.3\src\lbitlib.c" "..\3rd\lua-5.3.3\src\lcode.c" "..\3rd\lua-5.3.3\src\lcorolib.c" "..\3rd\lua-5.3.3\src\lctype.c" "..\3rd\lua-5.3.3\src\ldblib.c" "..\3rd\lua-5.3.3\src\ldebug.c" "..\3rd\lua-5.3.3\src\ldo.c" "..\3rd\lua-5.3.3\src\ldump.c" "..\3rd\lua-5.3.3\src\lfunc.c" "..\3rd\lua-5.3.3\src\lgc.c" "..\3rd\lua-5.3.3\src\linit.c" "..\3rd\lua-5.3.3\src\liolib.c" "..\3rd\lua-5.3.3\src\llex.c" "..\3rd\lua-5.3.3\src\lmathlib.c" "..\3rd\lua-5.3.3\src\lmem.c" "..\3rd\lua-5.3.3\src\loadlib.c" "..\3rd\lua-5.3.3\src\lobject.c" "..\3rd\lua-5.3.3\src\lopcodes.c" "..\3rd\lua-5.3.3\src\loslib.c" "..\3rd\lua-5.3.3\src\lparser.c" "..\3rd\lua-5.3.3\src\lstate.c" "..\3rd\lua-5.3.3\src\lstring.c" "..\3rd\lua-5.3.3\src\lstrlib.c" "..\3rd\lua-5.3.3\src\ltable.c" "..\3rd\lua-5.3.3\src\ltablib.c" "..\3rd\lua-5.3.3\src\ltm.c" "..\3rd\lua-5.3.3\src\lua.c" "..\3rd\lua-5.3.3\src\luac.c" "..\3rd\lua-5.3.3\src\lundump.c" "..\3rd\lua-5.3.3\src\lutf8lib.c" "..\3rd\lua-5.3.3\src\lvm.c" "..\3rd\lua-5.3.3\src\lzio.c"
+         lzio.c
+         lvm.c
+         lutf8lib.c
+         lundump.c
+         luac.c
+         lua.c
+         ltm.c
+         ltablib.c
+         ltable.c
+         lstrlib.c
+         lstring.c
+         lstate.c
+         lparser.c
+         loslib.c
+         lopcodes.c
+         lobject.c
+         loadlib.c
+         lmem.c
+         lmathlib.c
+         llex.c
+         Generating Code...
+         Compiling...
+         liolib.c
+         linit.c
+         lgc.c
+         lfunc.c
+         ldump.c
+         ldo.c
+         ldebug.c
+         ldblib.c
+         lctype.c
+         lcorolib.c
+         lcode.c
+         lbitlib.c
+         lbaselib.c
+         lauxlib.c
+         lapi.c
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"../lib\lua.lib" /NOLOGO Debug\lapi.obj
+         Debug\lauxlib.obj
+         Debug\lbaselib.obj
+         Debug\lbitlib.obj
+         Debug\lcode.obj
+         Debug\lcorolib.obj
+         Debug\lctype.obj
+         Debug\ldblib.obj
+         Debug\ldebug.obj
+         Debug\ldo.obj
+         Debug\ldump.obj
+         Debug\lfunc.obj
+         Debug\lgc.obj
+         Debug\linit.obj
+         Debug\liolib.obj
+         Debug\llex.obj
+         Debug\lmathlib.obj
+         Debug\lmem.obj
+         Debug\loadlib.obj
+         Debug\lobject.obj
+         Debug\lopcodes.obj
+         Debug\loslib.obj
+         Debug\lparser.obj
+         Debug\lstate.obj
+         Debug\lstring.obj
+         Debug\lstrlib.obj
+         Debug\ltable.obj
+         Debug\ltablib.obj
+         Debug\ltm.obj
+         Debug\lua.obj
+         Debug\luac.obj
+         Debug\lundump.obj
+         Debug\lutf8lib.obj
+         Debug\lvm.obj
+         Debug\lzio.obj
+     1>lua.obj : warning LNK4006: _main already defined in luac.obj; second definition ignored
+         lua.vcxproj -> F:\MyTest\myTest\testCPP\server\server - 单锁\lua\../lib\lua.lib
+     1>Done Building Project "F:\MyTest\myTest\testCPP\server\server - 单锁\lua\lua.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.46

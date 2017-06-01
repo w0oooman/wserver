@@ -1,0 +1,35 @@
+﻿Build started 2016/10/11 10:47:51.
+     1>Project "F:\MyTest\myTest\testCPP\server\server - 单锁\iocp_ex_server\iocp_ex_server.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(364,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1193,5): warning MSB8012: TargetPath(F:\MyTest\myTest\testCPP\server\server - 单锁\iocp_ex_server\../bin\iocp_ex_server.exe) does not match the Linker's OutputFile property value (F:\MyTest\myTest\testCPP\server\server - 单锁\bin\server.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1195,5): warning MSB8012: TargetName(iocp_ex_server) does not match the Linker's OutputFile property value (server). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"../bin\server.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib lib/win32/vld.lib winmm.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"../bin\iocp_ex_server.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"../lib" /MACHINE:X86 Debug\common.obj
+         Debug\Log.obj
+         Debug\DistriClientHandle.obj
+         Debug\DistriServerHandle.obj
+         Debug\LuaManager.obj
+         Debug\MainMgr.obj
+         Debug\MysqlDBProcess.obj
+         Debug\MySqlHandle.obj
+         Debug\Player.obj
+         Debug\PlayerMgr.obj
+         Debug\ServerLogicHandle.obj
+         Debug\SqlServerHandle.obj
+         Debug\main.obj
+         "F:\MyTest\myTest\testCPP\server\server - 单锁\bin\kernel.lib"
+         "F:\MyTest\myTest\testCPP\server\server - 单锁\bin\SqlEngine.lib"
+         lua.lib(lstate.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+     1>LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
+     1>common.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
+     1>msvcrt.lib(MSVCR120.dll) : error LNK2005: _strncmp already defined in LIBCMTD.lib(strncmp.obj)
+     1>msvcrt.lib(MSVCR120.dll) : error LNK2005: _strchr already defined in LIBCMTD.lib(strchr.obj)
+     1>msvcrt.lib(MSVCR120.dll) : error LNK2005: _memchr already defined in LIBCMTD.lib(memchr.obj)
+     1>msvcrt.lib(MSVCR120.dll) : error LNK2005: _strrchr already defined in LIBCMTD.lib(strrchr.obj)
+     1>LIBCMTD.lib(crt0init.obj) : warning LNK4098: defaultlib 'msvcrt.lib' conflicts with use of other libs; use /NODEFAULTLIB:library
+     1>../bin\server.exe : fatal error LNK1169: one or more multiply defined symbols found
+     1>Done Building Project "F:\MyTest\myTest\testCPP\server\server - 单锁\iocp_ex_server\iocp_ex_server.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.54

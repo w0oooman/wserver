@@ -1,0 +1,104 @@
+﻿Build started 2016/9/29 19:03:18.
+     1>Project "F:\MyTest\myTest\testCPP\server\server - 单锁\server_win\server_win.vcxproj" on node 3 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(364,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../proto_file /I../include/ /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\server_win.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../proto_file /I../include/ /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\include\Log.cpp ..\iocp_ex_server\ClientLogicHandle.cpp ..\iocp_ex_server\MainMgr.cpp ..\iocp_ex_server\MySqlHandle.cpp ..\iocp_ex_server\ServerLogicHandle.cpp ..\iocp_ex_server\SqlServerHandle.cpp server_win.cpp
+         server_win.cpp
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\dump.h(20): warning C4996: '_wsplitpath': This function or variable may be unsafe. Consider using _wsplitpath_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdlib.h(896) : see declaration of '_wsplitpath'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\dump.h(22): warning C4996: 'wcsicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _wcsicmp. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(413) : see declaration of 'wcsicmp'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\dump.h(99): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : see declaration of 'fopen'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\dump.h(101): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : see declaration of 'sprintf'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\dump.h(106): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : see declaration of 'sprintf'
+         SqlServerHandle.cpp
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\neterror.h(9): warning C4251: 'CNetErr::m_strErr' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\wheeltimer.h(105): warning C4251: 'CWheelTimerMgr::m_TimerLock' : class 'CCriSec' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\lock.h(9) : see declaration of 'CCriSec'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\wheeltimer.h(132): warning C4251: 'CWheelTimerMgr::m_timerIDMap' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\wheeltimer.h(135): warning C4251: 'CWheelTimerMgr::m_wtimer' : class 'CWheelTimer' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\wheeltimer.h(74) : see declaration of 'CWheelTimer'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\kernelmgr.h(30): warning C4251: 'CKernelMgr::QueueNormalMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\queuemsg.h(107) : see declaration of 'CLockFreeMgr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\kernelmgr.h(31): warning C4251: 'CKernelMgr::QueueBatchMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\queuemsg.h(107) : see declaration of 'CLockFreeMgr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\kernelmgr.h(32): warning C4251: 'CKernelMgr::QueueDBMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\queuemsg.h(107) : see declaration of 'CLockFreeMgr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\iocp_ex_server\mysqldbprocess.h(5): fatal error C1083: Cannot open include file: 'mysql.h': No such file or directory
+         ServerLogicHandle.cpp
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\neterror.h(9): warning C4251: 'CNetErr::m_strErr' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\wheeltimer.h(105): warning C4251: 'CWheelTimerMgr::m_TimerLock' : class 'CCriSec' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\lock.h(9) : see declaration of 'CCriSec'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\wheeltimer.h(132): warning C4251: 'CWheelTimerMgr::m_timerIDMap' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\wheeltimer.h(135): warning C4251: 'CWheelTimerMgr::m_wtimer' : class 'CWheelTimer' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\wheeltimer.h(74) : see declaration of 'CWheelTimer'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\kernelmgr.h(30): warning C4251: 'CKernelMgr::QueueNormalMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\queuemsg.h(107) : see declaration of 'CLockFreeMgr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\kernelmgr.h(31): warning C4251: 'CKernelMgr::QueueBatchMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\queuemsg.h(107) : see declaration of 'CLockFreeMgr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\kernelmgr.h(32): warning C4251: 'CKernelMgr::QueueDBMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\queuemsg.h(107) : see declaration of 'CLockFreeMgr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\iocp_ex_server\mysqldbprocess.h(5): fatal error C1083: Cannot open include file: 'mysql.h': No such file or directory
+         MySqlHandle.cpp
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\neterror.h(9): warning C4251: 'CNetErr::m_strErr' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\wheeltimer.h(105): warning C4251: 'CWheelTimerMgr::m_TimerLock' : class 'CCriSec' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\lock.h(9) : see declaration of 'CCriSec'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\wheeltimer.h(132): warning C4251: 'CWheelTimerMgr::m_timerIDMap' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\wheeltimer.h(135): warning C4251: 'CWheelTimerMgr::m_wtimer' : class 'CWheelTimer' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\wheeltimer.h(74) : see declaration of 'CWheelTimer'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\kernelmgr.h(30): warning C4251: 'CKernelMgr::QueueNormalMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\queuemsg.h(107) : see declaration of 'CLockFreeMgr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\kernelmgr.h(31): warning C4251: 'CKernelMgr::QueueBatchMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\queuemsg.h(107) : see declaration of 'CLockFreeMgr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\kernelmgr.h(32): warning C4251: 'CKernelMgr::QueueDBMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\queuemsg.h(107) : see declaration of 'CLockFreeMgr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\iocp_ex_server\mysqldbprocess.h(5): fatal error C1083: Cannot open include file: 'mysql.h': No such file or directory
+         MainMgr.cpp
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\neterror.h(9): warning C4251: 'CNetErr::m_strErr' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\wheeltimer.h(105): warning C4251: 'CWheelTimerMgr::m_TimerLock' : class 'CCriSec' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\lock.h(9) : see declaration of 'CCriSec'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\wheeltimer.h(132): warning C4251: 'CWheelTimerMgr::m_timerIDMap' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\wheeltimer.h(135): warning C4251: 'CWheelTimerMgr::m_wtimer' : class 'CWheelTimer' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\wheeltimer.h(74) : see declaration of 'CWheelTimer'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\kernelmgr.h(30): warning C4251: 'CKernelMgr::QueueNormalMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\queuemsg.h(107) : see declaration of 'CLockFreeMgr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\kernelmgr.h(31): warning C4251: 'CKernelMgr::QueueBatchMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\queuemsg.h(107) : see declaration of 'CLockFreeMgr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\kernelmgr.h(32): warning C4251: 'CKernelMgr::QueueDBMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\queuemsg.h(107) : see declaration of 'CLockFreeMgr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\iocp_ex_server\mysqldbprocess.h(5): fatal error C1083: Cannot open include file: 'mysql.h': No such file or directory
+         ClientLogicHandle.cpp
+     1>c1xx : fatal error C1083: Cannot open source file: '..\iocp_ex_server\ClientLogicHandle.cpp': No such file or directory
+         Log.cpp
+         Generating Code...
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\log.cpp(275): warning C4715: 'LogAll' : not all control paths return a value
+     1>Done Building Project "F:\MyTest\myTest\testCPP\server\server - 单锁\server_win\server_win.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:05.54

@@ -1,0 +1,34 @@
+﻿Build started 2016/9/29 19:03:18.
+     1>Project "F:\MyTest\myTest\testCPP\server\server - 单锁\iocp_ex_client\iocp_ex_client.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(364,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../include/ /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt lock.cpp main.cpp NetBase.cpp NetMgr.cpp
+         NetMgr.cpp
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\neterror.h(9): warning C4251: 'CNetErr::m_strErr' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\iocp_ex_client\netmgr.h(5): warning C4005: 'CLIENT_SND_SIZE' : macro redefinition
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\define.h(37) : see previous definition of 'CLIENT_SND_SIZE'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\iocp_ex_client\netmgr.h(6): warning C4005: 'CLIENT_RCV_SIZE' : macro redefinition
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\define.h(38) : see previous definition of 'CLIENT_RCV_SIZE'
+         NetBase.cpp
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\neterror.h(9): warning C4251: 'CNetErr::m_strErr' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\iocp_ex_client\netbase.cpp(3): warning C4081: expected 'newline'; found ';'
+         main.cpp
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\neterror.h(9): warning C4251: 'CNetErr::m_strErr' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\iocp_ex_client\netmgr.h(5): warning C4005: 'CLIENT_SND_SIZE' : macro redefinition
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\define.h(37) : see previous definition of 'CLIENT_SND_SIZE'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\iocp_ex_client\netmgr.h(6): warning C4005: 'CLIENT_RCV_SIZE' : macro redefinition
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\define.h(38) : see previous definition of 'CLIENT_RCV_SIZE'
+         lock.cpp
+         Generating Code...
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\iocp_ex_client\main.cpp(92): warning C4715: 'Unicode2Mulbytes' : not all control paths return a value
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"../bin\iocp_ex_client.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"../bin\iocp_ex_client.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"../bin\iocp_ex_client.lib" /MACHINE:X86 Debug\lock.obj
+         Debug\main.obj
+         Debug\NetBase.obj
+         Debug\NetMgr.obj
+         iocp_ex_client.vcxproj -> F:\MyTest\myTest\testCPP\server\server - 单锁\iocp_ex_client\../bin\iocp_ex_client.exe
+     1>Done Building Project "F:\MyTest\myTest\testCPP\server\server - 单锁\iocp_ex_client\iocp_ex_client.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.54

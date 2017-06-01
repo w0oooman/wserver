@@ -1,0 +1,71 @@
+=>2017-05-15 00:05:06
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-15 00:05:07
+test_event
+22
+33.3
+nil
+hehe
+true
+OnServerDwon
+=>2017-05-15 00:14:13
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-15 00:14:14
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-15 00:38:53
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-15 00:38:54
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-15 00:39:53
+----------CMainMgr::OnEvent timerID=502,data=0,time=1494779993
+SI_EachOneMinute
+=>2017-05-15 00:39:55
+OnServerDwon
+=>2017-05-15 00:40:52
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-15 00:40:53
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-15 00:41:52
+----------CMainMgr::OnEvent timerID=502,data=0,time=1494780112
+SI_EachOneMinute
+=>2017-05-15 00:41:59
+OnServerDwon
+=>2017-05-15 00:42:17
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-15 00:42:18
+test_event
+22
+33.3
+nil
+hehe
+true

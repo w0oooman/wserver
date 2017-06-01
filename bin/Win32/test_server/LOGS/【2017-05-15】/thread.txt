@@ -1,0 +1,22 @@
+=>2017-05-15 00:39:55
+closing server...
+=>2017-05-15 00:41:57
+OnRecvComplete <=0.ID=0
+=>2017-05-15 00:41:59
+closing server...
+waiting rs thread:1
+end rs thread:1
+waiting rs thread:2
+end rs thread:2
+waiting rs thread:3
+end rs thread:3
+waiting rs thread:4
+end rs thread:4
+waiting rs thread:5
+end rs thread:5
+waiting rs thread:6
+end rs thread:6
+waiting rs thread:7
+end rs thread:7
+waiting rs thread:8
+end rs thread:8

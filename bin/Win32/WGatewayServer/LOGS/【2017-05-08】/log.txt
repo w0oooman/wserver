@@ -1,0 +1,20 @@
+=>2017-05-08 16:20:01
+用户最大连接数：5000
+逻辑服务器最大连接数：1
+starting GateServer...
+start GateServer finish!
+=>2017-05-08 16:24:11
+用户最大连接数：5000
+逻辑服务器最大连接数：1
+starting GateServer...
+start GateServer finish!
+=>2017-05-08 16:27:22
+用户最大连接数：5000
+逻辑服务器最大连接数：1
+starting GateServer...
+start GateServer finish!
+=>2017-05-08 16:33:46
+用户最大连接数：5000
+逻辑服务器最大连接数：1
+starting GateServer...
+start GateServer finish!

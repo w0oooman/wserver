@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{087b04c8-ef9e-44b4-b913-20c231e2c51d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="分布式服务端">
+      <UniqueIdentifier>{9259a97e-221d-4156-8092-e9e85cb867eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="分布式客户端">
+      <UniqueIdentifier>{de7b2fef-7176-457f-b5e1-ac71a080e90b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="serialize">
+      <UniqueIdentifier>{da8518f3-59dd-420a-9be0-b40a318db823}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protobuf">
+      <UniqueIdentifier>{16014c5e-ef96-4b9e-b4b5-6ff73f8c136d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="mysql">
+      <UniqueIdentifier>{61211166-6d9f-4d79-9348-63a377a8f2ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lua">
+      <UniqueIdentifier>{d14221e0-0f6c-40d7-9321-33e436232748}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DB">
+      <UniqueIdentifier>{13e0650a-e715-44e7-b509-ce13c1ad8483}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMgr.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerLogicHandle.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="SqlServerHandle.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="MysqlDBProcess.cpp">
+      <Filter>mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="MySqlHandle.cpp">
+      <Filter>mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerMgr.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="DistriClientHandle.cpp">
+      <Filter>分布式客户端</Filter>
+    </ClCompile>
+    <ClCompile Include="DistriServerHandle.cpp">
+      <Filter>分布式服务端</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\Log.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaManager.cpp">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\IniParser.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="DBManager.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MysqlDBProcess.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="MySqlHandle.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="DistriClientHandle.h">
+      <Filter>分布式客户端</Filter>
+    </ClInclude>
+    <ClInclude Include="DistriServerHandle.h">
+      <Filter>分布式服务端</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serialize\Lite.h">
+      <Filter>serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serialize\Serializer.h">
+      <Filter>serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serialize\variant.h">
+      <Filter>serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serialize\Xcpt.h">
+      <Filter>serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaManager.h">
+      <Filter>lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\define.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\dump.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\IKernelMgr.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\KernelMgr.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\lock.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Log.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\NetBase.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\NetError.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\QueueMsg.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\singleton.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\TimerID.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\WheelTimer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\WSAInit.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\NetMsg.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\KernelMsg.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMgr.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerLogicHandle.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\UserData.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="DBManager.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\IniParser.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

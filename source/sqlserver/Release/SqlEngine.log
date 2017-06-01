@@ -1,0 +1,17 @@
+﻿Build started 2016/11/17 11:15:56.
+     1>Project "F:\MyTest\myTest\testCPP\server\server - 单锁\SqlEngine\SqlEngine.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\MyTest\myTest\testCPP\server\server - 单锁\Release\SqlEngine.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\MyTest\myTest\testCPP\server\server - 单锁\Release\SqlEngine.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\MyTest\myTest\testCPP\server\server - 单锁\Release\SqlEngine.lib" /MACHINE:X86 /SAFESEH /DLL Release\DataBase.obj
+         Release\DataBaseAide.obj
+         Release\dllmain.obj
+         Release\SqlEngine.obj
+         Release\stdafx.obj
+            Creating library F:\MyTest\myTest\testCPP\server\server - 单锁\Release\SqlEngine.lib and object F:\MyTest\myTest\testCPP\server\server - 单锁\Release\SqlEngine.exp
+         Generating code
+         Finished generating code
+         SqlEngine.vcxproj -> F:\MyTest\myTest\testCPP\server\server - 单锁\Release\SqlEngine.dll
+     1>Done Building Project "F:\MyTest\myTest\testCPP\server\server - 单锁\SqlEngine\SqlEngine.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.61

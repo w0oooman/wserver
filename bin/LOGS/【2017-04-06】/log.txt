@@ -1,0 +1,4303 @@
+=>2017-04-06 20:45:12
+
+
+
+
+
+
+
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+=>2017-04-06 20:46:19
+
+
+
+
+
+
+
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+=>2017-04-06 20:54:37
+
+
+
+
+
+
+
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+
+
+
+
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+
+
+GetQueuedCompletionStatus error:0
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+
+
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+
+GetQueuedCompletionStatus error:0
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+=>2017-04-06 21:04:35
+WSARecv error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+WSARecv error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+WSARecv error:10054
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+WSARecv error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+WSARecv error:10054
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+=>2017-04-06 21:04:36
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+WSARecv error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+WSARecv error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+WSARecv error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+WSARecv error:10054
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+WSARecv error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+=>2017-04-06 21:09:19
+WSARecv error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+WSARecv error:10054
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+WSARecv error:10054
+GetQueuedCompletionStatus error:10054
+
+
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+WSARecv error:10054
+
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:10054
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:0
+GetQueuedCompletionStatus error:0
+
+GetQueuedCompletionStatus error:0
+
+
+GetQueuedCompletionStatus error:10054
+
+
+GetQueuedCompletionStatus error:10054
+GetQueuedCompletionStatus error:10054
+

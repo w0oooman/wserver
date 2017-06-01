@@ -1,0 +1,26 @@
+﻿Build started 2016/10/11 10:46:24.
+     1>Project "F:\MyTest\myTest\testCPP\server\server - 单锁\SqlEngine\SqlEngine.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(364,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../proto_file /I../include/ /ZI /nologo /W3 /WX- /Od /Oy- /D _DB_EXPORT_ /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D SQLENGINE_EXPORTS /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\SqlEngine.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../proto_file /I../include/ /ZI /nologo /W3 /WX- /Od /Oy- /D _DB_EXPORT_ /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D SQLENGINE_EXPORTS /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\SqlEngine.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt DataBase.cpp DataBaseAide.cpp SqlEngine.cpp
+         SqlEngine.cpp
+         DataBaseAide.cpp
+         DataBase.cpp
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../proto_file /I../include/ /ZI /nologo /W3 /WX- /Od /Oy- /D _DB_EXPORT_ /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D SQLENGINE_EXPORTS /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
+         dllmain.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"../bin\SqlEngine.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"../bin\SqlEngine.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"../bin\SqlEngine.lib" /MACHINE:X86 /DLL Debug\DataBase.obj
+         Debug\DataBaseAide.obj
+         Debug\dllmain.obj
+         Debug\SqlEngine.obj
+         Debug\stdafx.obj
+            Creating library ../bin\SqlEngine.lib and object ../bin\SqlEngine.exp
+         SqlEngine.vcxproj -> F:\MyTest\myTest\testCPP\server\server - 单锁\SqlEngine\../bin\SqlEngine.dll
+     1>Done Building Project "F:\MyTest\myTest\testCPP\server\server - 单锁\SqlEngine\SqlEngine.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.89

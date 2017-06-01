@@ -1,0 +1,139 @@
+=>2017-05-08 16:20:05
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-08 16:20:05
+connecting...
+connect success!
+connecting...
+connect success!
+=>2017-05-08 16:20:06
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-08 16:20:30
+connecting...
+=>2017-05-08 16:20:35
+connecting...
+=>2017-05-08 16:20:40
+connecting...
+=>2017-05-08 16:20:45
+connecting...
+=>2017-05-08 16:20:50
+connecting...
+=>2017-05-08 16:24:14
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-08 16:24:14
+connecting...
+connect success!
+connecting...
+connect success!
+=>2017-05-08 16:24:15
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-08 16:25:14
+SI_EachOneMinute
+=>2017-05-08 16:25:29
+connecting...
+=>2017-05-08 16:28:16
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-08 16:28:16
+connecting...
+connect success!
+connecting...
+connect success!
+=>2017-05-08 16:28:17
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-08 16:29:16
+SI_EachOneMinute
+=>2017-05-08 16:29:26
+connecting...
+=>2017-05-08 16:29:31
+connecting...
+=>2017-05-08 16:29:36
+connecting...
+=>2017-05-08 16:29:41
+connecting...
+=>2017-05-08 16:29:46
+connecting...
+=>2017-05-08 16:29:51
+connecting...
+=>2017-05-08 16:29:56
+connecting...
+=>2017-05-08 16:30:01
+connecting...
+=>2017-05-08 16:30:06
+connecting...
+=>2017-05-08 16:30:11
+connecting...
+=>2017-05-08 16:30:16
+SI_EachOneMinute
+=>2017-05-08 16:30:16
+connecting...
+=>2017-05-08 16:30:21
+connecting...
+connect success!
+=>2017-05-08 16:31:16
+SI_EachOneMinute
+=>2017-05-08 16:32:16
+SI_EachOneMinute
+=>2017-05-08 16:32:41
+connecting...
+=>2017-05-08 16:32:46
+connecting...
+=>2017-05-08 16:32:51
+connecting...
+=>2017-05-08 16:32:56
+connecting...
+=>2017-05-08 16:33:01
+connecting...
+=>2017-05-08 16:33:06
+connecting...
+=>2017-05-08 16:33:11
+connecting...
+=>2017-05-08 16:33:16
+SI_EachOneMinute
+=>2017-05-08 16:33:16
+connecting...
+=>2017-05-08 16:33:21
+connecting...
+=>2017-05-08 16:33:26
+connecting...
+=>2017-05-08 16:33:50
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-08 16:33:50
+connecting...
+connect success!
+connecting...
+connect success!
+=>2017-05-08 16:33:51
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-08 16:34:50
+SI_EachOneMinute

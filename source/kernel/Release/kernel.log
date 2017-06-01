@@ -1,0 +1,9 @@
+﻿Build started 2017/6/1 15:46:03.
+     1>Project "F:\MyTest\myTest\testCPP\server\2\server+redis\source\kernel\kernel.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         kernel.vcxproj -> F:\MyTest\myTest\testCPP\server\2\server+redis\source\kernel\..\..\bin\Win32\kernel.dll
+     1>Done Building Project "F:\MyTest\myTest\testCPP\server\2\server+redis\source\kernel\kernel.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.04

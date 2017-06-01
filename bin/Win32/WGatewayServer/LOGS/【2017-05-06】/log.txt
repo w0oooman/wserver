@@ -1,0 +1,63 @@
+=>2017-05-06 16:54:53
+用户最大连接数：5000
+逻辑服务器最大连接数：1
+starting GateServer...
+start GateServer finish!
+=>2017-05-06 17:06:46
+用户最大连接数：5000
+逻辑服务器最大连接数：1
+starting GateServer...
+start GateServer finish!
+=>2017-05-06 17:07:19
+用户最大连接数：5000
+逻辑服务器最大连接数：1
+starting GateServer...
+start GateServer finish!
+=>2017-05-06 17:12:01
+用户最大连接数：5000
+逻辑服务器最大连接数：1
+=>2017-05-06 17:12:31
+starting GateServer...
+start GateServer finish!
+=>2017-05-06 17:12:38
+用户最大连接数：5000
+逻辑服务器最大连接数：1
+=>2017-05-06 17:12:46
+starting GateServer...
+start GateServer finish!
+=>2017-05-06 17:15:37
+用户最大连接数：5000
+逻辑服务器最大连接数：1
+=>2017-05-06 17:15:40
+starting GateServer...
+start GateServer finish!
+=>2017-05-06 17:16:54
+用户最大连接数：5000
+逻辑服务器最大连接数：1
+starting GateServer...
+start GateServer finish!
+=>2017-05-06 17:17:22
+用户最大连接数：5000
+逻辑服务器最大连接数：1
+starting GateServer...
+start GateServer finish!
+=>2017-05-06 17:19:20
+用户最大连接数：5000
+逻辑服务器最大连接数：1
+starting GateServer...
+start GateServer finish!
+=>2017-05-06 17:24:20
+用户最大连接数：5000
+逻辑服务器最大连接数：1
+starting GateServer...
+start GateServer finish!
+=>2017-05-06 17:24:33
+用户最大连接数：5000
+逻辑服务器最大连接数：1
+starting GateServer...
+start GateServer finish!
+=>2017-05-06 17:36:32
+用户最大连接数：5000
+逻辑服务器最大连接数：1
+starting GateServer...
+start GateServer finish!

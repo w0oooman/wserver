@@ -1,0 +1,1577 @@
+=>2017-05-06 16:54:57
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 16:54:57
+connecting...
+connect success!
+connecting...
+connect success!
+=>2017-05-06 16:54:58
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 16:55:23
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 16:55:23
+connecting...
+connect success!
+connecting...
+connect success!
+=>2017-05-06 16:55:24
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 16:55:30
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 16:55:30
+connecting...
+connect success!
+unhandle msg:102
+connecting...
+connect success!
+CLogicServerLogin unhandle msg:102
+=>2017-05-06 16:55:31
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 16:55:39
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 16:55:39
+connecting...
+connect success!
+unhandle msg:102
+connecting...
+connect success!
+CLogicServerLogin unhandle msg:102
+=>2017-05-06 16:55:40
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 16:55:44
+connecting...
+connect success!
+connecting...
+connect success!
+=>2017-05-06 16:55:44
+unhandle msg:102
+CLogicServerLogin unhandle msg:102
+=>2017-05-06 16:55:49
+connecting...
+connect success!
+=>2017-05-06 16:55:49
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 16:55:54
+connecting...
+connect success!
+connecting...
+connect success!
+=>2017-05-06 16:55:54
+CLogicServerLogin unhandle msg:102
+unhandle msg:102
+=>2017-05-06 16:55:57
+SI_EachOneMinute
+=>2017-05-06 16:55:59
+connecting...
+connect success!
+=>2017-05-06 16:55:59
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 16:56:04
+connecting...
+connect success!
+=>2017-05-06 16:56:04
+unhandle msg:102
+connecting...
+connect success!
+CLogicServerLogin unhandle msg:102
+=>2017-05-06 16:56:09
+connecting...
+connect success!
+connecting...
+connect success!
+=>2017-05-06 16:56:09
+unhandle msg:102
+CLogicServerLogin unhandle msg:102
+=>2017-05-06 16:59:18
+connecting...
+connect success!
+connecting...
+connect success!
+=>2017-05-06 16:59:18
+unhandle msg:102
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+SI_EachOneMinute
+unhandle msg:102
+=>2017-05-06 16:59:23
+connecting...
+connect success!
+=>2017-05-06 16:59:23
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 16:59:28
+connecting...
+connect success!
+=>2017-05-06 16:59:28
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 16:59:33
+connecting...
+connect success!
+=>2017-05-06 16:59:33
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 16:59:38
+connecting...
+connect success!
+=>2017-05-06 16:59:38
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 16:59:43
+connecting...
+connect success!
+=>2017-05-06 16:59:43
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 16:59:48
+connecting...
+connect success!
+=>2017-05-06 16:59:48
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 16:59:53
+connecting...
+connect success!
+=>2017-05-06 16:59:53
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 16:59:58
+connecting...
+connect success!
+=>2017-05-06 16:59:58
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:00:03
+connecting...
+connect success!
+=>2017-05-06 17:00:03
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:00:08
+connecting...
+connect success!
+=>2017-05-06 17:00:08
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:00:13
+connecting...
+connect success!
+=>2017-05-06 17:00:13
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:00:18
+connecting...
+connect success!
+=>2017-05-06 17:00:18
+CLogicServerLogin unhandle msg:102
+SI_EachOneMinute
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:00:23
+connecting...
+connect success!
+=>2017-05-06 17:00:23
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:00:28
+connecting...
+connect success!
+=>2017-05-06 17:00:28
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:00:33
+connecting...
+connect success!
+=>2017-05-06 17:00:33
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:00:38
+connecting...
+connect success!
+=>2017-05-06 17:00:38
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:00:43
+connecting...
+connect success!
+=>2017-05-06 17:00:43
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:00:48
+connecting...
+connect success!
+=>2017-05-06 17:00:48
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:00:53
+connecting...
+connect success!
+=>2017-05-06 17:00:53
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:00:58
+connecting...
+connect success!
+=>2017-05-06 17:00:58
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:01:03
+connecting...
+connect success!
+=>2017-05-06 17:01:03
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:01:08
+connecting...
+connect success!
+=>2017-05-06 17:01:08
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:01:13
+connecting...
+connect success!
+=>2017-05-06 17:01:13
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:01:18
+connecting...
+connect success!
+=>2017-05-06 17:01:18
+CLogicServerLogin unhandle msg:102
+SI_EachOneMinute
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:01:23
+connecting...
+connect success!
+=>2017-05-06 17:01:23
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:01:28
+connecting...
+connect success!
+=>2017-05-06 17:01:28
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:01:33
+connecting...
+connect success!
+=>2017-05-06 17:01:33
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:01:38
+connecting...
+connect success!
+=>2017-05-06 17:01:38
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:01:43
+connecting...
+connect success!
+=>2017-05-06 17:01:43
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:01:48
+connecting...
+connect success!
+=>2017-05-06 17:01:48
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:01:53
+connecting...
+connect success!
+=>2017-05-06 17:01:53
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:01:58
+connecting...
+connect success!
+=>2017-05-06 17:01:58
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:02:03
+connecting...
+connect success!
+=>2017-05-06 17:02:03
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:02:08
+connecting...
+connect success!
+=>2017-05-06 17:02:08
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:02:13
+connecting...
+connect success!
+=>2017-05-06 17:02:13
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:02:18
+connecting...
+connect success!
+=>2017-05-06 17:02:18
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+SI_EachOneMinute
+unhandle msg:102
+=>2017-05-06 17:02:23
+connecting...
+connect success!
+=>2017-05-06 17:02:23
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:02:28
+connecting...
+connect success!
+=>2017-05-06 17:02:28
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:02:33
+connecting...
+connect success!
+=>2017-05-06 17:02:33
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:02:38
+connecting...
+connect success!
+=>2017-05-06 17:02:38
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:02:43
+connecting...
+connect success!
+=>2017-05-06 17:02:43
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:02:48
+connecting...
+connect success!
+=>2017-05-06 17:02:48
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:02:53
+connecting...
+connect success!
+=>2017-05-06 17:02:53
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:02:58
+connecting...
+connect success!
+=>2017-05-06 17:02:58
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:03:03
+connecting...
+connect success!
+=>2017-05-06 17:03:03
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:03:08
+connecting...
+connect success!
+=>2017-05-06 17:03:08
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:03:13
+connecting...
+connect success!
+=>2017-05-06 17:03:13
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:03:18
+connecting...
+connect success!
+=>2017-05-06 17:03:18
+CLogicServerLogin unhandle msg:102
+SI_EachOneMinute
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:03:23
+connecting...
+connect success!
+=>2017-05-06 17:03:23
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:03:28
+connecting...
+connect success!
+=>2017-05-06 17:03:28
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:03:33
+connecting...
+connect success!
+=>2017-05-06 17:03:33
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:03:38
+connecting...
+connect success!
+=>2017-05-06 17:03:38
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:03:43
+connecting...
+connect success!
+=>2017-05-06 17:03:43
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:03:48
+connecting...
+connect success!
+=>2017-05-06 17:03:48
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:03:53
+connecting...
+connect success!
+=>2017-05-06 17:03:53
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:03:58
+connecting...
+connect success!
+=>2017-05-06 17:03:58
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:04:03
+connecting...
+connect success!
+=>2017-05-06 17:04:03
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:04:08
+connecting...
+connect success!
+=>2017-05-06 17:04:08
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:04:13
+connecting...
+connect success!
+=>2017-05-06 17:04:13
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:04:18
+connecting...
+connect success!
+=>2017-05-06 17:04:18
+CLogicServerLogin unhandle msg:102
+SI_EachOneMinute
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:04:23
+connecting...
+connect success!
+=>2017-05-06 17:04:23
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:04:28
+connecting...
+connect success!
+=>2017-05-06 17:04:28
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:04:33
+connecting...
+connect success!
+=>2017-05-06 17:04:33
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:04:38
+connecting...
+connect success!
+=>2017-05-06 17:04:38
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:04:43
+connecting...
+connect success!
+=>2017-05-06 17:04:43
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:04:48
+connecting...
+connect success!
+=>2017-05-06 17:04:48
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:04:53
+connecting...
+connect success!
+=>2017-05-06 17:04:53
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:04:57
+SI_EachTenMinute
+=>2017-05-06 17:04:58
+connecting...
+connect success!
+=>2017-05-06 17:04:58
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:05:03
+connecting...
+connect success!
+=>2017-05-06 17:05:03
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:05:08
+connecting...
+connect success!
+=>2017-05-06 17:05:08
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:05:13
+connecting...
+connect success!
+=>2017-05-06 17:05:13
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:05:18
+connecting...
+connect success!
+=>2017-05-06 17:05:18
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+SI_EachOneMinute
+unhandle msg:102
+=>2017-05-06 17:05:23
+connecting...
+connect success!
+=>2017-05-06 17:05:23
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:05:28
+connecting...
+connect success!
+=>2017-05-06 17:05:28
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:05:33
+connecting...
+connect success!
+=>2017-05-06 17:05:33
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:05:38
+connecting...
+connect success!
+=>2017-05-06 17:05:38
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:05:43
+connecting...
+connect success!
+=>2017-05-06 17:05:43
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:05:48
+connecting...
+connect success!
+=>2017-05-06 17:05:48
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:05:53
+connecting...
+connect success!
+=>2017-05-06 17:05:53
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:05:58
+connecting...
+connect success!
+=>2017-05-06 17:05:58
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:06:12
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:06:12
+connecting...
+connect success!
+unhandle msg:102
+connecting...
+connect success!
+CLogicServerLogin unhandle msg:102
+=>2017-05-06 17:06:13
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:06:17
+connecting...
+connect success!
+=>2017-05-06 17:06:17
+CLogicServerLogin unhandle msg:102
+connecting...
+connect success!
+unhandle msg:102
+=>2017-05-06 17:06:22
+connecting...
+connect success!
+=>2017-05-06 17:06:22
+unhandle msg:102
+connecting...
+connect success!
+CLogicServerLogin unhandle msg:102
+=>2017-05-06 17:06:27
+connecting...
+connect success!
+connecting...
+connect success!
+=>2017-05-06 17:06:27
+unhandle msg:102
+CLogicServerLogin unhandle msg:102
+=>2017-05-06 17:06:52
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:06:52
+connecting...
+connect success!
+connecting...
+=>2017-05-06 17:06:53
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:06:58
+connecting...
+=>2017-05-06 17:07:03
+connecting...
+=>2017-05-06 17:07:23
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:07:23
+connecting...
+connect success!
+connecting...
+connect success!
+=>2017-05-06 17:07:24
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:08:10
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:08:10
+connecting...
+connect success!
+connecting...
+connect success!
+=>2017-05-06 17:08:11
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:08:23
+SI_EachOneMinute
+=>2017-05-06 17:08:59
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:08:59
+connecting...
+connect success!
+unhandle msg:102
+connecting...
+connect success!
+CLogicServerLogin unhandle msg:102
+=>2017-05-06 17:09:00
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:09:04
+connecting...
+connect success!
+=>2017-05-06 17:09:04
+unhandle msg:102
+connecting...
+connect success!
+CLogicServerLogin unhandle msg:102
+=>2017-05-06 17:09:10
+SI_EachOneMinute
+=>2017-05-06 17:09:23
+SI_EachOneMinute
+=>2017-05-06 17:10:10
+SI_EachOneMinute
+=>2017-05-06 17:10:23
+SI_EachOneMinute
+=>2017-05-06 17:12:59
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:12:59
+connecting...
+connect success!
+connecting...
+=>2017-05-06 17:13:00
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:13:05
+connecting...
+=>2017-05-06 17:13:10
+connecting...
+=>2017-05-06 17:13:15
+connecting...
+=>2017-05-06 17:13:20
+connecting...
+=>2017-05-06 17:13:25
+connecting...
+=>2017-05-06 17:13:33
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:13:33
+connecting...
+connect success!
+connecting...
+=>2017-05-06 17:13:34
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:13:39
+connecting...
+=>2017-05-06 17:13:44
+connecting...
+=>2017-05-06 17:13:59
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:13:59
+connecting...
+connect success!
+connecting...
+=>2017-05-06 17:14:00
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:14:03
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:14:03
+connecting...
+connect success!
+connecting...
+=>2017-05-06 17:14:04
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:14:05
+connecting...
+=>2017-05-06 17:14:20
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:14:20
+connecting...
+connect success!
+connecting...
+=>2017-05-06 17:14:21
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:14:26
+connecting...
+=>2017-05-06 17:14:31
+connecting...
+=>2017-05-06 17:14:33
+unhandle msg:102
+=>2017-05-06 17:14:35
+connecting...
+connect success!
+=>2017-05-06 17:14:36
+connecting...
+=>2017-05-06 17:14:43
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:14:43
+connecting...
+connect success!
+connecting...
+=>2017-05-06 17:14:44
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:14:48
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:14:48
+connecting...
+connect success!
+connecting...
+=>2017-05-06 17:14:49
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:14:58
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:14:58
+connecting...
+connect success!
+unhandle msg:102
+connecting...
+=>2017-05-06 17:14:59
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:15:03
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:15:03
+connecting...
+connect success!
+unhandle msg:102
+connecting...
+=>2017-05-06 17:15:04
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:15:08
+connecting...
+connect success!
+=>2017-05-06 17:15:08
+unhandle msg:102
+=>2017-05-06 17:15:15
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:15:15
+connecting...
+connect success!
+unhandle msg:102
+connecting...
+=>2017-05-06 17:15:16
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:15:49
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:15:49
+connecting...
+connect success!
+connecting...
+=>2017-05-06 17:15:50
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:15:52
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:15:52
+connecting...
+connect success!
+connecting...
+=>2017-05-06 17:15:53
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:15:55
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:15:55
+connecting...
+connect success!
+unhandle msg:102
+connecting...
+=>2017-05-06 17:15:55
+connecting...
+=>2017-05-06 17:15:56
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:16:57
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:16:57
+connecting...
+connect success!
+connecting...
+=>2017-05-06 17:16:58
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:16:59
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:16:59
+connecting...
+connect success!
+unhandle msg:102
+connecting...
+=>2017-05-06 17:17:00
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:17:03
+connecting...
+=>2017-05-06 17:17:03
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:17:03
+connecting...
+connect success!
+unhandle msg:102
+connecting...
+=>2017-05-06 17:17:04
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:17:08
+connecting...
+=>2017-05-06 17:17:09
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:17:09
+connecting...
+connect success!
+unhandle msg:102
+connecting...
+=>2017-05-06 17:17:10
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:17:16
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:17:16
+connecting...
+connect success!
+unhandle msg:102
+connecting...
+=>2017-05-06 17:17:17
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:17:26
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:17:26
+connecting...
+connect success!
+connecting...
+=>2017-05-06 17:17:27
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:17:29
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:17:29
+connecting...
+connect success!
+unhandle msg:102
+connecting...
+=>2017-05-06 17:17:30
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:17:32
+connecting...
+=>2017-05-06 17:17:37
+connecting...
+=>2017-05-06 17:17:41
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:17:41
+connecting...
+connect success!
+unhandle msg:102
+connecting...
+=>2017-05-06 17:17:42
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:17:46
+connecting...
+connect success!
+=>2017-05-06 17:17:46
+unhandle msg:102
+=>2017-05-06 17:19:24
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:19:24
+connecting...
+connect success!
+connecting...
+=>2017-05-06 17:19:25
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:19:39
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:19:39
+connecting...
+connect success!
+unhandle msg:102
+connecting...
+=>2017-05-06 17:19:40
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:19:44
+connecting...
+connect success!
+=>2017-05-06 17:19:44
+unhandle msg:102
+=>2017-05-06 17:19:45
+connecting...
+=>2017-05-06 17:24:24
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:24:24
+connecting...
+connect success!
+connecting...
+=>2017-05-06 17:24:25
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:24:36
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:24:36
+connecting...
+connect success!
+connecting...
+=>2017-05-06 17:24:38
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:24:38
+connecting...
+connect success!
+connecting...
+=>2017-05-06 17:24:39
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:24:44
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:24:44
+connecting...
+connect success!
+connecting...
+=>2017-05-06 17:24:45
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:24:47
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:24:47
+connecting...
+connect success!
+connecting...
+=>2017-05-06 17:24:48
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:24:49
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:24:49
+connecting...
+connect success!
+unhandle msg:102
+connecting...
+=>2017-05-06 17:24:50
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:24:52
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:24:52
+connecting...
+connect success!
+unhandle msg:102
+connecting...
+=>2017-05-06 17:24:53
+connecting...
+=>2017-05-06 17:24:53
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:24:55
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:24:55
+connecting...
+connect success!
+unhandle msg:102
+connecting...
+=>2017-05-06 17:24:56
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:25:00
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:25:00
+connecting...
+connect success!
+connecting...
+=>2017-05-06 17:25:01
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:25:04
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:25:04
+connecting...
+connect success!
+unhandle msg:102
+connecting...
+=>2017-05-06 17:25:05
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:25:06
+connecting...
+=>2017-05-06 17:25:08
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:25:08
+connecting...
+connect success!
+connecting...
+=>2017-05-06 17:25:09
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:36:36
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:36:36
+connecting...
+connect success!
+connecting...
+connect success!
+=>2017-05-06 17:36:37
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:37:37
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:37:37
+connecting...
+connect success!
+connecting...
+connect success!
+=>2017-05-06 17:37:38
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2017-05-06 17:45:27
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2017-05-06 17:45:27
+connecting...
+connect success!
+connecting...
+connect success!
+=>2017-05-06 17:45:28
+test_event
+22
+33.3
+nil
+hehe
+true

@@ -1,0 +1,211 @@
+=>2017-04-30 13:25:23
+数据库连接出现错误 Access denied for user 'root'@'wuhaibo' (using password: YES)
+connecting redis server...
+connecting redis server success.
+starting DBServer...
+数据库连接出现错误 Access denied for user 'ODBC'@'localhost' (using password: NO)
+start DBServer finish!
+=>2017-04-30 13:29:48
+数据库连接出现错误 Access denied for user 'root'@'wuhaibo' (using password: YES)
+connecting redis server...
+connecting redis server success.
+starting DBServer...
+数据库连接出现错误 Access denied for user 'ODBC'@'localhost' (using password: NO)
+start DBServer finish!
+=>2017-04-30 13:30:08
+数据库连接出现错误 Access denied for user 'root'@'wuhaibo' (using password: YES)
+connecting redis server...
+connecting redis server success.
+starting DBServer...
+数据库连接出现错误 Access denied for user 'ODBC'@'localhost' (using password: NO)
+start DBServer finish!
+=>2017-04-30 13:30:14
+数据库连接出现错误 Access denied for user 'root'@'wuhaibo' (using password: YES)
+connecting redis server...
+connecting redis server success.
+starting DBServer...
+数据库连接出现错误 Access denied for user 'ODBC'@'localhost' (using password: NO)
+start DBServer finish!
+=>2017-04-30 13:30:37
+数据库连接出现错误 Access denied for user 'root'@'wuhaibo' (using password: YES)
+connecting redis server...
+connecting redis server success.
+starting DBServer...
+=>2017-04-30 13:31:43
+数据库连接出现错误 Access denied for user 'root'@'wuhaibo' (using password: YES)
+=>2017-04-30 13:32:14
+数据库连接出现错误 Access denied for user 'root'@'wuhaibo' (using password: YES)
+=>2017-04-30 13:33:40
+数据库连接出现错误 Access denied for user 'root'@'wuhaibo' (using password: YES)
+error file=DBServer.cpp,line=54,ErrorID=0
+starting DBServer...
+数据库连接出现错误 Access denied for user 'ODBC'@'localhost' (using password: NO)
+error file=DBServer.cpp,line=71,ErrorID=183
+start DBServer finish!
+=>2017-04-30 13:33:45
+数据库连接出现错误 Access denied for user 'root'@'wuhaibo' (using password: YES)
+error file=DBServer.cpp,line=54,ErrorID=0
+starting DBServer...
+=>2017-04-30 13:33:46
+数据库连接出现错误 Access denied for user 'ODBC'@'localhost' (using password: NO)
+error file=DBServer.cpp,line=71,ErrorID=183
+start DBServer finish!
+=>2017-04-30 14:46:08
+数据库连接出现错误 Access denied for user 'root'@'wuhaibo' (using password: YES)
+error file=DBServer.cpp,line=54,ErrorID=0
+=>2017-04-30 14:49:12
+数据库连接出现错误 Access denied for user 'root'@'wuhaibo' (using password: YES)
+error file=DBServer.cpp,line=54,ErrorID=0
+=>2017-04-30 14:49:33
+数据库连接出现错误 Access denied for user 'root'@'wuhaibo' (using password: YES)
+error file=DBServer.cpp,line=54,ErrorID=0
+=>2017-04-30 14:57:13
+connecting redis server...
+connecting redis server success.
+数据库连接出现错误 Access denied for user 'root'@'wuhaibo' (using password: YES)
+error file=DBServer.cpp,line=54,ErrorID=0
+DBServer Init Error.
+=>2017-04-30 15:16:40
+connecting redis server...
+connecting redis server success.
+数据库连接出现错误 Access denied for user 'root'@'wuhaibo' (using password: YES)
+error file=DBServer.cpp,line=54,function=695396,ErrorID=0
+DBServer Init Error.
+=>2017-04-30 15:16:59
+connecting redis server...
+connecting redis server success.
+=>2017-04-30 15:17:19
+数据库连接出现错误 Access denied for user 'root'@'wuhaibo' (using password: YES)
+=>2017-04-30 15:24:22
+connecting redis server...
+connecting redis server success.
+数据库连接出现错误 Access denied for user 'root'@'wuhaibo' (using password: YES)
+error file=DBServer.cpp,line=54,function=17341540,ErrorID=0
+DBServer Init Error.
+=>2017-04-30 15:25:06
+connecting redis server...
+connecting redis server success.
+数据库连接出现错误 Access denied for user 'root'@'wuhaibo' (using password: YES)
+error file=DBServer.cpp,line=54,function=13737060,ErrorID=0
+DBServer Init Error.
+=>2017-04-30 15:25:45
+connecting redis server...
+connecting redis server success.
+数据库连接出现错误 Access denied for user 'root'@'wuhaibo' (using password: YES)
+error file=DBServer.cpp,line=54,function=16686180,ErrorID=0
+DBServer Init Error.
+=>2017-04-30 15:27:24
+connecting redis server...
+connecting redis server success.
+=>2017-04-30 15:28:08
+connecting redis server...
+connecting redis server success.
+starting DBServer...
+LoadUserData roleid = 1000100010
+LoadUserData roleid = 1000100011
+start DBServer finish!
+=>2017-04-30 15:39:18
+connecting redis server...
+connecting redis server success.
+starting DBServer...
+LoadUserData roleid = 1000100010
+LoadUserData roleid = 1000100011
+start DBServer finish!
+=>2017-04-30 15:39:36
+connecting redis server...
+connecting redis server success.
+=>2017-04-30 15:39:37
+starting DBServer...
+LoadUserData roleid = 1000100010
+LoadUserData roleid = 1000100011
+start DBServer finish!
+=>2017-04-30 15:39:46
+connecting redis server...
+connecting redis server success.
+数据库连接出现错误 Access denied for user 'root'@'wuhaibo' (using password: YES)
+error file=DBServer.cpp,line=54,function=19831908,ErrorID=0
+数据库连接出现错误 Access denied for user 'ODBC'@'localhost' (using password: NO)
+SaveUserData roleid = 1000100010, success = false
+DBServer Init Error.
+=>2017-04-30 15:40:34
+connecting redis server...
+connecting redis server success.
+数据库连接出现错误 Access denied for user 'root'@'wuhaibo' (using password: YES)
+error file=DBServer.cpp,line=54,function=20749412,ErrorID=0
+DBServer Init Error.
+=>2017-04-30 15:42:13
+connecting redis server...
+connecting redis server success.
+数据库连接出现错误 Access denied for user 'root'@'wuhaibo' (using password: YES)
+error file=DBServer.cpp,line=54,function=16817252,ErrorID=0
+DBServer Init Error.
+=>2017-04-30 15:55:45
+connecting redis server...
+connecting redis server success.
+starting DBServer...
+LoadUserData roleid = 1000100010
+LoadUserData roleid = 1000100011
+start DBServer finish!
+=>2017-04-30 15:56:01
+connecting redis server...
+connecting redis server success.
+数据库连接出现错误 Access denied for user 'root'@'wuhaibo' (using password: YES)
+error file=DBServer.cpp,line=54,function=3316836,ErrorID=0
+=>2017-04-30 16:00:57
+connecting redis server...
+connecting redis server success.
+数据库连接出现错误 Access denied for user 'root'@'wuhaibo' (using password: YES)
+error file=DBServer.cpp,line=58,function=19700836,ErrorID=0
+DBServer Init Error.
+=>2017-04-30 16:01:04
+connecting redis server...
+connecting redis server success.
+=>2017-04-30 16:01:05
+数据库连接出现错误 Access denied for user 'root'@'wuhaibo' (using password: YES)
+error file=DBServer.cpp,line=58,function=2268260,ErrorID=0
+DBServer Init Error.
+=>2017-04-30 16:01:28
+connecting redis server...
+connecting redis server success.
+=>2017-04-30 16:01:29
+数据库连接出现错误 Access denied for user 'root'@'wuhaibo' (using password: YES)
+error file=DBServer.cpp,line=58,function=1219684,ErrorID=0
+=>2017-04-30 16:05:15
+connecting redis server...
+connecting redis server success.
+数据库连接出现错误 Access denied for user 'root'@'wuhaibo' (using password: YES)
+error file=DBServer.cpp,line=58,function=367716,ErrorID=0
+DBServer Init Error.
+=>2017-04-30 16:05:33
+connecting redis server...
+connecting redis server success.
+starting DBServer...
+LoadUserData roleid = 1000100010
+LoadUserData roleid = 1000100011
+start DBServer finish!
+=>2017-04-30 16:06:57
+connecting redis server...
+connecting redis server success.
+数据库连接出现错误 Access denied for user 'root'@'wuhaibo' (using password: YES)
+error file=DBServer.cpp,line=58,function=20683876,ErrorID=0
+DBServer Init Error.
+=>2017-04-30 16:07:06
+connecting redis server...
+connecting redis server success.
+starting DBServer...
+LoadUserData roleid = 1000100010
+LoadUserData roleid = 1000100011
+start DBServer finish!
+=>2017-04-30 16:07:18
+connecting redis server...
+connecting redis server success.
+数据库连接出现错误 Access denied for user 'root'@'wuhaibo' (using password: YES)
+error file=DBServer.cpp,line=58,function=12819556,ErrorID=0
+DBServer Init Error.
+=>2017-04-30 16:09:40
+connecting redis server...
+connecting redis server success.
+starting DBServer...
+LoadUserData roleid = 1000100010
+LoadUserData roleid = 1000100011
+start DBServer finish!

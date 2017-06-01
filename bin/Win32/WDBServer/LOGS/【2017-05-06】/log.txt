@@ -1,0 +1,21 @@
+=>2017-05-06 16:54:55
+connecting redis server...
+connecting redis server success.
+starting DBServer...
+LoadUserData roleid = 1000100010
+LoadUserData roleid = 1000100011
+start DBServer finish!
+=>2017-05-06 17:07:21
+connecting redis server...
+connecting redis server success.
+starting DBServer...
+LoadUserData roleid = 1000100010
+LoadUserData roleid = 1000100011
+start DBServer finish!
+=>2017-05-06 17:36:34
+connecting redis server...
+connecting redis server success.
+starting DBServer...
+LoadUserData roleid = 1000100010
+LoadUserData roleid = 1000100011
+start DBServer finish!

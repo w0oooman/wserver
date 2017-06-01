@@ -1,0 +1,23 @@
+﻿Build started 2017/3/30 19:43:38.
+     1>Project "F:\MyTest\myTest\testCPP\server\2\server+redis\source\kernel\kernel.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(364,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\bin\x64\kernel.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\..\bin\x64\kernel.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\lib\x64\kernel.lib" /MACHINE:X64 /DLL x64\Release\Log.obj
+         x64\Release\lock.obj
+         x64\Release\KernelMgr.obj
+         x64\Release\NetBase.obj
+         x64\Release\NetError.obj
+         x64\Release\NetMgr.obj
+         x64\Release\QueueMsg.obj
+         x64\Release\SocketArray.obj
+         x64\Release\TCPSocket.obj
+         x64\Release\TimerMgr.obj
+            Creating library ..\..\lib\x64\kernel.lib and object ..\..\lib\x64\kernel.exp
+         Generating code
+         Finished generating code
+         kernel.vcxproj -> F:\MyTest\myTest\testCPP\server\2\server+redis\source\kernel\..\..\bin\x64\kernel.dll
+     1>Done Building Project "F:\MyTest\myTest\testCPP\server\2\server+redis\source\kernel\kernel.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.87

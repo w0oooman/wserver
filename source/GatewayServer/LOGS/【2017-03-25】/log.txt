@@ -1,0 +1,132 @@
+=>2017-03-25 16:01:08
+starting...
+--------------server on--------------
+start finish!
+=>2017-03-25 16:01:22
+starting...
+--------------server on--------------
+=>2017-03-25 16:01:25
+start finish!
+=>2017-03-25 16:01:34
+starting...
+--------------server on--------------
+start finish!
+=>2017-03-25 16:01:57
+starting...
+--------------server on--------------
+start finish!
+=>2017-03-25 16:02:09
+starting...
+--------------server on--------------
+start finish!
+=>2017-03-25 16:03:31
+starting...
+--------------server on--------------
+start finish!
+=>2017-03-25 16:03:41
+waiting rs thread:1
+end rs thread:1
+waiting rs thread:2
+end rs thread:2
+waiting rs thread:3
+end rs thread:3
+waiting rs thread:4
+end rs thread:4
+waiting rs thread:5
+end rs thread:5
+waiting rs thread:6
+end rs thread:6
+waiting rs thread:7
+end rs thread:7
+waiting rs thread:8
+end rs thread:8
+=>2017-03-25 16:03:55
+starting...
+--------------server on--------------
+start finish!
+=>2017-03-25 16:04:06
+waiting rs thread:1
+end rs thread:1
+waiting rs thread:2
+end rs thread:2
+waiting rs thread:3
+end rs thread:3
+waiting rs thread:4
+end rs thread:4
+waiting rs thread:5
+end rs thread:5
+waiting rs thread:6
+end rs thread:6
+waiting rs thread:7
+end rs thread:7
+waiting rs thread:8
+end rs thread:8
+=>2017-03-25 16:04:22
+starting...
+--------------server on--------------
+start finish!
+=>2017-03-25 16:04:33
+waiting rs thread:1
+end rs thread:1
+waiting rs thread:2
+end rs thread:2
+waiting rs thread:3
+end rs thread:3
+waiting rs thread:4
+end rs thread:4
+waiting rs thread:5
+end rs thread:5
+waiting rs thread:6
+end rs thread:6
+waiting rs thread:7
+end rs thread:7
+waiting rs thread:8
+end rs thread:8
+=>2017-03-25 16:04:43
+starting...
+--------------server on--------------
+start finish!
+=>2017-03-25 16:04:54
+waiting rs thread:1
+end rs thread:1
+waiting rs thread:2
+end rs thread:2
+waiting rs thread:3
+end rs thread:3
+waiting rs thread:4
+end rs thread:4
+waiting rs thread:5
+end rs thread:5
+waiting rs thread:6
+end rs thread:6
+waiting rs thread:7
+end rs thread:7
+waiting rs thread:8
+end rs thread:8
+=>2017-03-25 16:04:54
+heheh
+=>2017-03-25 16:07:37
+starting...
+--------------server on--------------
+start finish!
+=>2017-03-25 16:07:37
+error! closing server...
+=>2017-03-25 16:07:47
+waiting rs thread:1
+end rs thread:1
+waiting rs thread:2
+end rs thread:2
+waiting rs thread:3
+end rs thread:3
+waiting rs thread:4
+end rs thread:4
+waiting rs thread:5
+end rs thread:5
+waiting rs thread:6
+end rs thread:6
+waiting rs thread:7
+end rs thread:7
+waiting rs thread:8
+end rs thread:8
+=>2017-03-25 16:07:47
+heheh

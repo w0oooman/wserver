@@ -1,0 +1,41 @@
+=>2017-05-08 16:20:26
+OnRecvComplete <=0.ID=0
+=>2017-05-08 16:20:30
+OnRecvComplete <=0.ID=0
+WSASendData close.
+
+=>2017-05-08 16:20:53
+OnRecvComplete <=0.ID=0
+=>2017-05-08 16:20:55
+closing server...
+=>2017-05-08 16:25:23
+OnRecvComplete <=0.ID=10038
+=>2017-05-08 16:25:26
+OnRecvComplete <=0.ID=0
+=>2017-05-08 16:29:21
+OnRecvComplete <=0.ID=0
+=>2017-05-08 16:29:24
+OnRecvComplete <=0.ID=0
+WSASendData close.
+
+=>2017-05-08 16:31:34
+OnRecvComplete <=0.ID=10038
+OnRecvComplete <=0.ID=10038
+WSASendData close.
+
+=>2017-05-08 16:33:28
+OnRecvComplete <=0.ID=0
+=>2017-05-08 16:33:29
+closing server...
+=>2017-05-08 16:34:14
+OnRecvComplete <=0.ID=0
+=>2017-05-08 16:34:26
+OnRecvComplete <=0.ID=0
+=>2017-05-08 16:34:31
+OnRecvComplete <=0.ID=0
+=>2017-05-08 16:35:16
+OnRecvComplete <=0.ID=0
+=>2017-05-08 16:35:19
+OnRecvComplete <=0.ID=0
+=>2017-05-08 16:35:21
+closing server...

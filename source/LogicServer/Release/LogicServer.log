@@ -1,0 +1,88 @@
+﻿Build started 2017/5/8 16:15:53.
+     1>Project "F:\MyTest\myTest\testCPP\server\2\server+redis\source\LogicServer\LogicServer.vcxproj" on node 4 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Release\) contains files shared from another project (GameServer.vcxproj, LogicServer.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>PreBuildEvent:
+         copy ..\..\bin\Win32\kernel.dll ..\..\bin\Win32\WLogicServer\
+         copy ..\..\bin\Win32\kernel.pdb ..\..\bin\Win32\WLogicServer\
+         :VCEnd
+         已复制         1 个文件。
+         已复制         1 个文件。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../ /I"../../3rd/lua-5.3.3/src" /Zi /nologo /W3 /WX- /sdl /Od /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt LogicServer.cpp LogicServerLogin.cpp LuaManager.cpp main.cpp Player.cpp PlayerMgr.cpp
+         LogicServer.cpp
+     1>f:\mytest\mytest\testcpp\server\2\server+redis\include\TimerMgr.h(59): warning C4251: 'CTimerMgr::timerIDmap_' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\2\server+redis\include\NetError.h(10): warning C4251: 'CNetErr::m_strErrorinfo' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>LogicServer.cpp(191): warning C4101: 'LogicIP' : unreferenced local variable
+         LogicServerLogin.cpp
+     1>f:\mytest\mytest\testcpp\server\2\server+redis\include\TimerMgr.h(59): warning C4251: 'CTimerMgr::timerIDmap_' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\2\server+redis\include\NetError.h(10): warning C4251: 'CNetErr::m_strErrorinfo' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+         LuaManager.cpp
+     1>f:\mytest\mytest\testcpp\server\2\server+redis\include\TimerMgr.h(59): warning C4251: 'CTimerMgr::timerIDmap_' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\2\server+redis\include\NetError.h(10): warning C4251: 'CNetErr::m_strErrorinfo' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>LuaManager.cpp(387): warning C4244: 'argument' : conversion from 'lua_Number' to 'lua_Integer', possible loss of data
+     1>LuaManager.cpp(395): warning C4244: 'argument' : conversion from 'lua_Number' to 'int', possible loss of data
+     1>LuaManager.cpp(413): warning C4244: 'initializing' : conversion from 'lua_Number' to 'int', possible loss of data
+     1>LuaManager.cpp(488): warning C4244: '=' : conversion from 'lua_Number' to 'int', possible loss of data
+     1>LuaManager.cpp(494): warning C4244: '=' : conversion from 'lua_Number' to 'int', possible loss of data
+     1>LuaManager.cpp(498): warning C4244: 'argument' : conversion from 'lua_Number' to 'int', possible loss of data
+     1>LuaManager.cpp(511): warning C4244: 'argument' : conversion from 'lua_Number' to 'int', possible loss of data
+         main.cpp
+     1>f:\mytest\mytest\testcpp\server\2\server+redis\include\TimerMgr.h(59): warning C4251: 'CTimerMgr::timerIDmap_' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\2\server+redis\include\NetError.h(10): warning C4251: 'CNetErr::m_strErrorinfo' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+         Player.cpp
+     1>f:\mytest\mytest\testcpp\server\2\server+redis\include\TimerMgr.h(59): warning C4251: 'CTimerMgr::timerIDmap_' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\2\server+redis\include\NetError.h(10): warning C4251: 'CNetErr::m_strErrorinfo' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+         PlayerMgr.cpp
+     1>f:\mytest\mytest\testcpp\server\2\server+redis\include\TimerMgr.h(59): warning C4251: 'CTimerMgr::timerIDmap_' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\2\server+redis\include\NetError.h(10): warning C4251: 'CNetErr::m_strErrorinfo' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>PlayerMgr.cpp(111): warning C4244: 'argument' : conversion from 'time_t' to 'DWORD', possible loss of data
+     1>PlayerMgr.cpp(143): warning C4244: 'argument' : conversion from 'time_t' to 'DWORD', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\bin\Win32\WLogicServer\WLogicServer.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\..\bin\Win32\WLogicServer\WLogicServer.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\bin\Win32\WLogicServer\WLogicServer.lib" /MACHINE:X86 /SAFESEH Release\IniParser.obj
+         Release\Log.obj
+         Release\LogicServer.obj
+         Release\LogicServerLogin.obj
+         Release\LuaManager.obj
+         Release\main.obj
+         Release\Player.obj
+         Release\PlayerMgr.obj
+         F:\MyTest\myTest\testCPP\server\2\server+redis\lib\Win32\kernel.lib
+         Generating code
+     1>f:\mytest\mytest\testcpp\server\2\server+redis\source\logicserver\playermgr.cpp(100): warning C4715: 'CPlayerMgr::AddPlayer' : not all control paths return a value
+         Finished generating code
+         LogicServer.vcxproj -> F:\MyTest\myTest\testCPP\server\2\server+redis\source\LogicServer\..\..\bin\Win32\WLogicServer\WLogicServer.exe
+     1>Done Building Project "F:\MyTest\myTest\testCPP\server\2\server+redis\source\LogicServer\LogicServer.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:07.54

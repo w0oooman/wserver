@@ -1,0 +1,271 @@
+﻿Build started 2017/2/11 15:32:42.
+     1>Project "F:\MyTest\myTest\testCPP\server\server - 单锁\source\iocp_ex_server\iocp_ex_server.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(364,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I../proto_file /I../../include/ /I../mysql/include /I../serialize /I"../../3rd/lua-5.3.3/src" /Zi /nologo /W3 /WX- /Od /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt DistriClientHandle.cpp DistriServerHandle.cpp LuaManager.cpp MainMgr.cpp MySqlHandle.cpp MysqlDBProcess.cpp PlayerMgr.cpp ServerLogicHandle.cpp SqlServerHandle.cpp main.cpp
+         DistriClientHandle.cpp
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\NetError.h(9): warning C4251: 'CNetErr::m_strErr' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(108): warning C4251: 'CWheelTimerMgr::m_TimerLock' : class 'CCriSec' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\lock.h(9) : see declaration of 'CCriSec'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(144): warning C4251: 'CWheelTimerMgr::m_timerIDMap' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(147): warning C4251: 'CWheelTimerMgr::m_wtimer' : class 'CWheelTimer' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(76) : see declaration of 'CWheelTimer'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(31): warning C4251: 'CKernelMgr::QueueNormalMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(32): warning C4251: 'CKernelMgr::QueueBatchMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(33): warning C4251: 'CKernelMgr::QueueDBMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(34): warning C4251: 'CKernelMgr::QueueTimerMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+         DistriServerHandle.cpp
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\NetError.h(9): warning C4251: 'CNetErr::m_strErr' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(108): warning C4251: 'CWheelTimerMgr::m_TimerLock' : class 'CCriSec' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\lock.h(9) : see declaration of 'CCriSec'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(144): warning C4251: 'CWheelTimerMgr::m_timerIDMap' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(147): warning C4251: 'CWheelTimerMgr::m_wtimer' : class 'CWheelTimer' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(76) : see declaration of 'CWheelTimer'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(31): warning C4251: 'CKernelMgr::QueueNormalMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(32): warning C4251: 'CKernelMgr::QueueBatchMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(33): warning C4251: 'CKernelMgr::QueueDBMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(34): warning C4251: 'CKernelMgr::QueueTimerMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>DistriServerHandle.cpp(44): warning C4060: switch statement contains no 'case' or 'default' labels
+         LuaManager.cpp
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\NetError.h(9): warning C4251: 'CNetErr::m_strErr' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(108): warning C4251: 'CWheelTimerMgr::m_TimerLock' : class 'CCriSec' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\lock.h(9) : see declaration of 'CCriSec'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(144): warning C4251: 'CWheelTimerMgr::m_timerIDMap' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(147): warning C4251: 'CWheelTimerMgr::m_wtimer' : class 'CWheelTimer' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(76) : see declaration of 'CWheelTimer'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(31): warning C4251: 'CKernelMgr::QueueNormalMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(32): warning C4251: 'CKernelMgr::QueueBatchMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(33): warning C4251: 'CKernelMgr::QueueDBMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(34): warning C4251: 'CKernelMgr::QueueTimerMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\source\iocp_ex_server\LuaManager.h(35): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>LuaManager.cpp(365): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>LuaManager.cpp(376): warning C4244: 'argument' : conversion from 'lua_Number' to 'lua_Integer', possible loss of data
+     1>LuaManager.cpp(384): warning C4244: 'argument' : conversion from 'lua_Number' to 'int', possible loss of data
+     1>LuaManager.cpp(402): warning C4244: 'initializing' : conversion from 'lua_Number' to 'int', possible loss of data
+     1>LuaManager.cpp(409): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>LuaManager.cpp(429): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>LuaManager.cpp(477): warning C4244: '=' : conversion from 'lua_Number' to 'int', possible loss of data
+     1>LuaManager.cpp(481): warning C4244: 'argument' : conversion from 'lua_Number' to 'int', possible loss of data
+     1>LuaManager.cpp(494): warning C4244: 'argument' : conversion from 'lua_Number' to 'int', possible loss of data
+         MainMgr.cpp
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\NetError.h(9): warning C4251: 'CNetErr::m_strErr' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(108): warning C4251: 'CWheelTimerMgr::m_TimerLock' : class 'CCriSec' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\lock.h(9) : see declaration of 'CCriSec'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(144): warning C4251: 'CWheelTimerMgr::m_timerIDMap' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(147): warning C4251: 'CWheelTimerMgr::m_wtimer' : class 'CWheelTimer' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(76) : see declaration of 'CWheelTimer'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(31): warning C4251: 'CKernelMgr::QueueNormalMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(32): warning C4251: 'CKernelMgr::QueueBatchMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(33): warning C4251: 'CKernelMgr::QueueDBMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(34): warning C4251: 'CKernelMgr::QueueTimerMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\source\iocp_ex_server\LuaManager.h(35): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+         MySqlHandle.cpp
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\NetError.h(9): warning C4251: 'CNetErr::m_strErr' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(108): warning C4251: 'CWheelTimerMgr::m_TimerLock' : class 'CCriSec' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\lock.h(9) : see declaration of 'CCriSec'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(144): warning C4251: 'CWheelTimerMgr::m_timerIDMap' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(147): warning C4251: 'CWheelTimerMgr::m_wtimer' : class 'CWheelTimer' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(76) : see declaration of 'CWheelTimer'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(31): warning C4251: 'CKernelMgr::QueueNormalMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(32): warning C4251: 'CKernelMgr::QueueBatchMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(33): warning C4251: 'CKernelMgr::QueueDBMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(34): warning C4251: 'CKernelMgr::QueueTimerMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+         MysqlDBProcess.cpp
+     1>MysqlDBProcess.cpp(23): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'vsprintf'
+     1>MysqlDBProcess.cpp(32): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(118) : see declaration of 'strcat'
+     1>MysqlDBProcess.cpp(42): warning C4996: '_localtime64': This function or variable may be unsafe. Consider using _localtime64_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\time.h(222) : see declaration of '_localtime64'
+     1>MysqlDBProcess.cpp(198): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>MysqlDBProcess.cpp(355): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>MysqlDBProcess.cpp(368): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>MysqlDBProcess.cpp(370): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>MysqlDBProcess.cpp(377): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>MysqlDBProcess.cpp(396): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>MysqlDBProcess.cpp(570): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>MysqlDBProcess.cpp(690): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>MysqlDBProcess.cpp(692): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>MysqlDBProcess.cpp(697): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>MysqlDBProcess.cpp(699): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>MysqlDBProcess.cpp(703): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>MysqlDBProcess.cpp(784): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>MysqlDBProcess.cpp(793): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>MysqlDBProcess.cpp(815): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>MysqlDBProcess.cpp(822): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>MysqlDBProcess.cpp(833): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>MysqlDBProcess.cpp(838): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>MysqlDBProcess.cpp(842): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+         PlayerMgr.cpp
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\NetError.h(9): warning C4251: 'CNetErr::m_strErr' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(108): warning C4251: 'CWheelTimerMgr::m_TimerLock' : class 'CCriSec' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\lock.h(9) : see declaration of 'CCriSec'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(144): warning C4251: 'CWheelTimerMgr::m_timerIDMap' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(147): warning C4251: 'CWheelTimerMgr::m_wtimer' : class 'CWheelTimer' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(76) : see declaration of 'CWheelTimer'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(31): warning C4251: 'CKernelMgr::QueueNormalMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(32): warning C4251: 'CKernelMgr::QueueBatchMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(33): warning C4251: 'CKernelMgr::QueueDBMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(34): warning C4251: 'CKernelMgr::QueueTimerMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>PlayerMgr.cpp(93): warning C4244: 'argument' : conversion from 'time_t' to 'DWORD', possible loss of data
+         ServerLogicHandle.cpp
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\NetError.h(9): warning C4251: 'CNetErr::m_strErr' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(108): warning C4251: 'CWheelTimerMgr::m_TimerLock' : class 'CCriSec' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\lock.h(9) : see declaration of 'CCriSec'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(144): warning C4251: 'CWheelTimerMgr::m_timerIDMap' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(147): warning C4251: 'CWheelTimerMgr::m_wtimer' : class 'CWheelTimer' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(76) : see declaration of 'CWheelTimer'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(31): warning C4251: 'CKernelMgr::QueueNormalMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(32): warning C4251: 'CKernelMgr::QueueBatchMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(33): warning C4251: 'CKernelMgr::QueueDBMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(34): warning C4251: 'CKernelMgr::QueueTimerMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+         SqlServerHandle.cpp
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\NetError.h(9): warning C4251: 'CNetErr::m_strErr' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(108): warning C4251: 'CWheelTimerMgr::m_TimerLock' : class 'CCriSec' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\lock.h(9) : see declaration of 'CCriSec'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(144): warning C4251: 'CWheelTimerMgr::m_timerIDMap' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(147): warning C4251: 'CWheelTimerMgr::m_wtimer' : class 'CWheelTimer' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(76) : see declaration of 'CWheelTimer'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(31): warning C4251: 'CKernelMgr::QueueNormalMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(32): warning C4251: 'CKernelMgr::QueueBatchMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(33): warning C4251: 'CKernelMgr::QueueDBMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(34): warning C4251: 'CKernelMgr::QueueTimerMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+         main.cpp
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\NetError.h(9): warning C4251: 'CNetErr::m_strErr' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(108): warning C4251: 'CWheelTimerMgr::m_TimerLock' : class 'CCriSec' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\lock.h(9) : see declaration of 'CCriSec'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(144): warning C4251: 'CWheelTimerMgr::m_timerIDMap' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(147): warning C4251: 'CWheelTimerMgr::m_wtimer' : class 'CWheelTimer' needs to have dll-interface to be used by clients of class 'CWheelTimerMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\WheelTimer.h(76) : see declaration of 'CWheelTimer'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(31): warning C4251: 'CKernelMgr::QueueNormalMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(32): warning C4251: 'CKernelMgr::QueueBatchMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(33): warning C4251: 'CKernelMgr::QueueDBMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>F:\MyTest\myTest\testCPP\server\server - 单锁\include\KernelMgr.h(34): warning C4251: 'CKernelMgr::QueueTimerMsg_' : class 'CLockFreeMgr' needs to have dll-interface to be used by clients of class 'CKernelMgr'
+                 f:\mytest\mytest\testcpp\server\server - 单锁\include\QueueMsg.h(108) : see declaration of 'CLockFreeMgr'
+     1>f:\mytest\mytest\testcpp\server\server - 单锁\source\iocp_ex_server\LuaManager.h(35): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>Project "F:\MyTest\myTest\testCPP\server\server - 单锁\source\iocp_ex_server\iocp_ex_server.vcxproj" (1) is building "F:\MyTest\myTest\testCPP\server\server - 单锁\source\lua\lua.vcxproj" (3:3) on node 1 (GetResolvedLinkLibs target(s)).
+     3>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(364,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     3>Done Building Project "F:\MyTest\myTest\testCPP\server\server - 单锁\source\lua\lua.vcxproj" (GetResolvedLinkLibs target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1193,5): warning MSB8012: TargetPath(F:\MyTest\myTest\testCPP\server\server - 单锁\source\iocp_ex_server\..\..\bin\x64\iocp_ex_server.exe) does not match the Linker's OutputFile property value (F:\MyTest\myTest\testCPP\server\server - 单锁\bin\x64\server.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1195,5): warning MSB8012: TargetName(iocp_ex_server) does not match the Linker's OutputFile property value (server). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\bin\x64\server.exe" /INCREMENTAL:NO /NOLOGO winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\..\bin\x64\iocp_ex_server.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\bin\x64\iocp_ex_server.lib" /MACHINE:X64 x64\Release\common.obj
+         x64\Release\Log.obj
+         x64\Release\DistriClientHandle.obj
+         x64\Release\DistriServerHandle.obj
+         x64\Release\LuaManager.obj
+         x64\Release\MainMgr.obj
+         x64\Release\MysqlDBProcess.obj
+         x64\Release\MySqlHandle.obj
+         x64\Release\Player.obj
+         x64\Release\PlayerMgr.obj
+         x64\Release\ServerLogicHandle.obj
+         x64\Release\SqlServerHandle.obj
+         x64\Release\main.obj
+         "F:\MyTest\myTest\testCPP\server\server - 单锁\bin\x64\kernel.lib"
+         "F:\MyTest\myTest\testCPP\server\server - 单锁\bin\x64\lua.lib"
+     1>msvcprt.lib(MSVCP120.dll) : fatal error LNK1112: module machine type 'X86' conflicts with target machine type 'x64'
+     1>Done Building Project "F:\MyTest\myTest\testCPP\server\server - 单锁\source\iocp_ex_server\iocp_ex_server.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:10.97
