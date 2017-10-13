@@ -285,11 +285,11 @@ void CIniParser::Close()
 		m_fstream.close();
 	}
 
-	if (NULL != m_szFormatStr)
-	{
-		delete []m_szFormatStr;
-		m_szFormatStr = NULL;
-	}
+	//if (NULL != m_szFormatStr)
+	//{
+	//	delete []m_szFormatStr;
+	//	m_szFormatStr = NULL;
+	//}
 }
 
 char* CIniParser::GetIniString(const char* section, const char* key, char* buffer, int bufsize, char* default/* = ""*/)

@@ -127,37 +127,43 @@ void CLuaManager::ServerDown()
 	CallFunc(m_ls, "OnServerDwon");
 }
 
+static int w_lua_error(lua_State *L)
+{
+	const char* pErrorMsg = lua_tostring(L, -1);
+
+	if (pErrorMsg)
+		luaL_traceback(L, L, pErrorMsg, 1);
+	else
+		lua_pushliteral(L, "no error");
+
+	return 1;
+}
+
 bool CLuaManager::Call(lua_State *L, int stackPos)
 {
 	int curPos = lua_gettop(L);
 	if (stackPos >= curPos)
 		return false;
 
-	if (lua_pcall(L, curPos - stackPos - 1, LUA_MULTRET, 0) != 0)
+	if (lua_pcall(L, curPos - stackPos - 2, LUA_MULTRET, stackPos + 1) != 0)
 	{
 		char temp[1024];
 		sprintf_s(temp, "%s\r\n", lua_tostring(L, -1));
-		OutputDebugString(temp);
 		Log(temp);
 		lua_settop(L, stackPos);
 		return false;
 	}
 
 	lua_settop(L, stackPos);
-	//int nNum = lua_gettop(L) - stackPos;
-	//for (int i = 0; i < nNum; i++)
-	//{
-	//	lua_pop(L, 1);
-	//}
-
 	return true;
 }
 
 #define PREPARE_CALL_LUA()                                      \
 	if ( ( name == NULL ) || ( name[0] == 0 ) ) return false;   \
 	int stackPos = lua_gettop( L );                          \
+	lua_pushcfunction(L, w_lua_error);                       \
 	lua_getglobal( L, name );                                \
-	if ( lua_isnil( L, -1 ) ) { lua_pop( L, 1 ); return false; }
+	if (!lua_isfunction( L, -1 )) { lua_pop( L, 2 ); return false; }
 
 #define CALL_LUA()                                              \
 	if ( !Call(L, stackPos ) ) return false; return true;
@@ -171,19 +177,9 @@ bool CLuaManager::CallFunc(lua_State *L, const char *name)
 // 执行LUA函数
 bool CLuaManager::ExecuteLuaFunc(const char *pFuncName, unsigned short wParaNum, ...)
 {
-	if ((pFuncName == NULL) || (pFuncName[0] == 0))
-		return false;
-
-	int stackPos = lua_gettop(m_ls);
-
-	// 函数是否存在
-	lua_getglobal(m_ls, pFuncName);
-	if (!lua_isfunction(m_ls, -1))
-	{
-		lua_settop(m_ls, stackPos);
-		Log("Can't Find Lua Function：%s", pFuncName);
-		return false;
-	}
+	const char* name = pFuncName;
+	lua_State *L = m_ls;
+	PREPARE_CALL_LUA()
 
 	//把参数压入LUA栈
 	va_list header;
@@ -195,9 +191,7 @@ bool CLuaManager::ExecuteLuaFunc(const char *pFuncName, unsigned short wParaNum,
 	}
 	va_end(header);
 
-	if (!CLuaManager::Call(m_ls, stackPos)) return false;
-
-	return true;
+	CALL_LUA()
 }
 
 void PrintLuaStack(lua_State *L)

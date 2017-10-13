@@ -34,12 +34,12 @@ CLogicServer::~CLogicServer()
 {
 	g_Script.ServerDown();
 
-	delete[]m_pSaveData;;
+	delete m_pSaveData;;
 	m_pSaveData = NULL;
 	delete m_pPlayerMgr;
 	m_pPlayerMgr = NULL;
 
-	//放到最后
+	/* 放到最后 */
 	delete m_pLogicServerLogin;
 	m_pLogicServerLogin = NULL;
 }

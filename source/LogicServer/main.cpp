@@ -9,8 +9,10 @@ int main()
 	try
 	{
 		CLogicServer mgr;
-		if(!mgr.Init()) throw "login server Init error.";
-		if (!mgr.Start()) throw "login server Start error.";
+		if (!mgr.Init())
+		    throw("logic server Init error.");
+		if (!mgr.Start())
+		    throw "logic server Start error.";
 		cout << "start all thread success!" << endl;
 		
 		while (1) share_sleep(2000);
