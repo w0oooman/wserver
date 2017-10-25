@@ -32,22 +32,6 @@
 -- 	Log("   }")
 -- end
 
--- 深拷贝函数
-function deepcopy(orig)
-    local orig_type = type(orig)
-    local copy
-    if orig_type == 'table' then
-        copy = {}
-        for orig_key, orig_value in next, orig, nil do
-            copy[deepcopy(orig_key)] = deepcopy(orig_value)
-        end
-        setmetatable(copy, deepcopy(getmetatable(orig)))
-    else -- number, string, boolean, etc
-        copy = orig
-    end
-    return copy
-end
-
 -- 调试打印函数,itype=nil 且 _LUA_DEBUG=true 输出,itype 为真时全输出,由全局 _DEBUG 控制
 function look(t, itype)
 	if not _LUA_DEBUG and not itype then return end
