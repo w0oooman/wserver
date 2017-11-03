@@ -21,6 +21,9 @@ extern "C"
 	extern int L##_##func(lua_State *L); \
     lua_register(ls, #func, L##_##func)
 
+//1024 * 1024 * 10
+#define FILESIZE (10485760)
+
 CLuaManager  g_Script;
 
 CLuaManager::CLuaManager()
@@ -236,110 +239,80 @@ void PrintLuaStack(lua_State *L)
 
 int CLuaManager::L_LoadTable(lua_State *L)
 {
-	//if (lua_isstring(L, 1))
-	//{
-	//	const char* tablename = static_cast<const char *>(lua_tostring(L, 1));
-	//	FILE *file = fopen(tablename, "rb");
-	//	if (file)
-	//	{
-	//		//BYTE Buff[FILESIZE];
-	//		fseek(file, 0, SEEK_END);
-	//		long fsize = ftell(file);
-	//		fseek(file, 0, SEEK_SET);
-	//		if (fsize == 0)
-	//		{
-	//			fsize = FILESIZE;
-	//		}
-	//		BYTE  *Buff = new BYTE[fsize];
-	//		memset(Buff, 0, fsize * sizeof(BYTE));
-	//		size_t  lfsize = fread(Buff, sizeof(BYTE), fsize, file);
+	if (lua_isstring(L, 1))
+	{
+		const char* tablename = static_cast<const char *>(lua_tostring(L, 1));
+		FILE *file = NULL;
+		int errorcode = fopen_s(&file, tablename, "rb");
+		if (0 == errorcode && file)
+		{
+			fseek(file, 0, SEEK_END);
+			long fsize = ftell(file);
+			fseek(file, 0, SEEK_SET);
+			if (fsize <= 0)
+			{
+				lua_newtable(L);
+				fclose(file);
+				return 1;
+			}
 
-	//		lua_createtable(L, 0, 0);
-	//		if (!lua_istable(L, -1))
-	//		{
-	//			SAFE_DELETE_ARRAY(Buff);
-	//			return 0;
-	//		}
+			BYTE  *pBuff = NULL;
+			pBuff = new BYTE[fsize];
+			if (NULL == pBuff)
+			{
+				Log("LoadTable too big,filename=%s,size=%d", tablename, fsize);
+				fclose(file);
+				lua_pushnil(L);
+				return 0;
+			}
 
-	//		int ck = luaEx_unserialize(L, Buff, lfsize);
-	//		if (ck <= 0)
-	//		{
-	//			fclose(file);
-	//			SAFE_DELETE_ARRAY(Buff);
-	//			//lua_pushnumber(L, 0);
-	//			lua_pushnil(L);
-	//			return 1;
-	//		}
-	//		fclose(file);
-	//		SAFE_DELETE_ARRAY(Buff);
-	//		return 1;
-	//	}
-	//}
-	////lua_pushnumber(L, 0);
-	//lua_pushnil(L);
+			memset(pBuff, 0, fsize * sizeof(BYTE));
+			size_t  lfsize = fread(pBuff, sizeof(BYTE), fsize, file);
+			int ck = luaEx_Unserialize(L, pBuff);
+			if (ck <= 0)
+			{
+				Log("unserialize error:%s", lua_tostring(L, -1));
+				fclose(file);
+				SAFE_DELETE_ARRAY(pBuff);
+				lua_pushnil(L);
+				return 1;
+			}
+			fclose(file);
+			SAFE_DELETE_ARRAY(pBuff);
+			return 1;
+		}
+	}
+	lua_newtable(L);
 	return 1;
 }
 
 int CLuaManager::L_SaveTable(lua_State *L)
 {
-	//test
-	Log("L_SaveTable");
-	
-	int nTestLen = 40960;
-	char *TestBuf = new char[nTestLen];
-
-	int len = luaEx_Serialize(L, 1, TestBuf, nTestLen);
-	if (len < 0)
+	if (lua_isstring(L, 1) && lua_istable(L, 2))
 	{
-		char temp[1024];
-		sprintf_s(temp, "%s\r\n", lua_tostring(L, -1));
-		Log(temp);
-		return 0;
+		const char* tablename = static_cast<const char *>(lua_tostring(L, 1));
+		FILE *file = NULL;
+		int errorcode = fopen_s(&file, tablename, "wb");
+		if (0 == errorcode && file)
+		{
+			BYTE *luabuffer = new BYTE[FILESIZE];
+			memset(luabuffer, 0, FILESIZE * sizeof(BYTE));
+			int nSeriLen = luaEx_Serialize(L, 2, luabuffer, FILESIZE);
+			if (nSeriLen <= 0)
+			{
+				Log("serialize error:%s", lua_tostring(L,-1));
+				SAFE_DELETE_ARRAY(luabuffer);
+				fclose(file);
+				lua_pushnumber(L, 0);
+				return 1;
+			}
+			fwrite(luabuffer, sizeof(BYTE), nSeriLen, file);
+			fclose(file);
+			lua_pushnumber(L, 1);
+			SAFE_DELETE_ARRAY(luabuffer);
+			return 1;
+		}
 	}
-	if (0 == len)
-	{
-		Log("luaEx_Serialize buf short,data truncate.");
-
-		//如果数据存数据库,这里定义一个很大的buf,且再调用一次luaEx_Serialize
-		//将数据存在某个地方，方便找回丢失的数据
-
-	}
-
-	if (luaEx_Unserialize(L, TestBuf) <= 0)
-	{
-		char temp[1024];
-		sprintf_s(temp, "%s\r\n", lua_tostring(L, -1));
-		Log(temp);
-		return 0;
-	}
-	delete TestBuf;
-	//Log(buf);
-
-
-	//if (lua_isstring(L, 1) && lua_istable(L, 2))
-	//{
-	//	const char* tablename = static_cast<const char *>(lua_tostring(L, 1));
-	//	FILE *file = fopen(tablename, "wb");
-	//	if (file)
-	//	{
-	//		BYTE *luabuffer = new BYTE[FILESIZE];
-	//		memset(luabuffer, 0, FILESIZE * sizeof(BYTE));
-	//		lua_pushvalue(L, 1);
-	//		int cur1 = luaEx_serialize(L, 2, luabuffer, FILESIZE);
-	//		if (cur1 < 0)
-	//		{
-	//			SAFE_DELETE_ARRAY(luabuffer);
-	//			fclose(file);
-	//			lua_pushnumber(L, 0);
-	//			return 1;
-	//		}
-	//		fwrite(luabuffer, sizeof(BYTE), cur1, file);
-	//		fclose(file);
-	//		lua_pushnumber(L, 1);
-	//		SAFE_DELETE_ARRAY(luabuffer);
-	//		return 1;
-	//	}
-	//}
 	return 1;
 }
 

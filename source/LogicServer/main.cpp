@@ -20,7 +20,7 @@ int main()
 	catch (CNetErr& err){
 		Log((char*)err);
 	}
-	catch (char *e){
+	catch (const char *e){
 		Log(e);
 	}
 	catch (...){

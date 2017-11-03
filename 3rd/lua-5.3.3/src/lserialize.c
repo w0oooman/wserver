@@ -29,6 +29,9 @@
 #include "luaconf.h"
 #include "lapi.h"
 
+/* #define seri_lua_registryindex (LUA_REGISTRYINDEX - 99) */
+#define seri_lua_registryindex LUA_REGISTRYINDEX
+#define seri_lua_registryname  "seri_lua_r"
 
 /* 此版本的LUA用64位来存储整形,所以hash表分别用1个字节来表示key/value序列化信息,
 ** 格式如下:0000 0000:右边4位表示类型,左边4位表示长度(因此，如果是数字,4位二进制
@@ -56,11 +59,29 @@
 #define serialize_null         -3
 #define serialize_long         -4   // buf too long
 #define unserialize_long       -5 
+#define serialize_unknow       -6
+
+#define serialize_looptable    -50
+
+typedef struct{
+	int errcode;
+	char *errinfo;
+}error_info;
+
+static error_info error_info_[] = 
+{
+	{ serialize_typeerr , "serialize type error."},
+	{ serialize_trunc, "serialize data truncate.." },
+	{ serialize_null, "serialize data null or buff size short." },
+	{ serialize_long, "serialize size too long." },
+	{ unserialize_long, "unserialize data too long." },
+	{ serialize_unknow, "serialize unknow error." }
+};
 
 #define unserialize_table_end  -100 // table end
 
 
-#define seri_maxlen      ((((unsigned int)~0)>>2)+1)  // max serialize length,should be <= 2^30!!
+#define seri_maxlen      ((((unsigned int)~0)>>5)+1)  // max serialize length,should be <= 2^27!!
 #define seri_lenbytes    4                            // serialize length bytes
 #define seri_lenstring   15                           // longer than 15 then use 00 endian
 
@@ -94,7 +115,7 @@ static char strShortBuf_[seri_lenstring + 1];                   // short buf
 //small endian
 #define seri_setlen(buf,v) \
 	for (int i_ = 0;i_ < seri_lenbytes; i_++) { \
-	   *(seri_conv_pchar(buf)++) = (char)(v >> i_*8); \
+	   *(seri_conv_pchar(buf)++) = (char)((v) >> i_*8); \
 		}
 
 #define seri_getlen(buf,len) \
@@ -108,6 +129,8 @@ static char strShortBuf_[seri_lenstring + 1];                   // short buf
 
 #define seri_setbufchar_add(buf,v) \
 	*seri_conv_pchar(buf) = seri_conv_char(v);seri_bufadd_char(buf);
+#define seri_setbufchar_dec(buf) \
+    seri_conv_pchar(buf)--
 
 #define seri_setbufchar(buf,v) \
 	*seri_conv_pchar(buf) = seri_conv_char(v);
@@ -115,6 +138,16 @@ static char strShortBuf_[seri_lenstring + 1];                   // short buf
 #define seri_setbufint(buf,v) \
 	*seri_conv_pint(buf) = seri_conv_int(v);seri_bufadd_int(buf);
 
+static char* get_error_info(errcode)
+{
+	int size = sizeof(error_info_) / sizeof(error_info_[0]);
+	for (int i = 0; i < size; i++)
+	{
+		if (errcode == error_info_[i].errcode)
+			return error_info_[i].errinfo;
+	}
+	return "unknow error";
+}
 
 // get "one int header" how much bytes?such as 257:0x0100,two bytes
 static int seri_get_int_bytes(lua_Integer iValue)
@@ -137,15 +170,16 @@ static int seri_get_int_bytes(lua_Integer iValue)
 	}
 	else
 	{
-		lua_Integer iTemp = iValue;
-		int iLen = 0;
-		iTemp = iTemp << 1;
-		while (iTemp == iValue)
-		{
-			iTemp = iTemp << 1;
-			iLen++;
-		}
-		return (64 - iLen) / 8 + (((64 - iLen) & 7) ? 1 : 0); //1、64 == sizeof(lua_Integer)  2、7 == 8 - 1
+		//lua_Integer iTemp = iValue;
+		//int iLen = 0;
+		//iTemp = iTemp << 1;
+		//while (iTemp == iValue)
+		//{
+		//	iTemp = iTemp << 1;
+		//	iLen++;
+		//}
+		//return (64 - iLen) / 8 + ((64 - iLen) & 7) ? 1 : 0); //1、64 == sizeof(lua_Integer)  2、7 == 8 - 1
+		return sizeof(lua_Integer);
 	}
 }
 
@@ -157,7 +191,7 @@ static int seri_get_int_bytes(lua_Integer iValue)
 #define seri_isenough_size(size,len) \
 	if ((size) < len) {\
 	    return serialize_short; \
-	}(size) -= (len);
+						}(size) -= (len);
 
 #define seri_encode_header(buf,len,itype) \
 	seri_setbufchar_add(buf,seri_shift4(len)|itype)
@@ -166,9 +200,7 @@ static int seri_get_int_bytes(lua_Integer iValue)
 #define seri_encode_hash(buf,pValue,len) \
 	char *buf_= seri_conv_pchar(buf); \
 	char *pValue_ = seri_conv_pchar(pValue); \
-	for(int i_ = 0;i_ < (len); i_++) { \
-	    *(buf_ + i_) = *(pValue_ + i_); \
-									} \
+	for(int i_ = 0;i_ < (len); i_++) *(buf_ + i_) = *(pValue_ + i_); \
 	seri_bufadd_len(buf,len);
 
 #define seri_encode_string(buf,size,lenRe,tsLen,pstr,itype) \
@@ -177,8 +209,7 @@ static int seri_get_int_bytes(lua_Integer iValue)
 			seri_isenough_size(size, lenRe); \
 			seri_encode_header(buf, tsLen, itype); \
 			seri_encode_hash(buf, pstr, tsLen); \
-							} \
-    else{ \
+	} else{ \
 		lenRe = tsLen + 2; \
 		seri_isenough_size(size, lenRe); \
 		seri_encode_header(buf, 0, itype); \
@@ -192,7 +223,7 @@ static int seri_get_int_bytes(lua_Integer iValue)
 	char *v_ = seri_conv_pchar(v); \
 	for(int i_ = 0;i_ < (len); i_++) { \
 	    *(v_ + i_) = *(buf_ + i_); \
-									}
+													}
 
 #define seri_decode_int(buf,v,len) \
 	if (len > ucLuaIntLen_) \
@@ -216,12 +247,12 @@ static int seri_get_int_bytes(lua_Integer iValue)
 		seri_decode_hash(*buf, strShortBuf_, lenTemp); \
 		strShortBuf_[lenTemp] = 0; \
 		pushbuf = strShortBuf_; \
-	}else{ \
+					}else{ \
 		seri_bufadd_char(*buf); \
 		lenTemp = strlen(*buf) + 1; \
 		unseri_string_judge(*buf, len, lenRet, lenTemp); \
 		pushbuf = *buf; \
-	}
+					}
 
 // size short,then add subed len(revert *psize)
 #define seri_isvalid_return(psize, lenEncode, leftLen) \
@@ -230,19 +261,26 @@ static int seri_get_int_bytes(lua_Integer iValue)
 	if (serialize_short == lenEncode){ \
 		*psize += leftLen; \
 		return lenEncode; \
-				}
+								}
 
-#define serialize_table_logic(v, buf, size) \
+#define serialize_table_logic(L, v, buf, size) \
 	seri_isenough_size(size, 1);\
-	lenTemp = 1;\
-	seri_setbufchar_add(*buf, seri_table_begin);\
+	lenTemp = 1; \
+    seri_setbufchar_add(*buf, seri_table_begin); \
 	int noldsize = size;\
-	int nresult = serialize_table(gco2t(gcvalue(v)), buf, &size);\
-	if (nresult != serialize_sucess) return nresult;\
-	lenTemp += noldsize - size;\
-	seri_isenough_size(size, 1);\
-	lenTemp += 1;\
-	seri_setbufchar_add(*buf, seri_table_end);
+	int nresult = serialize_table(L, gco2t(gcvalue(v)), buf, &size);\
+	if (nresult < serialize_sucess){ \
+	    if(serialize_looptable == nresult){ \
+            seri_setbufchar_dec(*buf); \
+			lenTemp = 0; \
+			seri_encode_string(*buf, size, lenTemp, sizeof("_@self"), "_@self", seri_header_string) \
+		} else return nresult; \
+	} else{ \
+		lenTemp += noldsize - size; \
+		seri_isenough_size(size, 1); \
+		lenTemp += 1; \
+		seri_setbufchar_add(*buf, seri_table_end); \
+	}
 
 #define seri_decode_int_logic(L,buf,len,lenRet) \
 	int lenTemp = unseri_get_len(*buf); \
@@ -338,7 +376,7 @@ static int serialize_bool(TValue *v, void **buf, int size)
 	return len;
 }
 
-static int serialize_all(TValue *v, void **buf, int size)
+static int serialize_all(lua_State *L, TValue *v, void **buf, int size)
 {
 	int lenTemp = serialize_typeerr;
 
@@ -350,19 +388,55 @@ static int serialize_all(TValue *v, void **buf, int size)
 		lenTemp = serialize_string(v, buf, size);
 	}break;
 	case LUA_TTABLE:{
-		serialize_table_logic(v, buf, size);
+		serialize_table_logic(L, v, buf, size);
 	}break;
 	case LUA_TBOOLEAN:{
 		lenTemp = serialize_bool(v, buf, size);
 	}break;
-	default:return serialize_typeerr;
+	case LUA_TLIGHTUSERDATA:{
+		int tsLen = sizeof("_@lightuserdata");
+		seri_encode_string(*buf, size, lenTemp, tsLen, "_@lightuserdata", seri_header_string);
+	}break;
+	case LUA_TFUNCTION:{
+		int tsLen = sizeof("_@function");
+		seri_encode_string(*buf, size, lenTemp, tsLen, "_@function", seri_header_string);
+	}break;
+	case LUA_TUSERDATA:{
+		int tsLen = sizeof("_@userdata");
+		seri_encode_string(*buf, size, lenTemp, tsLen, "_@userdata", seri_header_string);
+	}break;
+	case LUA_TTHREAD:{
+		int tsLen = sizeof("_@thread");
+		seri_encode_string(*buf, size, lenTemp, tsLen, "_@thread", seri_header_string);
+	}break;
+	default:{
+		int tsLen = sizeof("_@unknow_type");
+		seri_encode_string(*buf, size, lenTemp, tsLen, "_@unknow_type", seri_header_string);
+	}break;
 	}
 
 	return lenTemp;
 }
 
-static int serialize_table(Table *t, void **buf, int *psize)
+/* now, metatable serialize is not supportted! */
+static int serialize_table(lua_State *L, Table *t, void **buf, int *psize)
 {
+	/* handle loop table */
+	lua_pushliteral(L, seri_lua_registryname); /* lua_getfield(L, seri_lua_registryindex, seri_lua_registryname); */
+	lua_rawget(L, seri_lua_registryindex);
+	lua_pushlightuserdata(L, t); /* push addr of table t */
+	lua_pushvalue(L, -1); /* copy addr */
+	if (LUA_TNIL != lua_rawget(L, -3)){ /* is ever serialize? */
+		lua_pop(L, 3);
+		return serialize_looptable;
+	}
+	else{
+		lua_pop(L, 1);
+		lua_pushnumber(L, 1); /* not LUA_TNIL then ok. */
+		lua_rawset(L, -3);
+		lua_pop(L, 1);
+	}
+
 	// array
 	for (unsigned int i = 1; i <= t->sizearray; i++) {
 		TValue *v = &t->array[i - 1];
@@ -376,7 +450,7 @@ static int serialize_table(Table *t, void **buf, int *psize)
 		seri_encode_header(*buf, lenTemp, seri_header_int);  // encode header
 		seri_encode_hash(*buf, &i, lenTemp);       // encode key of hash
 
-		int lenEncode = serialize_all(v, buf, *psize);       // encode value of hash
+		int lenEncode = serialize_all(L, v, buf, *psize);       // encode value of hash
 		seri_isvalid_return(psize, lenEncode, leftLen);      // check return isvalid
 		*psize -= lenEncode;
 	}
@@ -391,11 +465,11 @@ static int serialize_table(Table *t, void **buf, int *psize)
 		if (ttisnil(gval(n)))
 			continue;
 
-		int lenTemp = serialize_all(gkey(n), buf, *psize);       // encode key of hash
+		int lenTemp = serialize_all(L, gkey(n), buf, *psize);       // encode key of hash
 		if (lenTemp <= serialize_short) return lenTemp;
 		*psize -= lenTemp;
 
-		int lenEncode = serialize_all(gval(n), buf, *psize);     // encode value of hash
+		int lenEncode = serialize_all(L, gval(n), buf, *psize);     // encode value of hash
 		seri_isvalid_return(psize, lenEncode, lenTemp);          // check return isvalid
 		*psize -= lenEncode;
 	}
@@ -409,6 +483,7 @@ static int serialize_table(Table *t, void **buf, int *psize)
 ** idx:      table index
 ** buf:      serialize buf
 ** size:     serialize size
+** return:
 ** success:  return serialize data len（> 0）
 ** len == 0: buf short,data truncate.
 ** error:    return < 0
@@ -417,37 +492,53 @@ LUALIB_API int luaEx_Serialize(lua_State *L, int idx, void *buf, int size)
 {
 	if (!buf || size <= seri_lenbytes)
 	{
-		luaG_runerror(L, "serialize data null or size short.");
+		lua_pushstring/*luaG_runerror*/(L, get_error_info(serialize_null));
 		return serialize_null;
 	}
 
 	if (size > seri_maxlen)
 	{
-		luaG_runerror(L, "serialize size too long.");
+		lua_pushstring/*luaG_runerror*/(L, get_error_info(serialize_long));
 		return serialize_long;
 	}
 		
 	if (lua_type(L, idx) != LUA_TTABLE)
 	{
-		luaG_runerror(L, "serialize type error.");
+		lua_pushstring/*luaG_runerror*/(L, get_error_info(serialize_typeerr));
 		return serialize_typeerr;
 	}
 
 	Table *t = lua_topointer(L, idx);
-
 	int seriSize = size - seri_lenbytes;
+	int oldsize = seriSize;
 	char *bufbegin = seri_jumpbegin(buf);
-	int len = serialize_table(t, &bufbegin, &seriSize);
+
+	/* handle loop table */
+	lua_pushliteral(L, seri_lua_registryname);
+	lua_newtable(L);
+	lua_rawset(L, seri_lua_registryindex);
+
+	int len = serialize_table(L, t, &bufbegin, &seriSize);
 
 	if (len < serialize_sucess)
 	{
-		if (len != serialize_short)
-			luaG_runerror(L, "serialize error!!!,errid = %d", len);
+		if (len != serialize_short){
+			lua_pushstring/*luaG_runerror*/(L, get_error_info(len));
+		}
 	}
 
-	seri_setlen(buf, size - seriSize - seri_lenbytes);
-
-	return len;
+	int datasize = oldsize - seriSize;
+	if (datasize > 0)
+	{
+		seri_setlen(buf, datasize);
+	}
+	else
+	{
+		lua_pushstring/*luaG_runerror*/(L, get_error_info(serialize_unknow));
+		return serialize_unknow;
+	}
+	
+	return datasize + seri_lenbytes;
 }
 
 // add by whb
@@ -518,8 +609,8 @@ static int unserialize_table(lua_State *L, void **buf, int *plen)
 		if (unserialize_table_end == lenTemp) continue;
 		if (lenTemp <= 0 || *plen <= 0) // if *plen <= 0 then not need push valus of table
 		{
-			luaG_runerror(L, "unserialize key error.");
-			break;
+			lua_pushstring/*luaG_runerror*/(L, get_error_info(lenTemp));
+			return lenTemp;
 		}
 
 		// value
@@ -527,9 +618,8 @@ static int unserialize_table(lua_State *L, void **buf, int *plen)
 		if (unserialize_table_end == lenTemp) continue;
 		if (lenTemp <= 0)
 		{
-			//lua_pop(L,1);  // remove key
-			luaG_runerror(L, "unserialize value error.");
-			break;
+			lua_pushstring/*luaG_runerror*/(L, get_error_info(lenTemp));
+			return lenTemp;
 		}
 
 		lua_settable(L,-3);  //t[k] = v
@@ -546,16 +636,25 @@ static int unserialize_table(lua_State *L, void **buf, int *plen)
 LUALIB_API int luaEx_Unserialize(lua_State *L, const void *buf)
 {
 	if (!L || !buf)
+	{
+		lua_pushstring(L, get_error_info(serialize_null));
 		return serialize_null;
+	}
 
 	int len = 0;
 	seri_getlen(buf, &len);
 
 	if (len <= 0)
+	{
+		lua_pushstring(L, get_error_info(serialize_short));
 		return serialize_short;
+	}
 
 	if (len > seri_maxlen)
+	{
+		lua_pushstring(L, get_error_info(serialize_long));
 		return serialize_long;
+	}
 
 	// outside tabel
 	lua_newtable(L); 

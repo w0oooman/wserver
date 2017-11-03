@@ -258,6 +258,7 @@ LUALIB_API void (luaL_openlib) (lua_State *L, const char *libname,
 ** idx:      table index
 ** buf:      serialize buf
 ** size:     serialize size
+** return:
 ** success:  return serialize data len£¨> 0£©
 ** len == 0: buf short,data truncate.
 ** error:    return < 0

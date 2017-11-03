@@ -34,7 +34,7 @@ attrib -r -h -s *.ipch /s
 attrib -r -h -s *.sdf /s
 attrib -r -h -s *.i /s
 
-del /s BuildLog.htm *.intermediate.manifest *.dep *.obj *.idb *.aps *.res *.plg *.opt *.ncb *.bak *.tmp *.idb *.exp *.ilk *.pdb *.tli *.tlh disasm.asm *.trg *.pch *.~* *.ddp *.scc thumbs.db *.cod *.ipch *.sdf
+del /s BuildLog.htm *.intermediate.manifest *.dep *.obj *.idb *.aps *.res *.plg *.opt *.ncb *.bak *.tmp *.idb *.exp *.ilk *.pdb *.tli *.tlh disasm.asm *.trg *.pch *.~* *.ddp *.scc thumbs.db *.cod *.ipch *.sdf *.ldb
 
 echo "没清理*.user 和 隐藏的*.suo 文件!!"
 rem del /s *.user *.suo 

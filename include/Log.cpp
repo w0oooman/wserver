@@ -58,7 +58,7 @@ private:
 	ofstream   m_stream;
 	char       m_file[MAX_PATH];
 public:
-	char        m_buf[LOG_MAXBUFFER + 10];
+	char        m_buf[LOG_MAXBUFFEREX];
 	__int64     m_time;
 	DWORD       m_len;
 public:
@@ -109,7 +109,7 @@ public:
 		/*
 		注意几种特殊情况printf的结果:
 		Log("%d 20%% 100%%", 777); -> 过滤后:777 20% 100% -> 打印结果:777 20%
-		Log("%d 20%%q100%%", 888); -> 过滤后:888 20%q100% ->打印结果:888 20q100
+		Log("%d 20%%q100%%", 888); -> 过滤后:888 20%q100% -> 打印结果:888 20q100
 		*/
 		printf(m_buf);  //whb
 	}
@@ -199,8 +199,7 @@ public:
 };
 
 CFileHandleMgr __LogMgr;  //缺点:占用有限的栈内存!!
-#define FORMAT_BUFF_LEN 512
-static char    __szFormatBuff[FORMAT_BUFF_LEN];
+static char    __szFormatBuff[LOG_MAXBUFFER];
 
 BOOL Log_Logic(CFileHandle *handle, const char* szFormat, va_list header, bool bIsLogAll)
 {
@@ -220,7 +219,7 @@ BOOL Log_Logic(CFileHandle *handle, const char* szFormat, va_list header, bool b
 	}
 
 	//filter
-	int nFormatLen = min(strlen(szFormat), FORMAT_BUFF_LEN - 1);
+	int nFormatLen = min(strlen(szFormat), LOG_MAXBUFFER - 1);
 	memcpy(__szFormatBuff, szFormat, nFormatLen);
 	__szFormatBuff[nFormatLen] = 0;
 	LogFilter((char*)__szFormatBuff, nFormatLen);

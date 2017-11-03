@@ -1,4 +1,5 @@
 f:\mytest\mytest\testcpp\server\2\server+redis\source\kernel\release\vc120.pdb
+f:\mytest\mytest\testcpp\server\2\server+redis\source\kernel\release\lock.obj
 f:\mytest\mytest\testcpp\server\2\server+redis\source\kernel\release\timermgr.obj
 f:\mytest\mytest\testcpp\server\2\server+redis\source\kernel\release\tcpsocket.obj
 f:\mytest\mytest\testcpp\server\2\server+redis\source\kernel\release\socketarray.obj
@@ -7,7 +8,6 @@ f:\mytest\mytest\testcpp\server\2\server+redis\source\kernel\release\netmgr.obj
 f:\mytest\mytest\testcpp\server\2\server+redis\source\kernel\release\neterror.obj
 f:\mytest\mytest\testcpp\server\2\server+redis\source\kernel\release\netbase.obj
 f:\mytest\mytest\testcpp\server\2\server+redis\source\kernel\release\kernelmgr.obj
-f:\mytest\mytest\testcpp\server\2\server+redis\source\kernel\release\lock.obj
 f:\mytest\mytest\testcpp\server\2\server+redis\source\kernel\release\log.obj
 f:\mytest\mytest\testcpp\server\2\server+redis\lib\win32\kernel.lib
 f:\mytest\mytest\testcpp\server\2\server+redis\lib\win32\kernel.exp

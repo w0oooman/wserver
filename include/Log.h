@@ -28,6 +28,7 @@
 #include <fstream>
 
 #define LOG_MAXBUFFER      2048  //LOG的buf最大长度
+#define LOG_MAXBUFFEREX    (LOG_MAXBUFFER + 10)
 
 enum LOG_TYPE
 {
@@ -41,16 +42,19 @@ enum LOG_TYPE
 	LOG_MAX,
 };
 
-//函数对文件操作没有考虑多线程环境,所以写入某个文件时
-//应该在单线程环境下!!!否则应使用LOG_THREAD参数
+/*
+** 函数对文件操作没有考虑多线程环境,所以写入某个文件
+** 时应该在单线程环境下!!!否则应使用LOG_THREAD参数
+*/
 extern BOOL Log(const char* szFormat, ...);             //以LOG_NORMAL方式保存
 extern BOOL Log(char type, const char* szFormat, ...);  //指定保存类型
 extern BOOL LogAll();                                   //保存所有类型数据
 
 
-//过滤掉不合法的变长参数如"Log("%d,100%",1)"，正确应为"Log("%d,100%%",1)"，
-//但此函数经处理为"Log("%d,100*",1)",避免程序在vsprintf_s类似接口处崩溃.
-//以上只是预防格式参数问题但是如果出现类似Log("%d%s",123);则此函数暂时无能为力.
+/* 过滤掉不合法的变长参数如"Log("%d,100%",1)"，正确应为"Log("%d,100%%",1)"，
+** 但此函数经处理为"Log("%d,100*",1)",避免程序在vsprintf_s类似接口处崩溃.
+** 以上只是预防格式参数问题但是如果出现类似Log("%d%s",123);则此函数暂时无能为力.
+*/
 extern void LogFilter(char* buffer, size_t size);      
 
 

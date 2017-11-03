@@ -1,63 +1,12 @@
-﻿Build started 2017/5/15 0:17:49.
-     1>Project "F:\MyTest\myTest\testCPP\server\2\server+redis\source\lua\lua.vcxproj" on node 3 (Rebuild target(s)).
+﻿Build started 2017/11/3 20:33:19.
+     1>Project "F:\MyTest\myTest\testCPP\server\2\server+redis\source\lua\lua.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../ /Zi /nologo /W3 /WX- /sdl /Od /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _LIB /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt "..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\dtoa.c" "..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\fpconv.c" "..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\g_fmt.c" "..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\lua_cjson.c" "..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\strbuf.c" "..\..\3rd\lua-5.3.3\src\lapi.c" "..\..\3rd\lua-5.3.3\src\lauxlib.c" "..\..\3rd\lua-5.3.3\src\lbaselib.c" "..\..\3rd\lua-5.3.3\src\lbitlib.c" "..\..\3rd\lua-5.3.3\src\lcode.c" "..\..\3rd\lua-5.3.3\src\lcorolib.c" "..\..\3rd\lua-5.3.3\src\lctype.c" "..\..\3rd\lua-5.3.3\src\ldblib.c" "..\..\3rd\lua-5.3.3\src\ldebug.c" "..\..\3rd\lua-5.3.3\src\ldo.c" "..\..\3rd\lua-5.3.3\src\ldump.c" "..\..\3rd\lua-5.3.3\src\lfunc.c" "..\..\3rd\lua-5.3.3\src\lgc.c" "..\..\3rd\lua-5.3.3\src\linit.c" "..\..\3rd\lua-5.3.3\src\liolib.c" "..\..\3rd\lua-5.3.3\src\llex.c" "..\..\3rd\lua-5.3.3\src\lmathlib.c" "..\..\3rd\lua-5.3.3\src\lmem.c" "..\..\3rd\lua-5.3.3\src\loadlib.c" "..\..\3rd\lua-5.3.3\src\lobject.c" "..\..\3rd\lua-5.3.3\src\lopcodes.c" "..\..\3rd\lua-5.3.3\src\loslib.c" "..\..\3rd\lua-5.3.3\src\lparser.c" "..\..\3rd\lua-5.3.3\src\lserialize.c" "..\..\3rd\lua-5.3.3\src\lstate.c" "..\..\3rd\lua-5.3.3\src\lstring.c" "..\..\3rd\lua-5.3.3\src\lstrlib.c" "..\..\3rd\lua-5.3.3\src\ltable.c" "..\..\3rd\lua-5.3.3\src\ltablib.c" "..\..\3rd\lua-5.3.3\src\ltm.c" "..\..\3rd\lua-5.3.3\src\lua.c" "..\..\3rd\lua-5.3.3\src\luac.c" "..\..\3rd\lua-5.3.3\src\lundump.c" "..\..\3rd\lua-5.3.3\src\lutf8lib.c" "..\..\3rd\lua-5.3.3\src\lvm.c" "..\..\3rd\lua-5.3.3\src\lzio.c"
-         dtoa.c
-     1>..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\dtoa.c(663): warning C4244: '=' : conversion from 'uint64_t' to 'uint32_t', possible loss of data
-     1>..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\dtoa.c(857): warning C4244: '=' : conversion from 'uint64_t' to 'uint32_t', possible loss of data
-     1>..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\dtoa.c(3390): warning C4244: '=' : conversion from 'double' to 'uint32_t', possible loss of data
-     1>..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\dtoa.c(3563): warning C4018: '<=' : signed/unsigned mismatch
-     1>..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\dtoa.c(3983): warning C4244: '=' : conversion from 'double' to 'int32_t', possible loss of data
-         fpconv.c
-         g_fmt.c
-         lua_cjson.c
-     1>..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\lua_cjson.c(233): warning C4244: '=' : conversion from 'lua_Integer' to 'int', possible loss of data
-     1>..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\lua_cjson.c(485): warning C4018: '<' : signed/unsigned mismatch
-     1>..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\lua_cjson.c(517): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-         strbuf.c
-         lapi.c
-         lauxlib.c
-         lbaselib.c
-         lbitlib.c
-         lcode.c
-         lcorolib.c
-         lctype.c
-         ldblib.c
-         ldebug.c
-         ldo.c
-         ldump.c
-         lfunc.c
-         lgc.c
-         linit.c
-         liolib.c
-         Compiling...
-         llex.c
-         lmathlib.c
-         lmem.c
-         loadlib.c
-         lobject.c
-         lopcodes.c
-         loslib.c
-         lparser.c
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../ /Zi /nologo /W3 /WX- /sdl /Od /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _LIB /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt "..\..\3rd\lua-5.3.3\src\lserialize.c"
          lserialize.c
-     1>..\..\3rd\lua-5.3.3\src\lserialize.c(353): warning C4013: 'serialize_table' undefined; assuming extern returning int
-     1>..\..\3rd\lua-5.3.3\src\lserialize.c(394): warning C4090: 'function' : different 'const' qualifiers
-     1>..\..\3rd\lua-5.3.3\src\lserialize.c(436): warning C4090: 'initializing' : different 'const' qualifiers
-     1>..\..\3rd\lua-5.3.3\src\lserialize.c(448): warning C4554: '>>' : check operator precedence for possible error; use parentheses to clarify precedence
-     1>..\..\3rd\lua-5.3.3\src\lserialize.c(495): warning C4013: 'unserialize_table' undefined; assuming extern returning int
-         lstate.c
-         lstring.c
-         lstrlib.c
-         ltable.c
-         ltablib.c
-         ltm.c
-         lua.c
-         luac.c
-         lundump.c
-         lutf8lib.c
-         lvm.c
-         Compiling...
-         lzio.c
+     1>..\..\3rd\lua-5.3.3\src\lserialize.c(391): warning C4013: 'serialize_table' undefined; assuming extern returning int
+     1>..\..\3rd\lua-5.3.3\src\lserialize.c(468): warning C4090: 'function' : different 'const' qualifiers
+     1>..\..\3rd\lua-5.3.3\src\lserialize.c(511): warning C4090: 'initializing' : different 'const' qualifiers
+     1>..\..\3rd\lua-5.3.3\src\lserialize.c(586): warning C4013: 'unserialize_table' undefined; assuming extern returning int
        Lib:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"../../lib/Win32/lua.lib" /NOLOGO /LTCG Release\dtoa.obj
          Release\fpconv.obj
@@ -104,8 +53,8 @@
      1>fpconv.obj : warning LNK4006: _fpconv_g_fmt already defined in g_fmt.obj; second definition ignored
      1>dtoa.obj : warning LNK4006: _fpconv_strtod already defined in fpconv.obj; second definition ignored
          lua.vcxproj -> F:\MyTest\myTest\testCPP\server\2\server+redis\source\lua\../../lib/Win32/lua.lib
-     1>Done Building Project "F:\MyTest\myTest\testCPP\server\2\server+redis\source\lua\lua.vcxproj" (Rebuild target(s)).
+     1>Done Building Project "F:\MyTest\myTest\testCPP\server\2\server+redis\source\lua\lua.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:04.05
+Time Elapsed 00:00:01.78
