@@ -71,7 +71,6 @@ end
 --关服
 function OnServerDwon()
     Log("OnServerDwon")
-	local a = 1+c
 end
 
 --每一分钟回调

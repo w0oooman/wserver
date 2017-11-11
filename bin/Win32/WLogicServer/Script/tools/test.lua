@@ -162,23 +162,45 @@ print("main", coroutine.resume(co, 1, 10))
 look("--------------Serialize test start.---------------")
 -- -- ¥˝≤‚ ‘ --{9223372036854775808}
 -- --local seriTest = {2,3,89,257,65534,65539,462378,748923744,4294967296,18014398509481984,72057594037927936,4611686018427387904,9223372036854775807,[234789] = 42378,[58239] = 255,[47892308]= 257,[5423987482037] = 65538,[256] = 256,[55536]=65536,[4294967296]=4294967296} 
--- --local seriTest = {[256] = 256,[55536]=65536,[4294967296]=4294967296,[234789] = 42378,[58239] = 255,[47892308]= 257,[5423987482037] = 65538} 
+--local seriTest = {[256] = 256,[55536]=65536,[4294967296]=4294967296,[234789] = 42378,[58239] = 255,[47892308]= 257,[5423987482037] = 65538} 
 -- local seriTest = {['test']='≤‚ ‘÷–Œƒ¬“¬Î.',[1.3] = 4,[2] = 3.141592,abced = 1.210,[true] = 1,[10] = false,[false] = true, abcde = "xyz0",abe = true,a = 1.0,[4294967296]=4294967296,[256] = 256,[55536]=65536,[7.5345345] = "akfdjk;j",[1.31231231231312321313] = 0.5345353453535345353535353535353535353535353535353}
--- --local seriTest = {-2,3,89,257,-65534,-65539,-462378,748923744,-4294967296,18014398509481984,-72057594037927936,4611686018427387904,-9223372036854775807,[-3]=-9,[-234789] = 42378,[-58239] = 255,[47892308]= 257,[-5423987482037] = -65538,[256] = -256,[55536]=65536,[4294967296]=-4294967296,a = 1,abcd = 2,abcde = 3,[643782] = "0fhas;jkld",fjaks = "0f0weipfk8",[256] = "0fjaskdfas;dfsadioffjieaowfasj",f;ha = "fahsiofjas;fja;kls",["f;ha"] = 2,FJASKLFJI89PJFJKSAFJSJIFJSOIJFSOAJDFSKOAAFPSADIFIOPSAJDFOIASPFOSIAPJDFSIOADFPIOAJDFPSDFfjaksfjsdjfkasjfoFJFIjfjskdf = "fjksdafjs;djfsiafj[390rj0sifs0[fasmk jfsdfisjdfiosajdf[pasf[sajdifsaoddddfj[ajf[sapo]fafjsdkalfjsdkafjksadfa[ofsadfksoadkfiajfiosajf",} 
+--local seriTest = {-2,3,89,257,-65534,-65539,-462378,748923744,-4294967296,18014398509481984,-72057594037927936,4611686018427387904,-9223372036854775807,[-3]=-9,[-234789] = 42378,[-58239] = 255,[47892308]= 257,[-5423987482037] = -65538,[256] = -256,[55536]=65536,[4294967296]=-4294967296,a = 1,abcd = 2,abcde = 3,[643782] = "0fhas;jkld",fjaks = "0f0weipfk8",[256] = "0fjaskdfas;dfsadioffjieaowfasj",f;ha = "fahsiofjas;fja;kls",["f;ha"] = 2,FJASKLFJI89PJFJKSAFJSJIFJSOIJFSOAJDFSKOAAFPSADIFIOPSAJDFOIASPFOSIAPJDFSIOADFPIOAJDFPSDFfjaksfjsdjfkasjfoFJFIjfjskdf = "fjksdafjs;djfsiafj[390rj0sifs0[fasmk jfsdfisjdfiosajdf[pasf[sajdifsaoddddfj[ajf[sapo]fafjsdkalfjsdkafjksadfa[ofsadfksoadkfiajfiosajf",} 
 -- --local seriTest = {a = 1,abcd = 2,abcde = 3,[643782] = "0fhas;jkld",fjaks = "0f0weipfk8",[256] = "0fjaskdfas;dfsadioffjieaowfasj",f;ha = "fahsiofjas;fja;kls",["f;ha"] = 2,FJASKLFJI89PJFJKSAFJSJIFJSOIJFSOAJDFSKOAAFPSADIFIOPSAJDFOIASPFOSIAPJDFSIOADFPIOAJDFPSDFfjaksfjsdjfkasjfoFJFIjfjskdf = "fjksdafjs;djfsiafj[390rj0sifs0[fasmk jfsdfisjdfiosajdf[pasf[sajdifsaoddddfj[ajf[sapo]fafjsdkalfjsdkafjksadfa[ofsadfksoadkfiajfiosajf",}
 -- --local seriTest = {a = 1,abcd = 2,abcde = 3,[643782] = "0fhas;jkld",fjaks = "0f0weipfk8",}
--- --local seriTest =  { a = 15*60, b = {1}}
+local seriTest =  { a = 15*60, b = {1}}
 -- -- local seriTest = {[2] = "hehe2",}
+-- local seriTest = {[-5423987482037] = -65538}
 -- -- seriTest[4] = "hehe4"
+
+--local seriTest = {}
+local mtable = {__index = function() error("hehe") end,}--__newindex = function() error("haha") end}
+setmetatable(seriTest, mtable)
+seriTest.a = "gaga"
 -- --look(seriTest)
 
--- look(seriTest)
--- local unseriTest = SaveTable(seriTest)
--- look(unseriTest)
+local ldbfile = "ldb/test.ldb"
+
+local testLdb = LoadTable(ldbfile)
+look("testLdb=")
+lookx(testLdb)
 
 
--- unseriTest = SaveTable(seriTest)
--- look(unseriTest)
+--look(testLdb)
+
+seriTest.bbb = seriTest
+seriTest.loop1 = {l1 = "test1"}
+seriTest.loop1.l2 = seriTest
+seriTest.loop2 = {l3 = seriTest.loop1}
+seriTest.look = look
+SaveTable(ldbfile, seriTest)
+look("_G.seri_lua_r=")
+look(_G["seri_lua_r"])
+
+--SaveTable(ldbfile, seriTest)
+
+-- local test = {a = "hehe"}
+-- test.b = test
+-- look(test)
 
 local x = 19  -- luaV_execute OP_LOADK
 --test ≤‚ ‘-------------------------
@@ -256,7 +278,6 @@ function test_remove()
     ClrEvent(g_timerID)
 end
 --SetEvent(nil, 12000, "test_remove")
-
 
 ------------------------------sort------------------------------------------------
 -- local test_sort = {2,3,4,7,1}
