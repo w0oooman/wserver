@@ -205,7 +205,7 @@ tagQueueData* CQueueBase::AddData(ULLONG llConnectID, const void* pData, DWORD d
 	tagQueueData* pAllQueueData = NULL;
 	try
 	{
-		pAllQueueData = new tagQueueData;
+		pAllQueueData = (tagQueueData*) new char[sizeof(tagQueueData) + dwSize];
 		if (NULL == pAllQueueData) return NULL;
 	}
 	catch (...)
@@ -220,19 +220,6 @@ tagQueueData* CQueueBase::AddData(ULLONG llConnectID, const void* pData, DWORD d
 	pAllQueueData->dwSize = dwSize;
 	pAllQueueData->pData = pData;
 
-	pAllQueueData->pQueueData = NULL;
-	try
-	{
-		pAllQueueData->pQueueData = new char[dwSize];
-		if (NULL == pAllQueueData->pQueueData) return NULL;
-	}
-	catch (...)
-	{
-		if (pAllQueueData->pQueueData != NULL) SAFE_DELETE_ARRAY(pAllQueueData->pQueueData);
-		if (pAllQueueData != NULL) SAFE_DELETE(pAllQueueData);
-		return NULL;
-	}
-
 	memcpy(pAllQueueData->pQueueData, pData, dwSize);
 
 	return pAllQueueData;
@@ -241,9 +228,10 @@ tagQueueData* CQueueBase::AddData(ULLONG llConnectID, const void* pData, DWORD d
 tagQueueData* CQueueBase::AddDataOld(DWORD dwMainID, DWORD dwSubID, const void* pData, DWORD dwSize, BYTE byQueueType)
 {
 	tagQueueData* pAllQueueData = NULL;
+	DWORD dwSizeTemp = sizeof(NetMsgHead) + dwSize;
 	try
 	{
-		pAllQueueData = new tagQueueData;
+		pAllQueueData = (tagQueueData*) new char[sizeof(tagQueueData) + dwSizeTemp];
 		if (NULL == pAllQueueData) return NULL;
 	}
 	catch (...)
@@ -252,23 +240,9 @@ tagQueueData* CQueueBase::AddDataOld(DWORD dwMainID, DWORD dwSubID, const void* 
 		return NULL;
 	}
 
-	DWORD dwSizeTemp = sizeof(NetMsgHead) + dwSize;
 	pAllQueueData->byQueueType = byQueueType;
 	pAllQueueData->dwSize = dwSizeTemp;
-	pAllQueueData->pQueueData = NULL;
 	pAllQueueData->pData = pData;
-
-	try
-	{
-		pAllQueueData->pQueueData = new char[dwSizeTemp];
-		if (NULL == pAllQueueData->pQueueData) return NULL;
-	}
-	catch (...)
-	{
-		if (pAllQueueData->pQueueData != NULL) SAFE_DELETE_ARRAY(pAllQueueData->pQueueData);
-		if (pAllQueueData != NULL) SAFE_DELETE(pAllQueueData);
-		return NULL;
-	}
 
 	NetMsgHead *pHead = (NetMsgHead *)(pAllQueueData->pQueueData);
 	pHead->dwMainID = dwMainID;
@@ -286,7 +260,7 @@ tagQueueData* CQueueBase::AddData(const void* pData, DWORD dwSize, BYTE byQueueT
 	tagQueueData* pAllQueueData = NULL;
 	try
 	{
-		pAllQueueData = new tagQueueData;
+		pAllQueueData = (tagQueueData*) new char[sizeof(tagQueueData) + dwSize];
 		if (NULL == pAllQueueData) return NULL;
 	}
 	catch (...)
@@ -297,20 +271,7 @@ tagQueueData* CQueueBase::AddData(const void* pData, DWORD dwSize, BYTE byQueueT
 
 	pAllQueueData->byQueueType = byQueueType;
 	pAllQueueData->dwSize = dwSize;
-	pAllQueueData->pQueueData = NULL;
 	pAllQueueData->pData = pData;
-
-	try
-	{
-		pAllQueueData->pQueueData = new char[dwSize];
-		if (NULL == pAllQueueData->pQueueData) return NULL;
-	}
-	catch (...)
-	{
-		if (pAllQueueData->pQueueData != NULL) SAFE_DELETE_ARRAY(pAllQueueData->pQueueData);
-		if (pAllQueueData != NULL) SAFE_DELETE(pAllQueueData);
-		return NULL;
-	}
 
 	if (pData != NULL && dwSize > 0)
 		memcpy(pAllQueueData->pQueueData, pData, dwSize);
@@ -335,7 +296,6 @@ tagQueueData* CQueueBase::AddData(ULLONG llConnectID, BYTE byQueueType)
 	pAllQueueData->byQueueType = byQueueType;
 	pAllQueueData->llConnectID = llConnectID;
 	pAllQueueData->dwSize = 0;
-	pAllQueueData->pQueueData = NULL;
 
 	return pAllQueueData;
 }
@@ -452,9 +412,7 @@ bool CQueueMsg::GetData(tagQueueData* pData, DWORD dwSize)
 	pData->dwSize = pTmpData->dwSize;
 	pData->pData = pTmpData->pData;
 
-	memcpy(&pData->pQueueData, pTmpData->pQueueData, pTmpData->dwSize);
-
-	SAFE_DELETE_ARRAY(pTmpData->pQueueData);
+	memcpy(pData->pQueueData, pTmpData->pQueueData, pTmpData->dwSize);
 	SAFE_DELETE(pTmpData);
 
 	return true;
@@ -490,7 +448,6 @@ CLockFreeQueue::~CLockFreeQueue()
 	for(int i = dwBegin;i < dwEnd;i++)
 	{
 	    pQueueData = (tagQueueData*)ppBuf_[i];
-		SAFE_DELETE_ARRAY(pQueueData->pQueueData);
 		SAFE_DELETE(pQueueData);
 	}
 
@@ -666,9 +623,7 @@ bool CLockFreeMgr::GetData(tagQueueData* pData, DWORD dwSize)
 	pData->llConnectID = data->llConnectID;
 	pData->pData = data->pData;
 
-	memcpy(&pData->pQueueData,data->pQueueData,data->dwSize);
-
-	SAFE_DELETE_ARRAY(data->pQueueData);
+	memcpy(pData->pQueueData,data->pQueueData,data->dwSize);
 	SAFE_DELETE(data);
 
 	return true;

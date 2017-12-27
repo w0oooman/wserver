@@ -373,17 +373,17 @@ unsigned int CKernelMgr::QueueThread(void *pData)
 			{
 			case QMD_NORMAL_DATA:
 			{
-				if (!pKernelMgr->OnNormalMsgHandle(pQueueData->llConnectID, &pQueueData->pQueueData, pQueueData->dwSize))
+				if (!pKernelMgr->OnNormalMsgHandle(pQueueData->llConnectID, pQueueData->pQueueData, pQueueData->dwSize))
 					pKernelMgr->CloseConnect(pQueueData->llConnectID);
 				break;
 			}
 			case QMD_DB_DATA:
-				pKernelMgr->OnDBMsghandle(pQueueData->llConnectID, (NetMsgHead*)(&pQueueData->pQueueData) + 1, pQueueData->dwSize, pQueueData->wDBType);
+				pKernelMgr->OnDBMsghandle(pQueueData->llConnectID, (NetMsgHead*)(pQueueData->pQueueData) + 1, pQueueData->dwSize, pQueueData->wDBType);
 				break;
 			case QMD_TIMER_DATA:
 			{
 #ifdef WHEEL_TIMER_LOCK
-				pKernelMgr->HandleTimerEvent(pKernelMgr, (tagWheelTimer *)(&pQueueData->pQueueData));
+				pKernelMgr->HandleTimerEvent(pKernelMgr, (tagWheelTimer *)(pQueueData->pQueueData));
 #endif
 			}
 				break;

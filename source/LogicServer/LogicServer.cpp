@@ -242,7 +242,7 @@ bool CLogicServer::UseLua()
 		//初始化LUA环境
 		g_Script.Init(this);
 		g_Script.ServerStart();
-		AddEvent(timer_lua_1_minute, 1 * 1000);
+		AddEvent(timer_lua_1_minute, 1 * 60 * 1000);
 		AddEvent(timer_lua_10_minute, 10 * 60 * 1000);
 		AddEvent(timer_lua_1_hour, 60 * 60 * 1000);
 	}

@@ -56,7 +56,7 @@ struct tagQueueData
 	ULLONG         llConnectID;   //连接ID
 	const void    *pData;         //源数据指针
 
-	char          *pQueueData;    //队列数据
+	char           pQueueData[];  //队列数据
 };
 
 
