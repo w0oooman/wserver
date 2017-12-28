@@ -22,7 +22,7 @@
 typedef   unsigned long long    ULLONG;
 
 #define SAFE_DELETE(p) \
-{ \
+do{ \
 	if ((p) != NULL){ \
 	    try{ \
 	        delete (p); \
@@ -30,10 +30,10 @@ typedef   unsigned long long    ULLONG;
 	    catch (...){}\
 	    (p) = NULL; \
 	}\
-}
+}while(0)
 
 #define SAFE_DELETE_ARRAY(p) \
-{ \
+do{ \
 	if((p)!=NULL){\
 	    try{\
 		    delete [](p);\
@@ -41,7 +41,7 @@ typedef   unsigned long long    ULLONG;
 		catch(...){}\
 		(p)=NULL;\
 	} \
-}
+}while(0)
 
 #define SAFE_CLOSE_HANDLE(p,num) \
 	for(int i=0;i<(num);i++){\

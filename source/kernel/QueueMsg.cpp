@@ -96,7 +96,7 @@ TYPE  CQueueList<TYPE, ARG_TYPE>::POPHead()
 		if (m_pNodeHead->pNext != NULL)
 		{
 			m_pNodeHead = m_pNodeHead->pNext;
-			SAFE_DELETE(m_pNodeHead->pPrev)
+			SAFE_DELETE(m_pNodeHead->pPrev);
 		}
 		else
 		{
