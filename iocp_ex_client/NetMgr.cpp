@@ -11,11 +11,11 @@ CNetMgrC::CNetMgrC()
 
     share_srand(GetTickCount());
 	szSendbuf_ = 0;
-	szRecvBuf_ = 0;
+	recvBuf_ = 0;
 	szSendbuf_ = new char[CLIENT_SND_SIZE];
-	szRecvBuf_ = new char[CLIENT_RCV_SIZE];
+	recvBuf_ = new char[CLIENT_RCV_SIZE];
 	memset(szSendbuf_, 0, CLIENT_SND_SIZE);
-	memset(szRecvBuf_, 0, CLIENT_RCV_SIZE);
+	memset(recvBuf_, 0, CLIENT_RCV_SIZE);
 	dwSendLen_=0;
 	dwRecvLen_=0;
 	dwCheckCode_=0;
@@ -166,23 +166,23 @@ bool CNetMgrC::OnRecvComplete()
 {
 	CLockMgr LockMgr(&GetLock());
 
-	int nRe=recv(GetSocket(),szRecvBuf_+dwRecvLen_,CLIENT_RCV_SIZE-dwRecvLen_,0);
+	int nRe=recv(GetSocket(),recvBuf_+dwRecvLen_,CLIENT_RCV_SIZE-dwRecvLen_,0);
 	if(nRe>0||(0==nRe&&CLIENT_RCV_SIZE==dwRecvLen_))
 	{		
 		//if(1){CLockMgr LockPrint(&PrintLock_);
 		//cout<<"________recv:"<<nRe<<endl;}
 
 		dwRecvLen_+=nRe;
-		CNetMsgHead * pMsgHead = (CNetMsgHead*)szRecvBuf_;
+		CNetMsgHead * pMsgHead = (CNetMsgHead*)recvBuf_;
 		DWORD dwMsgSize=pMsgHead->size_;
 
 		while (dwRecvLen_ >= sizeof(CNetMsgHead) && dwRecvLen_ >= dwMsgSize)
 		{
 			if (dwMsgSize<sizeof(CNetMsgHead)/* || dwMsgSize>MAX_MESSAGE_LENGTH*/)        throw "非法数据包!";
 
-			OnNetMessage(szRecvBuf_,dwMsgSize);
+			OnNetMessage(recvBuf_,dwMsgSize);
 
-			memmove(szRecvBuf_,szRecvBuf_+dwMsgSize,dwRecvLen_-dwMsgSize);
+			memmove(recvBuf_,recvBuf_+dwMsgSize,dwRecvLen_-dwMsgSize);
 			dwRecvLen_-=dwMsgSize;
 			dwMsgSize = pMsgHead->size_;
 		}

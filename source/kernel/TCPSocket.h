@@ -20,7 +20,6 @@
 //发送重叠限制
 #define   SEND_OVERLAPPED_LIMIT  (10)
 
-
 class CNetMgr;
 class CTCPSocket
 {
@@ -39,14 +38,18 @@ private:
 
 	NETOVERLAPPED   SendOverLPData_;                //发送结构
 	NETOVERLAPPED   RecvOverLPData_;                //接收结构
-	char           *szSendBuf_;                     //发送缓冲
-	char           *szRecvBuf_;                     //接收缓冲
+	char           *sendBuf_;                       //发送缓冲
+	char           *recvBuf_;                       //接收缓冲
 	DWORD           dwSendLen_;                     //当前发送长度
 	DWORD           dwRecvLen_;                     //当前接收长度
 	CLock           SingleLock_;                    //锁
 
-	//DWORD           m_dwRecvBegin;                  //环形缓冲区起始  whb
-	//DWORD           m_dwRecvEnd;                    //环形缓冲区结束  whb
+#ifdef IS_USE_CIRCLE_BUFFER
+	char           *recvTmpBuf_;                    //环形缓冲临时buf
+	DWORD           m_dwRecvBegin;                  //环形缓冲区起始
+	DWORD           m_dwRecvEnd;                    //环形缓冲区结束
+#endif
+
 	DWORD           dwTotalRecvLen_;                //接收缓冲大小
 	DWORD           dwTotalSendLen_;                //发送缓冲大小  
 
@@ -75,7 +78,9 @@ public:
 
 	bool WSASendData();
 	bool OnRecvComplete(DWORD dwRoundIndex);
-	bool OnRecvCompleteEx(DWORD dwRoundIndex);  //环形缓冲区
+#ifdef IS_USE_CIRCLE_BUFFER
+	bool OnRecvCompleteCircle(DWORD dwRoundIndex);
+#endif
 	bool OnSendComplete(DWORD dwSendCount, NETOVERLAPPED* pNetOL);
 	bool CloseSocket(DWORD dwRoundIndex);
 	bool IsValidSocket();

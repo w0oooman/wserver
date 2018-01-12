@@ -7,6 +7,9 @@
 #endif
 #include  "NetError.h"
 
+/* 是否使用环形buff */
+//#define   IS_USE_CIRCLE_BUFFER
+
 extern bool WSAInit();
 extern bool WSAUnInit();
 

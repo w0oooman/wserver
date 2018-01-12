@@ -104,16 +104,17 @@ bool CNetBase::CreateSocket()
 	//if(setsockopt( m_socket, IPPROTO_TCP,TCP_NODELAY, (char*)&bNodelay,sizeof(bool))==SOCKET_ERROR)  //no delay，发送时不等待返回ACK(需等200ms)，立刻发送下一个包
 	//	cout<<"set TCP_NODELAY failed!"<<endl;
 
-	//whb 环形缓冲 设置成非阻塞模式 测试发现使用非阻塞时CPU占用超高!!!
-	//unsigned long ul=1;     
-	//if(SOCKET_ERROR == ioctlsocket(m_socket,FIONBIO,(unsigned long *)&ul))
-	//{
-	//	char err[50];
-	//	int errNum=WSAGetLastError();
-	//	sprintf_s(err,"ioctlsocket()---error num=%d",errNum);
-	//	throw CNetErr(err);
-	//}
-
+	//环形缓冲因为使用两次recv 设置成非阻塞模式 测试发现使用非阻塞时CPU占用超高!!!
+#ifdef IS_USE_CIRCLE_BUFFER
+	unsigned long ul = 1;
+	if (SOCKET_ERROR == ioctlsocket(m_socket, FIONBIO, (unsigned long *)&ul))
+	{
+		char err[50];
+		int errNum = WSAGetLastError();
+		sprintf_s(err, "ioctlsocket()---error num=%d", errNum);
+		throw CNetErr(err);
+	}
+#endif
 	return true;
 }
 

@@ -23,7 +23,7 @@ class CNetMgrC:public CNetBase
 private:
 	CLock     SingleLock_;
 	char     *szSendbuf_;     //发送数据buffer
-	char     *szRecvBuf_;     //接收数据buffer
+	char     *recvBuf_;     //接收数据buffer
 	DWORD     dwSendLen_;
 	DWORD     dwRecvLen_;
 	DWORD     dwCheckCode_;

@@ -286,8 +286,12 @@ unsigned int CNetMgr::RSThread(void* pData)
 			switch (pNetOL->type)
 			{
 			case SOCKET_RCV:
+
+#ifdef IS_USE_CIRCLE_BUFFER
+				pTCPSocket->OnRecvCompleteCircle(pNetOL->roundindex);
+#else
 				pTCPSocket->OnRecvComplete(pNetOL->roundindex);
-				//pTCPSocket->OnRecvCompleteEx(OL->roundindex);  //whb 环形缓冲(发现无意义)
+#endif
 				break;
 			case SOCKET_SND:
 				pTCPSocket->OnSendComplete(dwTransfer, pNetOL);
@@ -534,8 +538,8 @@ bool CNetMgr::SendData(void* pAllMsgData, DWORD dwAllMsgLen)
 CClientNetMgr::CClientNetMgr()
 {
 	share_srand(GetTickCount());
-	szSendBuf_ = NULL;
-	szRecvBuf_ = NULL;
+	sendBuf_ = NULL;
+	recvBuf_ = NULL;
 	dwSendLen_ = 0;
 	dwRecvLen_ = 0;
 	dwCheckCode_ = 0;
@@ -565,8 +569,8 @@ CClientNetMgr::~CClientNetMgr()
 	    ::CloseHandle(hRSThreadHandle_);
 	hRSThreadHandle_ = NULL;
 
-	SAFE_DELETE_ARRAY(szRecvBuf_);
-	SAFE_DELETE_ARRAY(szSendBuf_);
+	SAFE_DELETE_ARRAY(recvBuf_);
+	SAFE_DELETE_ARRAY(sendBuf_);
 
 	::CloseHandle(hEvent_);
 	hEvent_ = NULL;
@@ -598,7 +602,7 @@ bool CClientNetMgr::PrepareRecv()
 
 	//客户端就不把wsabuf.len置为0而用recv接收实际数据了,因为不像服务端要处理多个连接因而怕非分页内存不足,客户端不存在这个问题.
 	DWORD dwRecvBytes = 0, dwFlags = 0;
-	RecvOverLPData_.wsabuf.buf = szRecvBuf_ + dwRecvLen_;
+	RecvOverLPData_.wsabuf.buf = recvBuf_ + dwRecvLen_;
 	RecvOverLPData_.wsabuf.len = min(dwTotalRecvLen_ - dwRecvLen_, dwTotalRecvLen_);
 	if ((WSARecv(GetSocket(), &RecvOverLPData_.wsabuf, 1, &dwRecvBytes, &dwFlags, &RecvOverLPData_.overlapped, NULL) == SOCKET_ERROR)
 		&& WSAGetLastError() != WSA_IO_PENDING)
@@ -627,9 +631,9 @@ HANDLE CClientNetMgr::GetIOCPHandle()
 
 bool CClientNetMgr::Start()
 {
-	szSendBuf_ = new char[dwTotalSendLen_];
-	szRecvBuf_ = new char[dwTotalRecvLen_];
-	if (NULL == szSendBuf_ || NULL == szRecvBuf_) throw CNetErr("new client buf failed!", true);
+	sendBuf_ = new char[dwTotalSendLen_];
+	recvBuf_ = new char[dwTotalRecvLen_];
+	if (NULL == sendBuf_ || NULL == recvBuf_) throw CNetErr("new client buf failed!", true);
 
 	hEvent_ = ::CreateEvent(NULL, 0, 0, NULL);
 	if (NULL == hEvent_)  throw CNetErr("create event failed!", true);
@@ -726,12 +730,12 @@ bool CClientNetMgr::OnRecvCompleteOld(DWORD dwTransNum)
 	}
 
 	dwRecvLen_ += dwTransNum;
-	if (dwRecvLen_ >= sizeof(((NetMsgHead*)szRecvBuf_)->dwSize))
+	if (dwRecvLen_ >= sizeof(((NetMsgHead*)recvBuf_)->dwSize))
 	{
 		DWORD dwSum = 0; bool bReturn = true;
 		while (dwRecvLen_ >= sizeof(NetMsgHead))
 		{
-			NetMsgHead *pNetMsgHead = (NetMsgHead*)((char*)szRecvBuf_ + dwSum);
+			NetMsgHead *pNetMsgHead = (NetMsgHead*)((char*)recvBuf_ + dwSum);
 			DWORD dwSize = pNetMsgHead->dwSize;
 			if (dwRecvLen_ < dwSize) break;
 
@@ -743,7 +747,7 @@ bool CClientNetMgr::OnRecvCompleteOld(DWORD dwTransNum)
 			//}
 			//else
 			{ 
-				NetMsgHead *pNetMsgHead = (NetMsgHead *)((char*)szRecvBuf_ + dwSum);
+				NetMsgHead *pNetMsgHead = (NetMsgHead *)((char*)recvBuf_ + dwSum);
 				if (!pKernelMgr_->OnNetMessageOld(pNetMsgHead, (char *)(pNetMsgHead + 1), dwSize - sizeof(NetMsgHead)))
 				{
 					bReturn = false; break;
@@ -754,7 +758,7 @@ bool CClientNetMgr::OnRecvCompleteOld(DWORD dwTransNum)
 			dwSum += dwSize;
 		}
 
-		memmove(szRecvBuf_, szRecvBuf_ + dwSum, dwRecvLen_);
+		memmove(recvBuf_, recvBuf_ + dwSum, dwRecvLen_);
 
 		if (!bReturn)
 		{
@@ -775,12 +779,12 @@ bool CClientNetMgr::OnRecvComplete(DWORD dwTransNum)
 	}
 
 	dwRecvLen_ += dwTransNum;
-	if (dwRecvLen_ >= sizeof(((CNetMsgHead*)szRecvBuf_)->size_))
+	if (dwRecvLen_ >= sizeof(((CNetMsgHead*)recvBuf_)->size_))
 	{
 		DWORD dwSum = 0; bool bReturn = true;
 		while (dwRecvLen_ >= sizeof(CNetMsgHead))
 		{
-			CNetMsgHead *pNetMsgHead = (CNetMsgHead*)((char*)szRecvBuf_ + dwSum);
+			CNetMsgHead *pNetMsgHead = (CNetMsgHead*)((char*)recvBuf_ + dwSum);
 			DWORD dwSize = pNetMsgHead->size_;
 
 			if (dwRecvLen_ < dwSize) break;
@@ -797,7 +801,7 @@ bool CClientNetMgr::OnRecvComplete(DWORD dwTransNum)
 			dwSum += dwSize;
 		}
 
-		memmove(szRecvBuf_, szRecvBuf_ + dwSum, dwRecvLen_);
+		memmove(recvBuf_, recvBuf_ + dwSum, dwRecvLen_);
 
 		if (!bReturn)
 		{
@@ -826,7 +830,7 @@ bool CClientNetMgr::OnSendComplete(DWORD dwSendCount, NETOVERLAPPED* pNetOL)
 		if (dwSendCount <= dwSendLen_)
 		{
 			dwSendLen_ -= dwSendCount;
-			memmove(szSendBuf_, szSendBuf_ + dwSendCount, dwSendLen_);
+			memmove(sendBuf_, sendBuf_ + dwSendCount, dwSendLen_);
 			return WSASendData();
 		}
 	}
@@ -848,7 +852,7 @@ bool CClientNetMgr::WSASendData()
 	{
 		if (dwSendLen_ > 0)
 		{
-			SendOverLPData_.wsabuf.buf = szSendBuf_;
+			SendOverLPData_.wsabuf.buf = sendBuf_;
 			SendOverLPData_.wsabuf.len = dwSendLen_;
 			SendOverLPData_.issendbuff = 1;
 			bSending_ = true;
@@ -974,7 +978,7 @@ bool CClientNetMgr::SendDataOld(DWORD dwMainID, DWORD dwSubID)
 
 	if (sizeof(NetMsgHead) + dwSendLen_ > dwTotalSendLen_)  return false;
 
-	NetMsgHead *pMsgHead = (NetMsgHead*)(szSendBuf_ + dwSendLen_);
+	NetMsgHead *pMsgHead = (NetMsgHead*)(sendBuf_ + dwSendLen_);
 	int nSize = sizeof(NetMsgHead);
 	pMsgHead->dwMainID = dwMainID;
 	pMsgHead->dwSubID = dwSubID;
@@ -994,14 +998,14 @@ bool CClientNetMgr::SendDataOld(DWORD dwMainID, DWORD dwSubID, void* pMsgData, D
 
 	if (sizeof(NetMsgHead) + dwSendLen_ > dwTotalSendLen_)  return false;
 
-	NetMsgHead *pMsgHead = (NetMsgHead*)(szSendBuf_ + dwSendLen_);
+	NetMsgHead *pMsgHead = (NetMsgHead*)(sendBuf_ + dwSendLen_);
 	int nSize = sizeof(NetMsgHead);
 	pMsgHead->dwMainID = dwMainID;
 	pMsgHead->dwSubID = dwSubID;
 	pMsgHead->dwSize = dwMsgLen + nSize;
 	pMsgHead->dwReserve = dwCheckCode_;
 
-	memcpy(szSendBuf_ + dwSendLen_ + nSize, (char*)pMsgData, dwMsgLen);
+	memcpy(sendBuf_ + dwSendLen_ + nSize, (char*)pMsgData, dwMsgLen);
 	dwSendLen_ += nSize + dwMsgLen;
 
 	return WSASendData();
@@ -1031,7 +1035,7 @@ bool CClientNetMgr::SendDataOld(void* pAllMsgData, DWORD dwAllMsgLen)
 		return WSASendData();
 	}
 		
-	memcpy(szSendBuf_ + dwSendLen_, (char*)pAllMsgData, dwAllMsgLen);
+	memcpy(sendBuf_ + dwSendLen_, (char*)pAllMsgData, dwAllMsgLen);
 	dwSendLen_ += dwAllMsgLen;
 
 	return WSASendData();
@@ -1061,7 +1065,7 @@ bool CClientNetMgr::SendData(void* pAllMsgData, DWORD dwAllMsgLen)
 		return WSASendData();
 	}
 
-	memcpy(szSendBuf_ + dwSendLen_, (char*)pAllMsgData, dwAllMsgLen);
+	memcpy(sendBuf_ + dwSendLen_, (char*)pAllMsgData, dwAllMsgLen);
 	dwSendLen_ += dwAllMsgLen;
 
 	return WSASendData();
@@ -1069,7 +1073,7 @@ bool CClientNetMgr::SendData(void* pAllMsgData, DWORD dwAllMsgLen)
 
 bool CClientNetMgr::CheckSendData()
 {
-	NetMsgHead* pMsgHead = (NetMsgHead*)szSendBuf_;
+	NetMsgHead* pMsgHead = (NetMsgHead*)sendBuf_;
 	DWORD &dwSize = pMsgHead->dwSize;
 
 	try
@@ -1080,11 +1084,11 @@ bool CClientNetMgr::CheckSendData()
 			if (dwSize > MAX_MESSAGE_LENGTH) throw "message too long!";
 			if (dwSize > dwSendLen_)         throw "not full message!";
 
-			int nRe = send(GetSocket(), szSendBuf_, dwSize, 0);  //发送A包
+			int nRe = send(GetSocket(), sendBuf_, dwSize, 0);  //发送A包
 			if (nRe > 0)
 			{
 				int dwSizeTmp = dwSize;
-				memmove(szSendBuf_, szSendBuf_ + nRe, dwSendLen_ - nRe);
+				memmove(sendBuf_, sendBuf_ + nRe, dwSendLen_ - nRe);
 				dwSendLen_ -= nRe;
 
 				if (nRe == dwSizeTmp)  continue;               //A包完成
@@ -1093,8 +1097,8 @@ bool CClientNetMgr::CheckSendData()
 					int nSendSize = dwSizeTmp - nRe;
 					for (int i = 0; i < 5; i++)                    //继续发A包
 					{
-						nRe = send(GetSocket(), szSendBuf_, nSendSize, 0);
-						memmove(szSendBuf_, szSendBuf_ + nRe, dwSendLen_ - nRe);
+						nRe = send(GetSocket(), sendBuf_, nSendSize, 0);
+						memmove(sendBuf_, sendBuf_ + nRe, dwSendLen_ - nRe);
 						dwSendLen_ -= nRe;
 
 						if (nRe == nSendSize) break;

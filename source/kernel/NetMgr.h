@@ -107,8 +107,8 @@ public:
 	CClientNetMgr();
 	~CClientNetMgr();
 private:
-	char     *szRecvBuf_;                      //接收数据buffer
-	char     *szSendBuf_;                      //发送数据buffer
+	char     *recvBuf_;                      //接收数据buffer
+	char     *sendBuf_;                      //发送数据buffer
 	DWORD     dwCheckCode_;
 	HANDLE    hEvent_;                         //等待事件
 	HANDLE    hRSThreadHandle_;                //收发线程句柄

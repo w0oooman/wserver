@@ -11,8 +11,8 @@ CTCPSocket::CTCPSocket(DWORD dwIndex)
 {
 	dwIndex_ = dwIndex;//TCPSOCKET_INVALID_INDEX;
 	pNetMgr_ = NULL;
-	szSendBuf_ = NULL;
-	szRecvBuf_ = NULL;
+	sendBuf_ = NULL;
+	recvBuf_ = NULL;
 	socket_ = INVALID_SOCKET;
 	bSending_ = false;
 	bRecving_ = false;
@@ -21,6 +21,10 @@ CTCPSocket::CTCPSocket(DWORD dwIndex)
 	dwTotalRecvLen_ = RCV_SIZE;
 	dwTotalSendLen_ = SND_SIZE;
 	bIsListHaveData_ = false;
+
+#ifdef IS_USE_CIRCLE_BUFFER
+	recvTmpBuf_ = NULL;
+#endif
 }
 
 CTCPSocket::~CTCPSocket()
@@ -28,8 +32,12 @@ CTCPSocket::~CTCPSocket()
 	dwIndex_ = TCPSOCKET_INVALID_INDEX;
 	pNetMgr_ = NULL;
 	bIsListHaveData_ = false;
-	delete []szSendBuf_;
-	delete []szRecvBuf_;
+	delete []sendBuf_;
+	delete []recvBuf_;
+
+#ifdef IS_USE_CIRCLE_BUFFER
+	delete[]recvTmpBuf_;
+#endif
 }
 
 bool CTCPSocket::IsCanClose()
@@ -67,9 +75,9 @@ void CTCPSocket::ResetData()
 	memset(&RecvOverLPData_, 0, sizeof(RecvOverLPData_));
 
 	SendOverLPData_.type = SOCKET_SND;
-	SendOverLPData_.wsabuf.buf = szSendBuf_;
+	SendOverLPData_.wsabuf.buf = sendBuf_;
 	RecvOverLPData_.type = SOCKET_RCV;
-	RecvOverLPData_.wsabuf.buf = szRecvBuf_;
+	RecvOverLPData_.wsabuf.buf = recvBuf_;
 
 	dwSendLen_ = 0;
 	dwRecvLen_ = 0;
@@ -79,8 +87,10 @@ void CTCPSocket::ResetData()
 	bIsListHaveData_ = false;
 	List_.Clear();
 
-	//m_dwRecvBegin = 0;  //whb
-	//m_dwRecvEnd = 0;    //whb
+#ifdef IS_USE_CIRCLE_BUFFER
+	m_dwRecvBegin = 0;
+	m_dwRecvEnd = 0;
+#endif
 }
 
 bool CTCPSocket::IsValidRoundIndex(DWORD dwRoundIndex)const
@@ -139,8 +149,8 @@ bool CTCPSocket::RecvData()
 	bRecving_ = true;
 
 	DWORD dwRecvBytes = 0, dwFlags = 0;
-	//RecvOverLPData_.wsabuf.buf=szRecvBuf_+dwRecvLen_;  //wsabuf.len=0时，此句其实没什么用
-	//RecvOverLPData_.wsabuf.buf=szRecvBuf_+m_dwRecvBegin;
+	//RecvOverLPData_.wsabuf.buf=recvBuf_+dwRecvLen_;  //wsabuf.len=0时，此句其实没什么用
+	//RecvOverLPData_.wsabuf.buf=recvBuf_+m_dwRecvBegin;
 	RecvOverLPData_.wsabuf.len = 0; //设为0，有数据时用recv接收,节约非分页内存!  
 	RecvOverLPData_.roundindex = dwRoundIndex_;
 	if ((WSARecv(socket_, &RecvOverLPData_.wsabuf, 1, &dwRecvBytes, &dwFlags, &RecvOverLPData_.overlapped, NULL) == SOCKET_ERROR)
@@ -170,7 +180,7 @@ bool CTCPSocket::SendDataOld(DWORD dwMainID, DWORD dwSubID, DWORD dwRoundIndex)
 
 	if (sizeof(NetMsgHead) + dwSendLen_ > dwTotalSendLen_)       return false;
 
-	NetMsgHead *pMsgHead = (NetMsgHead*)(szSendBuf_ + dwSendLen_);
+	NetMsgHead *pMsgHead = (NetMsgHead*)(sendBuf_ + dwSendLen_);
 	pMsgHead->dwSize = sizeof(NetMsgHead);
 	pMsgHead->dwMainID = dwMainID;
 	pMsgHead->dwSubID = dwSubID;
@@ -197,13 +207,13 @@ bool CTCPSocket::SendDataOld(DWORD dwMainID, DWORD dwSubID, void* pMsgData, DWOR
 		return false;
 	}
 
-	NetMsgHead *pMsgHead = (NetMsgHead*)(szSendBuf_ + dwSendLen_);
+	NetMsgHead *pMsgHead = (NetMsgHead*)(sendBuf_ + dwSendLen_);
 	pMsgHead->dwSize = sizeof(NetMsgHead) + dwMsgLen;
 	pMsgHead->dwMainID = dwMainID;
 	pMsgHead->dwSubID = dwSubID;
 	pMsgHead->dwReserve = 0;
 
-	memcpy(szSendBuf_ + dwSendLen_ + sizeof(NetMsgHead), (char*)pMsgData, dwMsgLen);
+	memcpy(sendBuf_ + dwSendLen_ + sizeof(NetMsgHead), (char*)pMsgData, dwMsgLen);
 	dwSendLen_ += pMsgHead->dwSize;
 
 	return WSASendData();
@@ -223,7 +233,7 @@ bool CTCPSocket::SendDataOld(void* pAllMsgData, DWORD dwAllMsgLen, DWORD dwRound
 		WSASendData();
 		return false;
 	}
-	memcpy(szSendBuf_ + dwSendLen_, (char*)pAllMsgData, dwAllMsgLen);
+	memcpy(sendBuf_ + dwSendLen_, (char*)pAllMsgData, dwAllMsgLen);
 	dwSendLen_ += dwAllMsgLen;
 
 	return WSASendData();
@@ -255,7 +265,7 @@ bool CTCPSocket::SendData(DWORD dwRoundIndex, void* pAllMsgData, DWORD dwAllMsgL
 		return WSASendData();
 	}
 
-	memcpy(szSendBuf_ + dwSendLen_, (char*)pAllMsgData, dwAllMsgLen);
+	memcpy(sendBuf_ + dwSendLen_, (char*)pAllMsgData, dwAllMsgLen);
 	dwSendLen_ += dwAllMsgLen;
 
 	return WSASendData();
@@ -285,7 +295,7 @@ bool CTCPSocket::SendData(void* pAllMsgData, DWORD dwAllMsgLen)
 		return WSASendData();
 	}
 
-	memcpy(szSendBuf_ + dwSendLen_, (char*)pAllMsgData, dwAllMsgLen);
+	memcpy(sendBuf_ + dwSendLen_, (char*)pAllMsgData, dwAllMsgLen);
 	dwSendLen_ += dwAllMsgLen;
 
 	return WSASendData();
@@ -299,7 +309,7 @@ bool CTCPSocket::WSASendData()
 	{
 		if (dwSendLen_ > 0)
 		{
-			SendOverLPData_.wsabuf.buf = szSendBuf_;
+			SendOverLPData_.wsabuf.buf = sendBuf_;
 			SendOverLPData_.wsabuf.len = dwSendLen_;
 			SendOverLPData_.roundindex = dwRoundIndex_;
 			SendOverLPData_.issendbuff = 1;
@@ -352,7 +362,7 @@ bool CTCPSocket::OnRecvComplete(DWORD dwRoundIndex)
 	assert(true == bRecving_);
 	bRecving_ = false;
 
-	int nCount = ::recv(socket_, szRecvBuf_ + dwRecvLen_, dwTotalRecvLen_ - dwRecvLen_, 0);
+	int nCount = ::recv(socket_, recvBuf_ + dwRecvLen_, dwTotalRecvLen_ - dwRecvLen_, 0);
 
 	if (nCount <= 0)
 	{
@@ -367,28 +377,28 @@ bool CTCPSocket::OnRecvComplete(DWORD dwRoundIndex)
 	//方式1 处理一次消息就memmove
 	while (dwRecvLen_ >= sizeof(CNetMsgHead))
 	{
-		CNetMsgHead *pNetMsgHead = (CNetMsgHead*)szRecvBuf_;
+		CNetMsgHead *pNetMsgHead = (CNetMsgHead*)recvBuf_;
 		DWORD dwSize = pNetMsgHead->size_;
 		if (dwRecvLen_ < dwSize) break;
 
 		if (dwSize < sizeof(CNetMsgHead) || dwSize > MAX_MESSAGE_LENGTH)    { pNetMgr_->CloseSocket(this, dwRoundIndex_); return false; }
 
-		//if (((NetMsgHead*)szRecvBuf_)->dwReserve != socket_)               { pNetMgr_->CloseSocket(this, dwRoundIndex_); return false; }
+		//if (((NetMsgHead*)recvBuf_)->dwReserve != socket_)               { pNetMgr_->CloseSocket(this, dwRoundIndex_); return false; }
 
-		if (((CNetMsgHead*)szRecvBuf_)->protocol_ != CNetMsgHead::NETMSG_HEART_BEAT)
+		if (((CNetMsgHead*)recvBuf_)->protocol_ != CNetMsgHead::NETMSG_HEART_BEAT)
 		{
-			if (!pNetMgr_->OnNetMessage(CONNECTID_MIX(dwIndex_, dwRoundIndex_), szRecvBuf_, dwSize)) { pNetMgr_->CloseSocket(this, dwRoundIndex_); return false; }
+			if (!pNetMgr_->OnNetMessage(CONNECTID_MIX(dwIndex_, dwRoundIndex_), recvBuf_, dwSize)) { pNetMgr_->CloseSocket(this, dwRoundIndex_); return false; }
 		}
 
 		dwRecvLen_ -= dwSize;
-		memmove(szRecvBuf_, szRecvBuf_ + dwSize, dwRecvLen_);
+		memmove(recvBuf_, recvBuf_ + dwSize, dwRecvLen_);
 	}
 
 	//方式2 处理完了再memmove
 	//DWORD dwSum = 0; bool bReturn = true;
 	//while (dwRecvLen_ >= sizeof(CNetMsgHead))
 	//{
-	//	CNetMsgHead *pNetMsgHead = (CNetMsgHead*)((char*)szRecvBuf_ + dwSum);
+	//	CNetMsgHead *pNetMsgHead = (CNetMsgHead*)((char*)recvBuf_ + dwSum);
 	//	WORD dwSize = pNetMsgHead->size_;
 	//	if (dwRecvLen_ < dwSize) break;
 
@@ -396,16 +406,16 @@ bool CTCPSocket::OnRecvComplete(DWORD dwRoundIndex)
 
 	//	//if (pNetMsgHead->dwReserve != socket_) { bReturn = false; break; }
 
-	//	if (((CNetMsgHead*)szRecvBuf_)->protocol_ != CNetMsgHead::NETMSG_HEART_BEAT)
+	//	if (((CNetMsgHead*)recvBuf_)->protocol_ != CNetMsgHead::NETMSG_HEART_BEAT)
 	//	{
-	//		if (!pNetMgr_->OnNetMessage(CONNECTID_MIX(dwIndex_, dwRoundIndex_), szRecvBuf_, dwSize)) { bReturn = false; break; }
+	//		if (!pNetMgr_->OnNetMessage(CONNECTID_MIX(dwIndex_, dwRoundIndex_), recvBuf_, dwSize)) { bReturn = false; break; }
 	//	}
 
 	//	dwRecvLen_ -= dwSize;
 	//	dwSum += dwSize;
 	//}
 
-	//memmove(szRecvBuf_, szRecvBuf_ + dwSum, dwRecvLen_);
+	//memmove(recvBuf_, recvBuf_ + dwSum, dwRecvLen_);
 
 	//if (!bReturn)
 	//{
@@ -418,84 +428,84 @@ bool CTCPSocket::OnRecvComplete(DWORD dwRoundIndex)
 
 //环形缓冲区(后来发现无实际意义，在单个线程这样操作效率只降不升!),后面考虑做的环形缓冲区应该是这样的:
 //OnSendComplete 和 SendData函数会频繁出现锁竞争的情况，考虑使用环形缓冲放弃锁从而提高效率!!!  whb
-bool CTCPSocket::OnRecvCompleteEx(DWORD dwRoundIndex)
+#ifdef IS_USE_CIRCLE_BUFFER
+bool CTCPSocket::OnRecvCompleteCircle(DWORD dwRoundIndex)
 {
-	//CLockMgr LockMgr(&SingleLock_);
-	////if (!IsValidRoundIndex(dwRoundIndex)) return false;
-	//IS_VALID_ROUNDINDEX(dwRoundIndex);
+	CLockMgr LockMgr(&SingleLock_);
+	IS_VALID_ROUNDINDEX(dwRoundIndex);
 
-	//assert(true == bRecving_);
-	//bRecving_ = false;
+	assert(true == bRecving_);
+	bRecving_ = false;
 
-	//try
-	//{   //dwTotalRecvLen_ 为2的次方才行
-	//	UINT Len = min(dwTotalRecvLen_, dwTotalRecvLen_ - m_dwRecvBegin + m_dwRecvEnd);   //剩余长度
-	//	UINT L = min(Len, dwTotalRecvLen_ - (m_dwRecvBegin & (dwTotalRecvLen_ - 1)));     //右边长度
-	//	int nCount = ::recv(socket_, szRecvBuf_ + (m_dwRecvBegin & (dwTotalRecvLen_ - 1)), L, 0);
-	//	int nLeft = ::recv(socket_, szRecvBuf_, Len - L, 0);
-	//	if (nLeft > 0)
-	//		nCount += nLeft;
+	try
+	{   //dwTotalRecvLen_ 为2的次方才行
+		UINT Len = min(dwTotalRecvLen_, dwTotalRecvLen_ - m_dwRecvBegin + m_dwRecvEnd);   /* 剩余空间长度 */
+		UINT L = min(Len, dwTotalRecvLen_ - (m_dwRecvBegin & (dwTotalRecvLen_ - 1)));     /* 环形缓冲剩余右边长度 */
+		int nCount = ::recv(socket_, recvBuf_ + (m_dwRecvBegin & (dwTotalRecvLen_ - 1)), L, 0); /* 右边填充 */
+		int nLeft = ::recv(socket_, recvBuf_, Len - L, 0); /* 左边填充 */
+		if (nLeft > 0)
+			nCount += nLeft;
 
-	//	if (nCount > 0)
-	//	{
-	//		m_dwRecvBegin += nCount;
+		if (nCount > 0)
+		{
+			m_dwRecvBegin += nCount;
 
-	//		Len = min(dwTotalRecvLen_, m_dwRecvBegin - m_dwRecvEnd);
-	//		if (Len >= dwTotalRecvLen_)   throw "buffer full!";
-	//		L = min(Len, dwTotalRecvLen_ - (m_dwRecvEnd&(dwTotalRecvLen_ - 1)));
+			Len = min(dwTotalRecvLen_, m_dwRecvBegin - m_dwRecvEnd); /* 数据总长度 */
+			if (Len >= dwTotalRecvLen_)   throw "buffer full!";
+			L = min(Len, dwTotalRecvLen_ - (m_dwRecvEnd & (dwTotalRecvLen_ - 1))); /* 环形缓冲右边数据长度 */
 
-	//		if (Len >= sizeof(NetMsgHead))
-	//		{
-	//			//明天检查buf数组是否溢出 whb
-	//			//消息只复制一次,而非环形缓冲则可能重复复制
-	//			CHAR buf[dwTotalRecvLen_];
-	//			memset(buf, 0, dwTotalRecvLen_);
-	//			memcpy(buf, szRecvBuf_ + m_dwRecvEnd, L);
-	//			memcpy(buf + L, szRecvBuf_ + m_dwRecvBegin, Len - L);
-	//			DWORD dwPos = 0;
-	//			DWORD dwSize = ((NetMsgHead*)(buf + dwPos))->dwSize;
+			if (Len >= sizeof(CNetMsgHead))
+			{
+				//明天检查buf数组是否溢出 whb
+				//消息只复制一次,而非环形缓冲则可能重复复制
+				char *pBuf = recvTmpBuf_;
+				memcpy(pBuf, recvBuf_ + (m_dwRecvEnd & (dwTotalRecvLen_ - 1)), L);
+				memcpy(pBuf + L, recvBuf_, Len - L);
+				DWORD dwPos = 0;
+				DWORD dwSize = ((CNetMsgHead*)(pBuf + dwPos))->size_;
 
-	//			while (Len >= sizeof(NetMsgHead) && Len >= dwSize)
-	//			{
-	//				if (dwSize > MAX_MESSAGE_LENGTH)                                           throw "非法数据包!";
+				while (Len >= sizeof(CNetMsgHead) && Len >= dwSize)
+				{
+					if (dwSize > MAX_MESSAGE_LENGTH)                                           throw "非法数据包!";
 
-	//				if (((NetMsgHead*)(buf + dwPos))->dwReserve != socket_)                              throw "密钥校验失败!";
+					//if (((CNetMsgHead*)(buf + dwPos))->dwReserve != socket_)                              throw "密钥校验失败!";
 
-	//				if (!pNetMgr_->OnNetMessage(this, buf + dwPos, dwSize, dwIndex_, dwRoundIndex_))     throw "数据处理失败!";
+					if (!pNetMgr_->OnNetMessage(CONNECTID_MIX(dwIndex_, dwRoundIndex_), recvBuf_, dwSize))     throw "数据处理失败!";
 
-	//				//whb test
-	//				if (Len < dwSize)
-	//				{
-	//					MessageBox(NULL, TEXT("Len<dwSize"), TEXT("error"), MB_OK);
-	//				}
-	//				if (dwPos > dwTotalRecvLen_)
-	//				{
-	//					MessageBox(NULL, TEXT("dwPos>dwTotalRecvLen_"), TEXT("error"), MB_OK);
-	//				}
+					//whb test
+					if (Len < dwSize)
+					{
+						MessageBox(NULL, TEXT("Len<dwSize"), TEXT("error"), MB_OK);
+					}
+					if (dwPos > dwTotalRecvLen_)
+					{
+						MessageBox(NULL, TEXT("dwPos>dwTotalRecvLen_"), TEXT("error"), MB_OK);
+					}
 
-	//				Len -= dwSize;
-	//				dwPos += dwSize;
-	//				m_dwRecvEnd += dwSize;
-	//				dwSize = ((NetMsgHead*)(buf + dwPos))->dwSize;
-	//			}
-	//		}
+					Len -= dwSize;
+					dwPos += dwSize;
+					m_dwRecvEnd += dwSize;
+					dwSize = ((CNetMsgHead*)(pBuf + dwPos))->size_;
+				}
+			}
 
-	//		return RecvData();
-	//	}
-	//	else// 1、SOCKET_ERROR==nCount:socket关闭;2、0==nCount:缓冲区(szRecvBuf_)满
-	//	{
-	//		pNetMgr_->CloseSocket(this, dwRoundIndex_);
-	//		return false;
-	//	}
-	//}
-	//catch (...)
-	//{
-	//	pNetMgr_->CloseSocket(this, dwRoundIndex_);
-	//	return false;
-	//}
+			return RecvData();
+		}
+		else// 1、SOCKET_ERROR==nCount:socket关闭;2、0==nCount:缓冲区(recvBuf_)满
+		{
+			pNetMgr_->CloseSocket(this, dwRoundIndex_);
+			return false;
+		}
+	}
+	catch (...)
+	{
+		pNetMgr_->CloseSocket(this, dwRoundIndex_);
+		return false;
+	}
 
 	return true;
 }
+#endif
 
 bool CTCPSocket::OnSendComplete(DWORD dwSendCount, NETOVERLAPPED* pNetOL)
 {
@@ -508,7 +518,7 @@ bool CTCPSocket::OnSendComplete(DWORD dwSendCount, NETOVERLAPPED* pNetOL)
 		return false;
 	}
 
-	//whb
+	//whb test
 	static DWORD dwTime = 0;
 	static int i = 0; i++;
 	if (1 == i)
@@ -521,17 +531,17 @@ bool CTCPSocket::OnSendComplete(DWORD dwSendCount, NETOVERLAPPED* pNetOL)
 		Log("send complete i = %d,time:  %d分%d秒%d毫秒\n",i, tt / 1000 / 60, tt / 1000 % 60, tt % 1000);
 	}
 
-	//buff
+	/* buff */
 	if (pNetOL->issendbuff)
 	{
 		if (dwSendCount <= dwSendLen_)
 		{
 			dwSendLen_ -= dwSendCount;
-			memmove(szSendBuf_, szSendBuf_ + dwSendCount, dwSendLen_);
+			memmove(sendBuf_, sendBuf_ + dwSendCount, dwSendLen_);
 			return WSASendData();
 		}
 	}
-	//list
+	/* list */
 	else
 	{
 		delete pNetOL->wsabuf.buf;
@@ -554,10 +564,16 @@ void CTCPSocket::SetNetMgr(CNetMgr* pNetMgr)
 		dwTotalSendLen_ = SND_SIZE_SPECIAL;
 		dwTotalRecvLen_ = RCV_SIZE_SPECIAL;
 	}
-	if (szSendBuf_) delete szSendBuf_;
-	if (szRecvBuf_) delete szRecvBuf_;
-	szSendBuf_ = new char[dwTotalSendLen_];
-	szRecvBuf_ = new char[dwTotalRecvLen_];
+	if (sendBuf_) delete sendBuf_;
+	if (recvBuf_) delete recvBuf_;
+	sendBuf_ = new char[dwTotalSendLen_];
+	recvBuf_ = new char[dwTotalRecvLen_];
+
+#ifdef IS_USE_CIRCLE_BUFFER
+	if (recvTmpBuf_) delete recvTmpBuf_;
+	recvTmpBuf_ = new char[dwTotalRecvLen_];
+#endif
+
 	ResetData();
 }
 
