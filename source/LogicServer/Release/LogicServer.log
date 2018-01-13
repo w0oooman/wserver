@@ -1,5 +1,5 @@
-﻿Build started 2017/11/3 20:33:27.
-     1>Project "F:\MyTest\myTest\testCPP\server\2\server+redis\source\LogicServer\LogicServer.vcxproj" on node 2 (Build target(s)).
+﻿Build started 2018/1/13 14:05:10.
+     1>Project "F:\MyTest\myTest\testCPP\server\2\server_redis_git\source\LogicServer\LogicServer.vcxproj" on node 2 (Build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Release\) contains files shared from another project (GameServer.vcxproj, LogicServer.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>PreBuildEvent:
          copy ..\..\bin\Win32\kernel.dll ..\..\bin\Win32\WLogicServer\
@@ -8,21 +8,9 @@
          已复制         1 个文件。
          已复制         1 个文件。
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\bin\Win32\WLogicServer\WLogicServer.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\..\bin\Win32\WLogicServer\WLogicServer.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\bin\Win32\WLogicServer\WLogicServer.lib" /MACHINE:X86 /SAFESEH Release\IniParser.obj
-         Release\Log.obj
-         Release\LogicServer.obj
-         Release\LogicServerLogin.obj
-         Release\LuaManager.obj
-         Release\main.obj
-         Release\Player.obj
-         Release\PlayerMgr.obj
-         F:\MyTest\myTest\testCPP\server\2\server+redis\lib\Win32\kernel.lib
-         Generating code
-     1>f:\mytest\mytest\testcpp\server\2\server+redis\source\logicserver\playermgr.cpp(100): warning C4715: 'CPlayerMgr::AddPlayer' : not all control paths return a value
-         Finished generating code
-         LogicServer.vcxproj -> F:\MyTest\myTest\testCPP\server\2\server+redis\source\LogicServer\..\..\bin\Win32\WLogicServer\WLogicServer.exe
-     1>Done Building Project "F:\MyTest\myTest\testCPP\server\2\server+redis\source\LogicServer\LogicServer.vcxproj" (Build target(s)).
+         LogicServer.vcxproj -> F:\MyTest\myTest\testCPP\server\2\server_redis_git\source\LogicServer\..\..\bin\Win32\WLogicServer\WLogicServer.exe
+     1>Done Building Project "F:\MyTest\myTest\testCPP\server\2\server_redis_git\source\LogicServer\LogicServer.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.93
+Time Elapsed 00:00:00.33

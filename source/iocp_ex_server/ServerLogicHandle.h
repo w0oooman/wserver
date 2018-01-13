@@ -13,7 +13,7 @@ class CServerLogicHandle
 {
 public:
 	CServerLogicHandle();
-	~CServerLogicHandle();
+	virtual ~CServerLogicHandle();
 private:
 	CMainMgr     *m_pMainMgr;
 	CPlayerMgr   *m_pPlayerMgr;        //玩家管理接口

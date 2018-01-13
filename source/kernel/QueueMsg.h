@@ -20,7 +20,7 @@ protected:
 
 public:
 	CQueueList();
-	~CQueueList();
+	virtual ~CQueueList();
 public:
 	DWORD  GetCount() const;
 	void   Clear();
@@ -86,7 +86,7 @@ private:
 	CQueueList<tagQueueData*, tagQueueData*>  QueueList_;      //∂”¡–±Ì
 public:
 	CQueueMsg();
-	~CQueueMsg();
+	virtual ~CQueueMsg();
 	bool   AddData(ULLONG llConnectID, const void* pData, DWORD dwSize, BYTE byQueueType, WORD wDBType = 0);
 	bool   AddDataOld(DWORD dwMainID, DWORD dwSubID, const void* pData, DWORD dwSize, BYTE byQueueType);
 	bool   AddData(const void* pData, DWORD dwSize, BYTE byQueueType);
@@ -111,7 +111,7 @@ public:
 	void    **ppBuf_;
 public:
 	CLockFreeQueue(DWORD dwSize);
-	~CLockFreeQueue();
+	virtual ~CLockFreeQueue();
 };
 
 class CLockFreeMgr:public CQueueBase
@@ -123,7 +123,7 @@ private:
 
 public:
 	CLockFreeMgr();
-	~CLockFreeMgr();
+	virtual ~CLockFreeMgr();
 private:
 	bool   PUSHBack(void *data);
 	void*  POPFront();

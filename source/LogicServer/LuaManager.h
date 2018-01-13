@@ -30,7 +30,7 @@ public:
 		m_func = NULL;
 		m_para.clear();
 	}
-	~LUAEvent()
+	virtual ~LUAEvent()
 	{
 		int num = m_para.size();
 		for (int i = 0; i < num; i++)

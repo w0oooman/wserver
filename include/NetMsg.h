@@ -41,7 +41,7 @@ public:
 	{
 		size_ = sizeof(CDUserData2LogicMsg);
 	}
-	~CDUserData2LogicMsg(){}
+	virtual ~CDUserData2LogicMsg(){}
 };
 //.............................................................................................
 
@@ -54,7 +54,7 @@ public:
 	{
 		size_ = sizeof(CDVersionErrorMsg);
 	}
-	~CDVersionErrorMsg(){}
+	virtual ~CDVersionErrorMsg(){}
 };
 //.............................................................................................
 
@@ -70,7 +70,7 @@ public:
 	{
 		size_ = sizeof(CDVersionErrorMsg);
 	}
-	~CDSaveDataMsg(){}
+	virtual ~CDSaveDataMsg(){}
 };
 //.............................................................................................
 
@@ -99,7 +99,7 @@ public:
 	{
 		size_ = sizeof(CDRegisterMsg);
 	}
-	~CDRegisterMsg(){}
+	virtual ~CDRegisterMsg(){}
 	enum 
 	{
 		REG_SUCCESS = 1,//注册成功
@@ -126,7 +126,7 @@ public:
 		memset(m_password, 0, sizeof(m_password));
 		size_ = sizeof(CULoginMsg);
 	}
-	~CULoginMsg(){}
+	virtual ~CULoginMsg(){}
 };
 
 //登录/获取角色列表
@@ -164,7 +164,7 @@ public:
 	{
 		memset(m_rolename, 0, sizeof(m_rolename));
 	}
-	~CUEnterMsg(){}
+	virtual ~CUEnterMsg(){}
 };
 
 //进入-下行
@@ -195,7 +195,7 @@ public:
 	{
 		size_ = sizeof(CUChatMsg);
 	}
-	~CUChatMsg(){}
+	virtual ~CUChatMsg(){}
 };
 //.............................................................................................
 
@@ -205,7 +205,7 @@ class CDUserOfflineMsg : public CNetMsgHead
 {
 public:
 	CDUserOfflineMsg() : CNetMsgHead(CNetMsgHead::NETMSG_USER_OFFLINE){ }
-	~CDUserOfflineMsg(){}
+	virtual ~CDUserOfflineMsg(){}
 };
 
 //.............................................................................................
@@ -217,7 +217,7 @@ class CTestMsg : public CNetMsgHead
 public:
 	char buf[100];
 	CTestMsg() : CNetMsgHead(CNetMsgHead::NETMSG_MY_TEST){ memset(buf, 0, sizeof(buf)); }
-	~CTestMsg(){}
+	virtual ~CTestMsg(){}
 };
 
 //.............................................................................................

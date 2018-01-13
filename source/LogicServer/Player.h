@@ -11,7 +11,7 @@ class CPlayer
 {
 public:
 	CPlayer();
-	~CPlayer();
+	virtual ~CPlayer();
 private:
 	ULLONG m_llConnectID;     //Íæ¼ÒÁ¬½ÓID
 

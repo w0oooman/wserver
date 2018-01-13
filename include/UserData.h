@@ -17,7 +17,7 @@ public:
 	{
 		Reset();
 	}
-	~CUserData()
+	virtual ~CUserData()
 	{
 
 	}

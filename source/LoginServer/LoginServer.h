@@ -20,7 +20,7 @@ private:
 	CLoginServerLogic   *m_pLoginServerLogic;
 public:
 	CLoginServer();
-	~CLoginServer();
+	virtual ~CLoginServer();
 public:
 	virtual void OnEvent(int timerID, void *data);
 

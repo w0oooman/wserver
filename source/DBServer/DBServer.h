@@ -15,7 +15,7 @@ private:
 	CDBManager    *m_pDBmanager;
 public:
 	CDBServer();
-	~CDBServer();
+	virtual ~CDBServer();
 public:
 	virtual void OnEvent(int timerID, void *data);
 

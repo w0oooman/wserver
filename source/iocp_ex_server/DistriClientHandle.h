@@ -9,7 +9,7 @@ class CDistriClientHandle :public CClientCKernelMgr, virtual public CNoInherit <
 {
 public:
 	CDistriClientHandle();
-	~CDistriClientHandle();
+	virtual ~CDistriClientHandle();
 public:
 	bool  Init(LPCTSTR lpIP, USHORT usPort);
 	bool  Start();

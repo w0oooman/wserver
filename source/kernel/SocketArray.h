@@ -15,7 +15,7 @@ private:
 	CTCPSocket    **ppTempTCPSocketArray_;   //socket临时活动指针数组
 public:
 	CSocketArray();
-	~CSocketArray();
+	virtual ~CSocketArray();
 private:
 	void         UnInit();
 public:

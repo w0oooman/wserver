@@ -1,60 +1,9 @@
-﻿Build started 2017/11/3 20:33:19.
-     1>Project "F:\MyTest\myTest\testCPP\server\2\server+redis\source\lua\lua.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../ /Zi /nologo /W3 /WX- /sdl /Od /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _LIB /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt "..\..\3rd\lua-5.3.3\src\lserialize.c"
-         lserialize.c
-     1>..\..\3rd\lua-5.3.3\src\lserialize.c(391): warning C4013: 'serialize_table' undefined; assuming extern returning int
-     1>..\..\3rd\lua-5.3.3\src\lserialize.c(468): warning C4090: 'function' : different 'const' qualifiers
-     1>..\..\3rd\lua-5.3.3\src\lserialize.c(511): warning C4090: 'initializing' : different 'const' qualifiers
-     1>..\..\3rd\lua-5.3.3\src\lserialize.c(586): warning C4013: 'unserialize_table' undefined; assuming extern returning int
-       Lib:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"../../lib/Win32/lua.lib" /NOLOGO /LTCG Release\dtoa.obj
-         Release\fpconv.obj
-         Release\g_fmt.obj
-         Release\lua_cjson.obj
-         Release\strbuf.obj
-         Release\lapi.obj
-         Release\lauxlib.obj
-         Release\lbaselib.obj
-         Release\lbitlib.obj
-         Release\lcode.obj
-         Release\lcorolib.obj
-         Release\lctype.obj
-         Release\ldblib.obj
-         Release\ldebug.obj
-         Release\ldo.obj
-         Release\ldump.obj
-         Release\lfunc.obj
-         Release\lgc.obj
-         Release\linit.obj
-         Release\liolib.obj
-         Release\llex.obj
-         Release\lmathlib.obj
-         Release\lmem.obj
-         Release\loadlib.obj
-         Release\lobject.obj
-         Release\lopcodes.obj
-         Release\loslib.obj
-         Release\lparser.obj
-         Release\lserialize.obj
-         Release\lstate.obj
-         Release\lstring.obj
-         Release\lstrlib.obj
-         Release\ltable.obj
-         Release\ltablib.obj
-         Release\ltm.obj
-         Release\lua.obj
-         Release\luac.obj
-         Release\lundump.obj
-         Release\lutf8lib.obj
-         Release\lvm.obj
-         Release\lzio.obj
-     1>lua.obj : warning LNK4006: _main already defined in luac.obj; second definition ignored
-     1>fpconv.obj : warning LNK4006: _fpconv_g_fmt already defined in g_fmt.obj; second definition ignored
-     1>dtoa.obj : warning LNK4006: _fpconv_strtod already defined in fpconv.obj; second definition ignored
-         lua.vcxproj -> F:\MyTest\myTest\testCPP\server\2\server+redis\source\lua\../../lib/Win32/lua.lib
-     1>Done Building Project "F:\MyTest\myTest\testCPP\server\2\server+redis\source\lua\lua.vcxproj" (Build target(s)).
+﻿Build started 2018/1/13 14:04:29.
+     1>Project "F:\MyTest\myTest\testCPP\server\2\server_redis_git\source\lua\lua.vcxproj" on node 3 (Build target(s)).
+     1>Lib:
+         lua.vcxproj -> F:\MyTest\myTest\testCPP\server\2\server_redis_git\source\lua\../../lib/Win32/lua.lib
+     1>Done Building Project "F:\MyTest\myTest\testCPP\server\2\server_redis_git\source\lua\lua.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.78
+Time Elapsed 00:00:00.07

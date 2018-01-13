@@ -31,7 +31,7 @@ private:
 	vector<string>  m_vecData;
 public:
 	CDBManager();
-	~CDBManager();
+	virtual ~CDBManager();
 
 private:
 	void InitRedisName();

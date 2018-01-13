@@ -19,7 +19,7 @@ private:
 
 public:
 	CLock();
-	~CLock();
+	virtual ~CLock();
 
 	//×èÈû
 	inline void Lock();
@@ -41,7 +41,7 @@ public:
 	  µ÷ÓÃUnLock().
 	*/
 	CLockMgr(CLock* pLock, bool bAuto = true);
-	~CLockMgr();
+	virtual ~CLockMgr();
 	void Lock();
 	void UnLock();
 };

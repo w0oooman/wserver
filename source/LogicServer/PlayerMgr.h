@@ -12,7 +12,7 @@ class CPlayerMgr
 {
 public:
 	CPlayerMgr();
-	~CPlayerMgr();
+	virtual ~CPlayerMgr();
 private:
 	bool         m_bIsDelayRemove;    //是否延迟移除
 	CLock        m_lockPlayerMgr;     //玩家管理锁

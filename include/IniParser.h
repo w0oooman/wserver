@@ -12,7 +12,7 @@ private:
 	//char           m_szFormatStr[INI_STRING_LEN];
 public:
 	CIniParser();
-	~CIniParser();
+	virtual ~CIniParser();
 private:
 	char* __cdecl FormatStr(const char* format, ...);
 	bool  Open();

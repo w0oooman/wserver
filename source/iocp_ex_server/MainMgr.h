@@ -23,7 +23,7 @@ class CDistriServerHandle;
 {
 public:
 	CMainMgr();
-	~CMainMgr();
+	virtual ~CMainMgr();
 private:
 	//CKernelMgr * pKernelMgr_;    //内核管理类
 	CSqlServerHandle         *m_pSqlServer;        //数据库接口

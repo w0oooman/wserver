@@ -17,7 +17,7 @@ private:
 	CPlayerMgr         *m_pPlayerMgr;
 public:
 	CLogicServer();
-	~CLogicServer();
+	virtual ~CLogicServer();
 private:
 	bool UseLua();
 	void DeleteTimerData(const void *data);

@@ -23,7 +23,7 @@ public:
 		head_.pre_ = head_.next_ = &head_;
 		count_ = 0;
 	}
-	~CDoubleRingList()
+	virtual ~CDoubleRingList()
 	{
 		Clear();
 	}
@@ -104,7 +104,7 @@ public:
 		tail_ = &head_;
 		count_ = 0;
 	}
-	~CSingleRingList()
+	virtual ~CSingleRingList()
 	{
 		Clear();
 	}

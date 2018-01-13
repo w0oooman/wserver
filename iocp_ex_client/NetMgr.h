@@ -11,7 +11,7 @@ class CTCPSocket
 {
 public:
 	CTCPSocket();
-	~CTCPSocket();
+	virtual ~CTCPSocket();
 
 public:
 	bool SendData();
@@ -32,7 +32,7 @@ private:
 
 public:
 	CNetMgrC();
-	~CNetMgrC();
+	virtual ~CNetMgrC();
 private:
 	CLock&   GetLock(){ return SingleLock_; }
 

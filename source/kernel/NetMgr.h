@@ -60,7 +60,7 @@ private:
 
 public:
 	CNetMgr();
-	~CNetMgr();
+	virtual ~CNetMgr();
 
 private:
 	CTCPSocket*       NewSocket();                            //生成一个客户端实例
@@ -105,7 +105,7 @@ class CClientNetMgr:public CNetBase
 {
 public:
 	CClientNetMgr();
-	~CClientNetMgr();
+	virtual ~CClientNetMgr();
 private:
 	char     *recvBuf_;                      //接收数据buffer
 	char     *sendBuf_;                      //发送数据buffer

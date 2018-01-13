@@ -15,7 +15,7 @@ public:
 	CNetErr(string strErrorinfo, bool bIsJoin);
 	//自动生成错误
 	CNetErr();
-	~CNetErr();
+	virtual ~CNetErr();
 private:
 	int  GetErrorID();
 	void SetErrorinfo();

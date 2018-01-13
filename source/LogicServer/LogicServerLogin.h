@@ -14,7 +14,7 @@ private:
 	CLogicServer   *m_pLogicServer;
 public:
 	CLogicServerLogin();
-	~CLogicServerLogin();
+	virtual ~CLogicServerLogin();
 public:
 	virtual void OnEvent(int timerID, void *data);
 

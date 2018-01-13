@@ -17,7 +17,7 @@ private:
 	CServerRegister  *m_pServerRegister;
 public:
 	CLoginServerLogic();
-	~CLoginServerLogic();
+	virtual ~CLoginServerLogic();
 public:
 	virtual void OnEvent(int timerID, void *data);
 	virtual void OnCloseConnect(ULLONG llConnectID);

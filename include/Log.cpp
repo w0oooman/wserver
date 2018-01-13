@@ -68,7 +68,7 @@ public:
 		m_len = 0;
 		m_nWriteTimes = 0;
 	}
-	~CFileHandle()
+	virtual ~CFileHandle()
 	{
 		if (m_stream.is_open())
 		{
@@ -181,7 +181,7 @@ public:
 		m_dclient = new CFileHandle();
 		m_dclient->init("dclient.txt", folder);
 	}
-	~CFileHandleMgr(){
+	virtual ~CFileHandleMgr(){
 		SAFE_DELETE(m_log);
 		SAFE_DELETE(m_thread);
 		SAFE_DELETE(m_debug);

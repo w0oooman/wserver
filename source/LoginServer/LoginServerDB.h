@@ -14,7 +14,7 @@ private:
 	CLoginServer     *m_pLoginServer;
 public:
 	CLoginServerDB();
-	~CLoginServerDB();
+	virtual ~CLoginServerDB();
 public:
 	virtual void OnEvent(int timerID, void *data);
 

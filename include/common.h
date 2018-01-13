@@ -74,7 +74,7 @@ class IniFiles
 {
 public:
 	IniFiles(){};
-	~IniFiles(){};
+	virtual ~IniFiles(){};
 	bool open(const char* pinipath)
 	{
 		return do_open(pinipath);

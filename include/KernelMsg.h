@@ -22,7 +22,7 @@ public:
 	DWORD    reserve2_;   //±£Áô×Ö½Ú2
 public:
 	CNetMsgHead(WORD protocol){ protocol_ = protocol; }
-	~CNetMsgHead(){}
+	virtual ~CNetMsgHead(){}
 public:
 	enum
 	{
@@ -58,7 +58,7 @@ public:
 	{
 
 	}
-	~CDConnectSuccessMsg(){};
+	virtual ~CDConnectSuccessMsg(){};
 };
 //.............................................................................................
 
