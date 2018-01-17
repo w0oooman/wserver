@@ -1,0 +1,29 @@
+=>2018-01-17 11:44:48
+--------------Serialize test start.---------------
+LUA SetEvent
+¡¾warning¡¿:setevent unhandle type:table
+OnServerStart
+=>2018-01-17 11:44:49
+test_event
+22
+33.3
+nil
+hehe
+true
+=>2018-01-17 11:44:52
+----------CMainMgr::OnEvent timerID=111,data=4,time=1516160692
+=>2018-01-17 11:44:53
+----------CMainMgr::OnEvent timerID=110,data=0,time=1516160693
+=>2018-01-17 11:44:54
+all  0·Ö0Ãë109ºÁÃë
+
+=>2018-01-17 11:44:56
+----------CMainMgr::OnEvent timerID=111,data=4,time=1516160696
+=>2018-01-17 11:44:58
+++++++++++++CTimerTest::timer_test data=10
+
+----------CMainMgr::OnEvent timerID=110,data=0,time=1516160698
+=>2018-01-17 11:45:00
+----------CMainMgr::OnEvent timerID=111,data=4,time=1516160700
+=>2018-01-17 11:45:02
+OnServerDwon

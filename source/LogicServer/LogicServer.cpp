@@ -168,7 +168,7 @@ bool CLogicServer::OnNetMessage(const void* pData, DWORD dwSize)
 			Log("s client i %% 1000 == 0 ------%s-----sum=%d", buf, i);
 		}
 
-		bool ret = false;
+		bool ret;
 		//ret  = SendData(dwIndex, pMsgHead->dwMainID, pMsgHead->dwSubID, (char*)pData, pMsgHead->dwSize - sizeof(NetMsgHead), dwRoundIndex);
 		//ret = SendData(pMsgHead, dwMsgLen);
 		ret = SendBatchData(pMsgHead, dwSize);

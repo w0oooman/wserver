@@ -191,8 +191,8 @@ bool CNetMgr::Start()
 
 unsigned int CNetMgr::AcceptThread(void* pData)
 {
-	tagThreadData *ThreadData = (tagThreadData*)pData;
-	CNetMgr *pNetMgr = (CNetMgr *)ThreadData->netmgr;
+	tagThreadData *ThreadData = static_cast<tagThreadData*>(pData);
+	CNetMgr *pNetMgr = static_cast<CNetMgr *>(ThreadData->netmgr);
 	HANDLE  hIOCP = ThreadData->iocp;
 	HANDLE  hCreateIOCP = NULL;
 	sockaddr_in addr;
@@ -261,8 +261,8 @@ unsigned int CNetMgr::AcceptThread(void* pData)
 
 unsigned int CNetMgr::RSThread(void* pData)
 {
-	tagThreadData *ThreadData = (tagThreadData*)pData;
-	CNetMgr *pNetMgr = (CNetMgr *)ThreadData->netmgr;
+	tagThreadData *ThreadData = static_cast<tagThreadData*>(pData);
+	CNetMgr *pNetMgr = static_cast<CNetMgr *>(ThreadData->netmgr);
 	HANDLE  hIOCP = ThreadData->iocp;
 
 	::SetEvent(ThreadData->event);
@@ -311,13 +311,13 @@ unsigned int CNetMgr::RSThread(void* pData)
 //心跳、群发、定时delete资源等
 unsigned int CNetMgr::HeartBeatThread(void* pData)
 {
-	tagThreadData *ThreadData = (tagThreadData*)pData;
-	CNetMgr *pNetMgr = (CNetMgr *)ThreadData->netmgr;
+	tagThreadData *ThreadData = static_cast<tagThreadData*>(pData);
+	CNetMgr *pNetMgr = static_cast<CNetMgr *>(ThreadData->netmgr);
 
 	::SetEvent(ThreadData->event);
 	DWORD  dwTime = GetTickCount();//timeGetTime();
 	char   szBuf[MAX_MESSAGE_LENGTH + 512];
-	tagQueueData *pQueueData = (tagQueueData*)szBuf;
+	tagQueueData *pQueueData = reinterpret_cast<tagQueueData*>(szBuf);
 
 	while (pNetMgr->bIsRunning_)
 	{
@@ -631,6 +631,8 @@ HANDLE CClientNetMgr::GetIOCPHandle()
 
 bool CClientNetMgr::Start()
 {
+	SAFE_DELETE_ARRAY(sendBuf_);
+	SAFE_DELETE_ARRAY(recvBuf_);
 	sendBuf_ = new char[dwTotalSendLen_];
 	recvBuf_ = new char[dwTotalRecvLen_];
 	if (NULL == sendBuf_ || NULL == recvBuf_) throw CNetErr("new client buf failed!", true);
@@ -665,10 +667,10 @@ bool CClientNetMgr::Start()
 
 unsigned int CClientNetMgr::RSThread(void *pData)
 {
-	tagThreadData *ThreadData = (tagThreadData*)pData;
-	CClientNetMgr *pNetMgr = (CClientNetMgr *)ThreadData->netmgr;
+	tagThreadData *ThreadData = static_cast<tagThreadData*>(pData);
+	CClientNetMgr *pNetMgr = static_cast<CClientNetMgr *>(ThreadData->netmgr);
 	HANDLE  hIOCP = ThreadData->iocp;
-	CLockFreeMgr *pQueueMsg = (CLockFreeMgr *)ThreadData->data;
+	CLockFreeMgr *pQueueMsg = static_cast<CLockFreeMgr *>(ThreadData->data);
 
 	::SetEvent(ThreadData->event);
 
@@ -678,7 +680,7 @@ unsigned int CClientNetMgr::RSThread(void *pData)
 
 	int   nQueueBufLen = 1024 * 64;//MAX_MESSAGE_LENGTH + 512;
 	char *pQueueBuf = new char[nQueueBufLen];
-	tagQueueData *pQueueData = (tagQueueData*)pQueueBuf;
+	tagQueueData *pQueueData = reinterpret_cast<tagQueueData*>(pQueueBuf);
 
 	while (pNetMgr->bIsRunning_)
 	{
@@ -1071,6 +1073,7 @@ bool CClientNetMgr::SendData(void* pAllMsgData, DWORD dwAllMsgLen)
 	return WSASendData();
 }
 
+/* 测试版函数，不正规 */
 bool CClientNetMgr::CheckSendData()
 {
 	NetMsgHead* pMsgHead = (NetMsgHead*)sendBuf_;

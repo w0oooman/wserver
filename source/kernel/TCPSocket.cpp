@@ -21,6 +21,7 @@ CTCPSocket::CTCPSocket(DWORD dwIndex)
 	dwTotalRecvLen_ = RCV_SIZE;
 	dwTotalSendLen_ = SND_SIZE;
 	bIsListHaveData_ = false;
+	memset(ipAddr_, 0, IPADDRESS_MAX_LENGTH);
 
 #ifdef IS_USE_CIRCLE_BUFFER
 	recvTmpBuf_ = NULL;

@@ -337,7 +337,7 @@ bool CLuaManager::ClrEvent(int timerID)
 
 bool CLuaManager::OnLuaEvent(void *data)
 {
-	LUAEvent *para = (LUAEvent*)data;
+	LUAEvent *para = static_cast<LUAEvent*>(data);
 	lua_State *L = g_Script.GetLuaState();
 
 	int num = para->m_para.size();
@@ -371,7 +371,7 @@ bool CLuaManager::OnLuaEvent(void *data)
 
 void CLuaManager::DeleteTimerData(const void *data)
 {
-	LUAEvent *para = (LUAEvent *)data;
+	LUAEvent *para = const_cast<LUAEvent*>(static_cast<const LUAEvent*>(data));
 	delete para;
 }
 

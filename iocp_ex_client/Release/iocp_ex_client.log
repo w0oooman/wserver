@@ -1,4 +1,4 @@
-﻿Build started 2018/1/13 14:04:25.
+﻿Build started 2018/1/17 11:44:17.
      1>Project "F:\MyTest\myTest\testCPP\server\2\server_redis_git\iocp_ex_client\iocp_ex_client.vcxproj" on node 2 (Build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(364,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Release\) contains files shared from another project (iocp_ex_client.vcxproj).  This can lead to incorrect clean and rebuild behavior.
@@ -8,6 +8,48 @@
          :VCEnd
          已复制         1 个文件。
          已复制         1 个文件。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../include/ /Zi /nologo /W3 /WX- /Od /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\include\IniParser.cpp ..\include\Log.cpp main.cpp NetBase.cpp NetMgr.cpp
+         IniParser.cpp
+     1>..\include\IniParser.cpp(307): warning C4018: '<' : signed/unsigned mismatch
+         Log.cpp
+     1>..\include\Log.cpp(390): warning C4018: '<' : signed/unsigned mismatch
+     1>..\include\Log.cpp(399): warning C4018: '<' : signed/unsigned mismatch
+         main.cpp
+     1>F:\MyTest\myTest\testCPP\server\2\server_redis_git\include\NetError.h(10): warning C4251: 'CNetErr::m_strErrorinfo' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>F:\MyTest\myTest\testCPP\server\2\server_redis_git\include\TimerMgr.h(59): warning C4251: 'CTimerMgr::timerIDmap_' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\source\kernel\QueueMsg.h(59): warning C4200: nonstandard extension used : zero-sized array in struct/union
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\iocp_ex_client\NetMgr.h(7): warning C4005: 'CLIENT_SND_SIZE' : macro redefinition
+                 f:\mytest\mytest\testcpp\server\2\server_redis_git\include\KernelDefine.h(35) : see previous definition of 'CLIENT_SND_SIZE'
+     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\iocp_ex_client\NetMgr.h(8): warning C4005: 'CLIENT_RCV_SIZE' : macro redefinition
+                 f:\mytest\mytest\testcpp\server\2\server_redis_git\include\KernelDefine.h(36) : see previous definition of 'CLIENT_RCV_SIZE'
+     1>main.cpp(110): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>main.cpp(196): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _itoa. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(937) : see declaration of 'itoa'
+         NetBase.cpp
+     1>F:\MyTest\myTest\testCPP\server\2\server_redis_git\include\NetError.h(10): warning C4251: 'CNetErr::m_strErrorinfo' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>NetBase.cpp(127): warning C4244: 'argument' : conversion from 'DWORD' to 'u_short', possible loss of data
+         NetMgr.cpp
+     1>F:\MyTest\myTest\testCPP\server\2\server_redis_git\include\NetError.h(10): warning C4251: 'CNetErr::m_strErrorinfo' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>F:\MyTest\myTest\testCPP\server\2\server_redis_git\include\TimerMgr.h(59): warning C4251: 'CTimerMgr::timerIDmap_' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\source\kernel\QueueMsg.h(59): warning C4200: nonstandard extension used : zero-sized array in struct/union
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\iocp_ex_client\NetMgr.h(7): warning C4005: 'CLIENT_SND_SIZE' : macro redefinition
+                 f:\mytest\mytest\testcpp\server\2\server_redis_git\include\KernelDefine.h(35) : see previous definition of 'CLIENT_SND_SIZE'
+     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\iocp_ex_client\NetMgr.h(8): warning C4005: 'CLIENT_RCV_SIZE' : macro redefinition
+                 f:\mytest\mytest\testcpp\server\2\server_redis_git\include\KernelDefine.h(36) : see previous definition of 'CLIENT_RCV_SIZE'
+     1>NetMgr.cpp(229): warning C4244: '=' : conversion from 'DWORD' to 'WORD', possible loss of data
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\bin\Win32\test_client\test_client.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\bin\Win32\test_client\test_client.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\bin\Win32\test_client\test_client.lib" /MACHINE:X86 /SAFESEH Release\IniParser.obj
          Release\Log.obj
@@ -21,4 +63,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.25
+Time Elapsed 00:00:08.22

@@ -112,7 +112,7 @@ TYPE  CQueueList<TYPE, ARG_TYPE>::POPHead()
 template<typename TYPE, typename ARG_TYPE = const TYPE&>
 void CQueueList<TYPE, ARG_TYPE>::AddTail(void *node)
 {
-	CNode *pNode = (CNode*)node;
+	CNode *pNode = static_cast<CNode*>(node);
 	//if (sizeof(*pNode) != sizeof(CNode))
 	//	return;
 
@@ -142,7 +142,6 @@ void* CQueueList<TYPE, ARG_TYPE>::RemoveHead()
 	if (m_dwCount > 0)
 	{
 		CNode *pRet = NULL;
-		pData = m_pNodeHead->data;
 		if (m_pNodeHead->pNext != NULL)
 		{
 			m_pNodeHead = m_pNodeHead->pNext;
@@ -205,7 +204,7 @@ tagQueueData* CQueueBase::AddData(ULLONG llConnectID, const void* pData, DWORD d
 	tagQueueData* pAllQueueData = NULL;
 	try
 	{
-		pAllQueueData = (tagQueueData*) new char[sizeof(tagQueueData) + dwSize];
+		pAllQueueData = reinterpret_cast<tagQueueData*>(new char[sizeof(tagQueueData) + dwSize]);
 		if (NULL == pAllQueueData) return NULL;
 	}
 	catch (...)
@@ -231,7 +230,7 @@ tagQueueData* CQueueBase::AddDataOld(DWORD dwMainID, DWORD dwSubID, const void* 
 	DWORD dwSizeTemp = sizeof(NetMsgHead) + dwSize;
 	try
 	{
-		pAllQueueData = (tagQueueData*) new char[sizeof(tagQueueData) + dwSizeTemp];
+		pAllQueueData = reinterpret_cast<tagQueueData*>(new char[sizeof(tagQueueData) + dwSizeTemp]);
 		if (NULL == pAllQueueData) return NULL;
 	}
 	catch (...)
@@ -260,7 +259,7 @@ tagQueueData* CQueueBase::AddData(const void* pData, DWORD dwSize, BYTE byQueueT
 	tagQueueData* pAllQueueData = NULL;
 	try
 	{
-		pAllQueueData = (tagQueueData*) new char[sizeof(tagQueueData) + dwSize];
+		pAllQueueData = reinterpret_cast<tagQueueData*>(new char[sizeof(tagQueueData) + dwSize]);
 		if (NULL == pAllQueueData) return NULL;
 	}
 	catch (...)
@@ -444,10 +443,9 @@ CLockFreeQueue::~CLockFreeQueue()
 {
 	DWORD dwBegin = dwHead_&(dwSize_ - 1);
 	DWORD dwEnd = dwTail_&(dwSize_ - 1);
-	tagQueueData *pQueueData = NULL;
 	for(int i = dwBegin;i < dwEnd;i++)
 	{
-	    pQueueData = (tagQueueData*)ppBuf_[i];
+		tagQueueData *pQueueData = static_cast<tagQueueData*>(ppBuf_[i]);
 		SAFE_DELETE(pQueueData);
 	}
 
@@ -614,7 +612,7 @@ bool CLockFreeMgr::GetData(tagQueueData* pData, DWORD dwSize)
 {
 	if (NULL == pData)    return false;
 
-	tagQueueData* data = (tagQueueData*)POPFront();
+	tagQueueData* data = static_cast<tagQueueData*>(POPFront());
 	if (NULL == data)    return false;
 
 	pData->byQueueType = data->byQueueType;

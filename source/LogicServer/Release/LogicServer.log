@@ -1,4 +1,4 @@
-﻿Build started 2018/1/13 14:05:10.
+﻿Build started 2018/1/17 11:44:04.
      1>Project "F:\MyTest\myTest\testCPP\server\2\server_redis_git\source\LogicServer\LogicServer.vcxproj" on node 2 (Build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Release\) contains files shared from another project (GameServer.vcxproj, LogicServer.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>PreBuildEvent:
@@ -7,10 +7,123 @@
          :VCEnd
          已复制         1 个文件。
          已复制         1 个文件。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../ /I"../../3rd/lua-5.3.3/src" /Zi /nologo /W3 /WX- /sdl /Od /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\include\IniParser.cpp ..\..\include\Log.cpp LogicServer.cpp LogicServerLogin.cpp LuaManager.cpp main.cpp Player.cpp PlayerMgr.cpp
+         IniParser.cpp
+     1>..\..\include\IniParser.cpp(307): warning C4018: '<' : signed/unsigned mismatch
+         Log.cpp
+     1>..\..\include\Log.cpp(390): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\include\Log.cpp(399): warning C4018: '<' : signed/unsigned mismatch
+         LogicServer.cpp
+     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\TimerMgr.h(59): warning C4251: 'CTimerMgr::timerIDmap_' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\NetError.h(10): warning C4251: 'CNetErr::m_strErrorinfo' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>LogicServer.cpp(191): warning C4101: 'LogicIP' : unreferenced local variable
+         LogicServerLogin.cpp
+     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\TimerMgr.h(59): warning C4251: 'CTimerMgr::timerIDmap_' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\NetError.h(10): warning C4251: 'CNetErr::m_strErrorinfo' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+         LuaManager.cpp
+     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\TimerMgr.h(59): warning C4251: 'CTimerMgr::timerIDmap_' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\NetError.h(10): warning C4251: 'CNetErr::m_strErrorinfo' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>LuaManager.cpp(354): warning C4244: 'argument' : conversion from 'lua_Number' to 'lua_Integer', possible loss of data
+     1>LuaManager.cpp(362): warning C4244: 'argument' : conversion from 'lua_Number' to 'int', possible loss of data
+     1>LuaManager.cpp(380): warning C4244: 'initializing' : conversion from 'lua_Number' to 'int', possible loss of data
+     1>LuaManager.cpp(455): warning C4244: '=' : conversion from 'lua_Number' to 'int', possible loss of data
+     1>LuaManager.cpp(461): warning C4244: '=' : conversion from 'lua_Number' to 'int', possible loss of data
+     1>LuaManager.cpp(465): warning C4244: 'argument' : conversion from 'lua_Number' to 'int', possible loss of data
+     1>LuaManager.cpp(478): warning C4244: 'argument' : conversion from 'lua_Number' to 'int', possible loss of data
+         main.cpp
+     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\TimerMgr.h(59): warning C4251: 'CTimerMgr::timerIDmap_' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\NetError.h(10): warning C4251: 'CNetErr::m_strErrorinfo' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+         Player.cpp
+     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\TimerMgr.h(59): warning C4251: 'CTimerMgr::timerIDmap_' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\NetError.h(10): warning C4251: 'CNetErr::m_strErrorinfo' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+         PlayerMgr.cpp
+     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\TimerMgr.h(59): warning C4251: 'CTimerMgr::timerIDmap_' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\NetError.h(10): warning C4251: 'CNetErr::m_strErrorinfo' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>PlayerMgr.cpp(111): warning C4244: 'argument' : conversion from 'time_t' to 'DWORD', possible loss of data
+     1>PlayerMgr.cpp(143): warning C4244: 'argument' : conversion from 'time_t' to 'DWORD', possible loss of data
        Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\bin\Win32\WLogicServer\WLogicServer.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\..\bin\Win32\WLogicServer\WLogicServer.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\bin\Win32\WLogicServer\WLogicServer.lib" /MACHINE:X86 /SAFESEH Release\IniParser.obj
+         Release\Log.obj
+         Release\LogicServer.obj
+         Release\LogicServerLogin.obj
+         Release\LuaManager.obj
+         Release\main.obj
+         Release\Player.obj
+         Release\PlayerMgr.obj
+         F:\MyTest\myTest\testCPP\server\2\server_redis_git\lib\Win32\kernel.lib
+         Generating code
+     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\source\logicserver\playermgr.cpp(100): warning C4715: 'CPlayerMgr::AddPlayer' : not all control paths return a value
+         Finished generating code
+     1>lua.lib(lapi.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(lapi.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(lauxlib.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(lauxlib.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(linit.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(linit.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(lstate.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(lstate.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(lserialize.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(lserialize.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(ldebug.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(ldebug.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(lvm.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(lvm.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(ldump.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(ldump.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(ltable.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(ltable.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(lstring.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(lstring.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(lfunc.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(lfunc.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(lobject.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(lobject.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(ldo.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(ldo.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(lgc.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(lgc.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(lzio.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(lzio.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(ltm.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(ltm.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(ldblib.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(ldblib.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(lutf8lib.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(lutf8lib.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(lcorolib.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(lcorolib.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(lmathlib.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(lmathlib.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(lua_cjson.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(lua_cjson.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(lstrlib.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(lstrlib.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(lbaselib.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(lbaselib.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(liolib.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(liolib.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(loslib.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(loslib.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(loadlib.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(loadlib.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(ltablib.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(ltablib.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(llex.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(llex.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(lmem.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(lmem.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(lopcodes.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(lopcodes.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(lctype.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(lctype.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(lparser.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(lparser.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(lundump.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(lundump.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(strbuf.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(strbuf.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(fpconv.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(fpconv.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
+     1>lua.lib(lcode.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'lua.lib(lcode.obj)' or at 'F:\MyTest\myTest\testCPP\server\2\server_redis_git\bin\Win32\WLogicServer\vc120.pdb'; linking object as if no debug info
          LogicServer.vcxproj -> F:\MyTest\myTest\testCPP\server\2\server_redis_git\source\LogicServer\..\..\bin\Win32\WLogicServer\WLogicServer.exe
      1>Done Building Project "F:\MyTest\myTest\testCPP\server\2\server_redis_git\source\LogicServer\LogicServer.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.33
+Time Elapsed 00:00:09.51

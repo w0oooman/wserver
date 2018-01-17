@@ -1,4 +1,4 @@
-﻿Build started 2018/1/13 14:05:10.
+﻿Build started 2018/1/17 11:44:17.
      1>Project "F:\MyTest\myTest\testCPP\server\2\server_redis_git\source\kernel\kernel.vcxproj" on node 2 (Build target(s)).
      1>Link:
          kernel.vcxproj -> F:\MyTest\myTest\testCPP\server\2\server_redis_git\source\kernel\..\..\bin\Win32\kernel.dll
@@ -6,4 +6,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.06
+Time Elapsed 00:00:00.14

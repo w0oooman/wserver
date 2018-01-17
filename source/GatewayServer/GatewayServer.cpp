@@ -20,7 +20,7 @@ CGatewayServer::~CGatewayServer()
 	unordered_map<ULLONG, CUserGateWayInfo*>::iterator it = m_mapUserGWInfo.begin();
 	for (; it != m_mapUserGWInfo.end();)
 	{
-		CUserGateWayInfo* pUserGateWayInfo = (CUserGateWayInfo*)(it->second);
+		CUserGateWayInfo* pUserGateWayInfo = static_cast<CUserGateWayInfo*>(it->second);
 		delete pUserGateWayInfo;
 		m_mapUserGWInfo.erase(it++);
 	}
@@ -157,7 +157,7 @@ void CGatewayServer::SetUserGateWayInfo(ULLONG llConnectID, CUserGateWayInfo* pU
 	unordered_map<ULLONG, CUserGateWayInfo*>::iterator it = m_mapUserGWInfo.find(llConnectID);
 	if (it != m_mapUserGWInfo.end())
 	{
-		CUserGateWayInfo* pUserGateWayInfo = (CUserGateWayInfo*)(it->second);
+		CUserGateWayInfo* pUserGateWayInfo = static_cast<CUserGateWayInfo*>(it->second);
 		delete pUserGateWayInfo;
 		m_mapUserGWInfo.erase(it);
 	}
@@ -170,7 +170,7 @@ CUserGateWayInfo* CGatewayServer::GetUserGateWayInfo(ULLONG llConnectID)
 	unordered_map<ULLONG, CUserGateWayInfo*>::iterator it = m_mapUserGWInfo.find(llConnectID);
 	if (it != m_mapUserGWInfo.end())
 	{
-		CUserGateWayInfo* pUserGateWayInfo = (CUserGateWayInfo*)(it->second);
+		CUserGateWayInfo* pUserGateWayInfo = static_cast<CUserGateWayInfo*>(it->second);
 		return pUserGateWayInfo;
 	}
 	return NULL;

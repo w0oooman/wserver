@@ -51,7 +51,7 @@ unsigned int MKernelMgr::TimerThread(void *pData)
 {
 	if (NULL == pData)  return -1;
 
-	tagReadData    *ThreadData = (tagReadData*)pData;
+	tagReadData    *ThreadData = static_cast<tagReadData*>(pData);
 	IKernelMgr*     pKernelMgr = ThreadData->kernelmgr;
 	CTimerMgr      *pWheelTimerMgr = (CTimerMgr *)ThreadData->data;
 
@@ -342,7 +342,7 @@ void CKernelMgr::OnCloseConnect(ULLONG llConnectID)
 
 unsigned int CKernelMgr::QueueThread(void *pData)
 {
-	tagReadData   *ThreadData = (tagReadData*)pData;
+	tagReadData   *ThreadData = static_cast<tagReadData*>(pData);
 	HANDLE         hQueueIOCP = ThreadData->iocp;
 	IKernelMgr*    pKernelMgr = ThreadData->kernelmgr;
 	CLockFreeMgr/*CQueueMsg*/*     pQueueMsg = ThreadData->msg;
@@ -352,7 +352,7 @@ unsigned int CKernelMgr::QueueThread(void *pData)
 
 	int   nQueueBufLen = 1024 * 8;//MAX_MESSAGE_LENGTH + 512;
 	char *pQueueBuf = new char[nQueueBufLen];
-	tagQueueData *pQueueData = (tagQueueData*)pQueueBuf;
+	tagQueueData *pQueueData = reinterpret_cast<tagQueueData*>(pQueueBuf);
 
 	LPOVERLAPPED OL;
 	DWORD dwTransfer;
@@ -565,7 +565,7 @@ void CClientCKernelMgr::CloseSocket()
 
 void CClientCKernelMgr::SendHeartBeatCallBack(void *data)
 {
-	CClientCKernelMgr *pKernelMgr = (CClientCKernelMgr *)data;
+	CClientCKernelMgr *pKernelMgr = static_cast<CClientCKernelMgr *>(data);
 	if (pKernelMgr && !IsBadReadPtr(pKernelMgr, sizeof(CClientCKernelMgr*)))
 	{
 		pKernelMgr->SendData(&CNetMsgHead(CNetMsgHead::NETMSG_HEART_BEAT), sizeof(CNetMsgHead));
@@ -574,7 +574,7 @@ void CClientCKernelMgr::SendHeartBeatCallBack(void *data)
 
 void CClientCKernelMgr::ReConnectCallBack(void *data)
 {
-	CClientCKernelMgr *pKernelMgr = (CClientCKernelMgr *)data;
+	CClientCKernelMgr *pKernelMgr = static_cast<CClientCKernelMgr *>(data);
 	if (pKernelMgr && !IsBadReadPtr(pKernelMgr, sizeof(CClientCKernelMgr*)))
 	{
 		pKernelMgr->GetNetMgrPtr()->ReConnect();

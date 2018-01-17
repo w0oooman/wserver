@@ -7,7 +7,7 @@ using namespace std;
 #ifdef _WIN64
 #pragma comment(lib, "..\\3rd\\redis-3.0\\bin\\x64\\hiredis.lib")
 #pragma comment(lib, "..\\3rd\\redis-3.0\\bin\\x64\\Win32_Interop.lib")
-#else
+#elif defined _WIN32
 #pragma comment(lib, "..\\3rd\\redis-3.0\\bin\\Win32\\hiredis.lib")
 #pragma comment(lib, "..\\3rd\\redis-3.0\\bin\\Win32\\Win32_Interop.lib")
 #endif
@@ -566,7 +566,7 @@ void CDBManager::SaveUserData(bool quit/* = false*/)
 		m_vecData.clear();
 		GetRedisSetData(&m_vecData, m_key[e_userinfo_roleid_set]);
 		vector<string>::iterator it = m_vecData.begin();
-		for (; it != m_vecData.end(); it++)
+		for (; it != m_vecData.end(); ++it)
 		{
 			DWORD dwUserID = atoi((*it).c_str());
 			SaveUserData(dwUserID, true);
@@ -667,7 +667,7 @@ void CDBManager::SaveUserData(DWORD dwUserID, bool nojudge/* = false*/)
 
 	m_pUserData->Reset();
 	Redis2Memory(m_pUserData, dwUserID);
-	bool ret = false;
+	bool ret;
 	//1
 	ret = UpdateDBData(UPDATE_USER_DATA, m_pUserData->m_dwMoney, m_pUserData->m_dwDiamond, m_pUserData->m_dwPoint, dwUserID);
 
@@ -782,7 +782,7 @@ bool CDBManager::GetRoleListByAccount(char* buffer, DWORD dwSize, char *account)
 	{
 		vector<string>::iterator it = m_vecData.begin();
 		int nLen = 0;
-		for (; it != m_vecData.end(); it++)
+		for (; it != m_vecData.end(); ++it)
 		{
 			const char* str = (*it).c_str();
 			int nLenTmp = strlen(str);
