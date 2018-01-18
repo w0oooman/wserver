@@ -1,5 +1,5 @@
-﻿Build started 2018/1/17 11:44:23.
-     1>Project "F:\MyTest\myTest\testCPP\server\2\server_redis_git\source\iocp_ex_server\iocp_ex_server.vcxproj" on node 3 (Build target(s)).
+﻿Build started 2018/1/18 17:59:00.
+     1>Project "F:\MyTest\myTest\testCPP\server\2\server_redis_git\source\iocp_ex_server\iocp_ex_server.vcxproj" on node 2 (Build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(364,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Release\) contains files shared from another project (iocp_ex_server.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>PreBuildEvent:
@@ -9,34 +9,16 @@
          已复制         1 个文件。
          已复制         1 个文件。
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../proto_file /I../../include/ /I../mysql/include /I../serialize /I"../../3rd/lua-5.3.3/src" /Zi /nologo /W3 /WX- /Od /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\include\common.cpp ..\..\include\IniParser.cpp ..\..\include\Log.cpp DBManager.cpp DistriClientHandle.cpp DistriServerHandle.cpp LuaManager.cpp MainMgr.cpp MysqlDBProcess.cpp MySqlHandle.cpp Player.cpp PlayerMgr.cpp ServerLogicHandle.cpp SqlServerHandle.cpp main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../proto_file /I../../include/ /I../mysql/include /I../serialize /I"../../3rd/lua-5.3.3/src" /Zi /nologo /W3 /WX- /Od /Oi /Oy- /GL /D _CRT_SECURE_NO_WARNINGS /D WIN32 /D NDEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\include\common.cpp ..\..\include\IniParser.cpp ..\..\include\Log.cpp DBManager.cpp DistriClientHandle.cpp DistriServerHandle.cpp LuaManager.cpp MainMgr.cpp MysqlDBProcess.cpp MySqlHandle.cpp Player.cpp PlayerMgr.cpp ServerLogicHandle.cpp SqlServerHandle.cpp main.cpp
          common.cpp
          IniParser.cpp
      1>..\..\include\IniParser.cpp(307): warning C4018: '<' : signed/unsigned mismatch
          Log.cpp
-     1>..\..\include\Log.cpp(390): warning C4018: '<' : signed/unsigned mismatch
-     1>..\..\include\Log.cpp(399): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\include\Log.cpp(394): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\include\Log.cpp(403): warning C4018: '<' : signed/unsigned mismatch
          DBManager.cpp
-     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\source\iocp_ex_server\DBManager.h(114): warning C4996: '_i64toa': This function or variable may be unsafe. Consider using _i64toa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(483) : see declaration of '_i64toa'
-     1>DBManager.cpp(88): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
-     1>DBManager.cpp(89): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
-     1>DBManager.cpp(90): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
-     1>DBManager.cpp(91): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
-     1>DBManager.cpp(92): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
-     1>DBManager.cpp(93): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
      1>DBManager.cpp(489): warning C4018: '<' : signed/unsigned mismatch
      1>DBManager.cpp(788): warning C4018: '>' : signed/unsigned mismatch
-     1>DBManager.cpp(790): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(118) : see declaration of 'strcat'
-     1>DBManager.cpp(795): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(118) : see declaration of 'strcat'
          DistriClientHandle.cpp
      1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\TimerMgr.h(59): warning C4251: 'CTimerMgr::timerIDmap_' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CTimerMgr'
                  with
@@ -45,8 +27,6 @@
          ,            _Ty=int
                  ]
      1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\NetError.h(10): warning C4251: 'CNetErr::m_strErrorinfo' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
-     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\source\iocp_ex_server\DBManager.h(114): warning C4996: '_i64toa': This function or variable may be unsafe. Consider using _i64toa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(483) : see declaration of '_i64toa'
      1>f:\mytest\mytest\testcpp\server\2\server_redis_git\source\iocp_ex_server\Player.h(24): warning C4244: 'return' : conversion from 'const ULLONG' to 'DWORD', possible loss of data
          DistriServerHandle.cpp
      1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\TimerMgr.h(59): warning C4251: 'CTimerMgr::timerIDmap_' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CTimerMgr'
@@ -56,8 +36,6 @@
          ,            _Ty=int
                  ]
      1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\NetError.h(10): warning C4251: 'CNetErr::m_strErrorinfo' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
-     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\source\iocp_ex_server\DBManager.h(114): warning C4996: '_i64toa': This function or variable may be unsafe. Consider using _i64toa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(483) : see declaration of '_i64toa'
      1>f:\mytest\mytest\testcpp\server\2\server_redis_git\source\iocp_ex_server\Player.h(24): warning C4244: 'return' : conversion from 'const ULLONG' to 'DWORD', possible loss of data
      1>DistriServerHandle.cpp(44): warning C4060: switch statement contains no 'case' or 'default' labels
          LuaManager.cpp
@@ -68,8 +46,6 @@
          ,            _Ty=int
                  ]
      1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\NetError.h(10): warning C4251: 'CNetErr::m_strErrorinfo' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
-     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\source\iocp_ex_server\DBManager.h(114): warning C4996: '_i64toa': This function or variable may be unsafe. Consider using _i64toa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(483) : see declaration of '_i64toa'
      1>f:\mytest\mytest\testcpp\server\2\server_redis_git\source\iocp_ex_server\Player.h(24): warning C4244: 'return' : conversion from 'const ULLONG' to 'DWORD', possible loss of data
      1>LuaManager.cpp(386): warning C4244: 'argument' : conversion from 'lua_Number' to 'lua_Integer', possible loss of data
      1>LuaManager.cpp(394): warning C4244: 'argument' : conversion from 'lua_Number' to 'int', possible loss of data
@@ -86,54 +62,8 @@
          ,            _Ty=int
                  ]
      1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\NetError.h(10): warning C4251: 'CNetErr::m_strErrorinfo' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
-     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\source\iocp_ex_server\DBManager.h(114): warning C4996: '_i64toa': This function or variable may be unsafe. Consider using _i64toa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(483) : see declaration of '_i64toa'
      1>f:\mytest\mytest\testcpp\server\2\server_redis_git\source\iocp_ex_server\Player.h(24): warning C4244: 'return' : conversion from 'const ULLONG' to 'DWORD', possible loss of data
          MysqlDBProcess.cpp
-     1>MysqlDBProcess.cpp(23): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'vsprintf'
-     1>MysqlDBProcess.cpp(33): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(118) : see declaration of 'strcat'
-     1>MysqlDBProcess.cpp(43): warning C4996: '_localtime64': This function or variable may be unsafe. Consider using _localtime64_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\time.h(222) : see declaration of '_localtime64'
-     1>MysqlDBProcess.cpp(204): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
-     1>MysqlDBProcess.cpp(374): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
-     1>MysqlDBProcess.cpp(387): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
-     1>MysqlDBProcess.cpp(389): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
-     1>MysqlDBProcess.cpp(396): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
-     1>MysqlDBProcess.cpp(415): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
-     1>MysqlDBProcess.cpp(594): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
-     1>MysqlDBProcess.cpp(714): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
-     1>MysqlDBProcess.cpp(716): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
-     1>MysqlDBProcess.cpp(721): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
-     1>MysqlDBProcess.cpp(723): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
-     1>MysqlDBProcess.cpp(727): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
-     1>MysqlDBProcess.cpp(808): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
-     1>MysqlDBProcess.cpp(817): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
-     1>MysqlDBProcess.cpp(839): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
-     1>MysqlDBProcess.cpp(846): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
-     1>MysqlDBProcess.cpp(857): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
-     1>MysqlDBProcess.cpp(862): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
-     1>MysqlDBProcess.cpp(866): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
          MySqlHandle.cpp
      1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\TimerMgr.h(59): warning C4251: 'CTimerMgr::timerIDmap_' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CTimerMgr'
                  with
@@ -142,16 +72,10 @@
          ,            _Ty=int
                  ]
      1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\NetError.h(10): warning C4251: 'CNetErr::m_strErrorinfo' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
-     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\source\iocp_ex_server\DBManager.h(114): warning C4996: '_i64toa': This function or variable may be unsafe. Consider using _i64toa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(483) : see declaration of '_i64toa'
      1>f:\mytest\mytest\testcpp\server\2\server_redis_git\source\iocp_ex_server\Player.h(24): warning C4244: 'return' : conversion from 'const ULLONG' to 'DWORD', possible loss of data
          Player.cpp
-     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\source\iocp_ex_server\DBManager.h(114): warning C4996: '_i64toa': This function or variable may be unsafe. Consider using _i64toa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(483) : see declaration of '_i64toa'
      1>f:\mytest\mytest\testcpp\server\2\server_redis_git\source\iocp_ex_server\Player.h(24): warning C4244: 'return' : conversion from 'const ULLONG' to 'DWORD', possible loss of data
          PlayerMgr.cpp
-     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\source\iocp_ex_server\DBManager.h(114): warning C4996: '_i64toa': This function or variable may be unsafe. Consider using _i64toa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(483) : see declaration of '_i64toa'
      1>f:\mytest\mytest\testcpp\server\2\server_redis_git\source\iocp_ex_server\Player.h(24): warning C4244: 'return' : conversion from 'const ULLONG' to 'DWORD', possible loss of data
      1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\TimerMgr.h(59): warning C4251: 'CTimerMgr::timerIDmap_' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CTimerMgr'
                  with
@@ -169,8 +93,6 @@
          ,            _Ty=int
                  ]
      1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\NetError.h(10): warning C4251: 'CNetErr::m_strErrorinfo' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
-     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\source\iocp_ex_server\DBManager.h(114): warning C4996: '_i64toa': This function or variable may be unsafe. Consider using _i64toa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(483) : see declaration of '_i64toa'
      1>f:\mytest\mytest\testcpp\server\2\server_redis_git\source\iocp_ex_server\Player.h(24): warning C4244: 'return' : conversion from 'const ULLONG' to 'DWORD', possible loss of data
      1>ServerLogicHandle.cpp(113): warning C4101: 'LogicIP' : unreferenced local variable
          SqlServerHandle.cpp
@@ -181,8 +103,6 @@
          ,            _Ty=int
                  ]
      1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\NetError.h(10): warning C4251: 'CNetErr::m_strErrorinfo' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
-     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\source\iocp_ex_server\DBManager.h(114): warning C4996: '_i64toa': This function or variable may be unsafe. Consider using _i64toa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(483) : see declaration of '_i64toa'
      1>f:\mytest\mytest\testcpp\server\2\server_redis_git\source\iocp_ex_server\Player.h(24): warning C4244: 'return' : conversion from 'const ULLONG' to 'DWORD', possible loss of data
          main.cpp
      1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\TimerMgr.h(59): warning C4251: 'CTimerMgr::timerIDmap_' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CTimerMgr'
@@ -192,8 +112,6 @@
          ,            _Ty=int
                  ]
      1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\NetError.h(10): warning C4251: 'CNetErr::m_strErrorinfo' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
-     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\source\iocp_ex_server\DBManager.h(114): warning C4996: '_i64toa': This function or variable may be unsafe. Consider using _i64toa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(483) : see declaration of '_i64toa'
      1>f:\mytest\mytest\testcpp\server\2\server_redis_git\source\iocp_ex_server\Player.h(24): warning C4244: 'return' : conversion from 'const ULLONG' to 'DWORD', possible loss of data
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\bin\Win32\test_server\test_server.exe" /INCREMENTAL:NO /NOLOGO winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\..\bin\Win32\test_server\test_server.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\bin\Win32\test_server\test_server.lib" /MACHINE:X86 /SAFESEH Release\common.obj
@@ -233,4 +151,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:20.13
+Time Elapsed 00:00:20.59

@@ -72,6 +72,9 @@ int main()
 
 	//SerializerTest();
 
+	Log("%d 100%.");
+	Log("%d 100%.", 10);
+
 	try
 	{
 		CIniParser parser;

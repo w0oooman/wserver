@@ -8,6 +8,7 @@
 #include <direct.h>
 #include "Log.h"
 #include "define.h"
+
 using namespace std;
 
 #define WRITELEN           1024  //存到多长就写一次文件
@@ -222,10 +223,13 @@ BOOL Log_Logic(CFileHandle *handle, const char* szFormat, va_list header, bool b
 	int nFormatLen = min(strlen(szFormat), LOG_MAXBUFFER - 1);
 	memcpy(__szFormatBuff, szFormat, nFormatLen);
 	__szFormatBuff[nFormatLen] = 0;
-	LogFilter((char*)__szFormatBuff, nFormatLen);
+	//LogFilter((char*)__szFormatBuff, nFormatLen);
 
 	int value = LOG_MAXBUFFER - len - lentemp * 3;
-	vsprintf_s(handle->m_buf + len, value > 0 ? value : 0, __szFormatBuff, header);
+	//vsprintf_s(handle->m_buf + len, value > 0 ? value : 0, __szFormatBuff, header);
+	//vsnprintf_s(handle->m_buf + len, value > 0 ? value : 0, _TRUNCATE, __szFormatBuff, header);
+	/* 发现使用_vsnprintf函数,当传入非法format参数时不会有问题,因此不用调用LogFilter.还不清楚原理!!注:需预定义_CRT_SECURE_NO_WARNINGS */ 
+	_vsnprintf(handle->m_buf + len, value > 0 ? value : 0, __szFormatBuff, header);
 
 	len = strlen(handle->m_buf);
 	handle->m_buf[len] = '\n'; len += lentemp;

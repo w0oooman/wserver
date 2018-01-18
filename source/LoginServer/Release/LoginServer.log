@@ -1,5 +1,5 @@
-﻿Build started 2018/1/13 14:04:49.
-     1>Project "F:\MyTest\myTest\testCPP\server\2\server_redis_git\source\LoginServer\LoginServer.vcxproj" on node 2 (Build target(s)).
+﻿Build started 2018/1/18 17:58:49.
+     1>Project "F:\MyTest\myTest\testCPP\server\2\server_redis_git\source\LoginServer\LoginServer.vcxproj" on node 3 (Build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Release\) contains files shared from another project (LoginServer.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>PreBuildEvent:
          copy ..\..\bin\Win32\kernel.dll ..\..\bin\Win32\WLoginServer\
@@ -7,10 +7,70 @@
          :VCEnd
          已复制         1 个文件。
          已复制         1 个文件。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../ /Zi /nologo /W3 /WX- /sdl /Od /Oi /Oy- /GL /D _CRT_SECURE_NO_WARNINGS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\include\IniParser.cpp ..\..\include\Log.cpp LoginServer.cpp LoginServerDB.cpp LoginServerLogic.cpp main.cpp
+         IniParser.cpp
+     1>..\..\include\IniParser.cpp(307): warning C4018: '<' : signed/unsigned mismatch
+         Log.cpp
+     1>..\..\include\Log.cpp(394): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\include\Log.cpp(403): warning C4018: '<' : signed/unsigned mismatch
+         LoginServer.cpp
+     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\TimerMgr.h(59): warning C4251: 'CTimerMgr::timerIDmap_' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\NetError.h(10): warning C4251: 'CNetErr::m_strErrorinfo' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>F:\MyTest\myTest\testCPP\server\2\server_redis_git\include\ServerRegister.h(40): warning C4018: '<' : signed/unsigned mismatch
+     1>F:\MyTest\myTest\testCPP\server\2\server_redis_git\include\ServerRegister.h(51): warning C4018: '<' : signed/unsigned mismatch
+     1>F:\MyTest\myTest\testCPP\server\2\server_redis_git\include\ServerRegister.h(71): warning C4018: '<' : signed/unsigned mismatch
+         LoginServerDB.cpp
+     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\TimerMgr.h(59): warning C4251: 'CTimerMgr::timerIDmap_' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\NetError.h(10): warning C4251: 'CNetErr::m_strErrorinfo' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>F:\MyTest\myTest\testCPP\server\2\server_redis_git\include\ServerRegister.h(40): warning C4018: '<' : signed/unsigned mismatch
+     1>F:\MyTest\myTest\testCPP\server\2\server_redis_git\include\ServerRegister.h(51): warning C4018: '<' : signed/unsigned mismatch
+     1>F:\MyTest\myTest\testCPP\server\2\server_redis_git\include\ServerRegister.h(71): warning C4018: '<' : signed/unsigned mismatch
+         LoginServerLogic.cpp
+     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\TimerMgr.h(59): warning C4251: 'CTimerMgr::timerIDmap_' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\NetError.h(10): warning C4251: 'CNetErr::m_strErrorinfo' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>F:\MyTest\myTest\testCPP\server\2\server_redis_git\include\ServerRegister.h(40): warning C4018: '<' : signed/unsigned mismatch
+     1>F:\MyTest\myTest\testCPP\server\2\server_redis_git\include\ServerRegister.h(51): warning C4018: '<' : signed/unsigned mismatch
+     1>F:\MyTest\myTest\testCPP\server\2\server_redis_git\include\ServerRegister.h(71): warning C4018: '<' : signed/unsigned mismatch
+         main.cpp
+     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\TimerMgr.h(59): warning C4251: 'CTimerMgr::timerIDmap_' : class 'std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'CTimerMgr'
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>f:\mytest\mytest\testcpp\server\2\server_redis_git\include\NetError.h(10): warning C4251: 'CNetErr::m_strErrorinfo' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CNetErr'
+     1>F:\MyTest\myTest\testCPP\server\2\server_redis_git\include\ServerRegister.h(40): warning C4018: '<' : signed/unsigned mismatch
+     1>F:\MyTest\myTest\testCPP\server\2\server_redis_git\include\ServerRegister.h(51): warning C4018: '<' : signed/unsigned mismatch
+     1>F:\MyTest\myTest\testCPP\server\2\server_redis_git\include\ServerRegister.h(71): warning C4018: '<' : signed/unsigned mismatch
        Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\bin\Win32\WLoginServer\WLoginServer.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\..\bin\Win32\WLoginServer\WLoginServer.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\bin\Win32\WLoginServer\WLoginServer.lib" /MACHINE:X86 /SAFESEH Release\IniParser.obj
+         Release\Log.obj
+         Release\LoginServer.obj
+         Release\LoginServerDB.obj
+         Release\LoginServerLogic.obj
+         Release\main.obj
+         F:\MyTest\myTest\testCPP\server\2\server_redis_git\lib\Win32\kernel.lib
+         Generating code
+         Finished generating code
          LoginServer.vcxproj -> F:\MyTest\myTest\testCPP\server\2\server_redis_git\source\LoginServer\..\..\bin\Win32\WLoginServer\WLoginServer.exe
      1>Done Building Project "F:\MyTest\myTest\testCPP\server\2\server_redis_git\source\LoginServer\LoginServer.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.31
+Time Elapsed 00:00:13.14
