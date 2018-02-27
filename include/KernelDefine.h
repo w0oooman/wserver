@@ -22,14 +22,14 @@
 #define   MAX_SEND_LIMIT  (32768/*1024*32*/)
 
 //普通客户端连接时:服务器发送最大buffer
-#define   SND_SIZE        (4096/*1024*4*/)
+#define   SND_SIZE        (1024*4)
 //普通客户端连接时:服务器接收最大buffer
-#define   RCV_SIZE        (8192/*1024*8*/)  //若buf采用环形缓冲区时，最好是2的次方
+#define   RCV_SIZE        (1024*8)  //若buf采用环形缓冲区时，最好是2的次方
 
 //客户机连接服务端时:服务端发送最大buffer
-#define   SND_SIZE_SPECIAL  (262144/*1024*256*/)
+#define   SND_SIZE_SPECIAL  (1024*256)
 //客户机连接服务端时:服务端接收最大buffer
-#define   RCV_SIZE_SPECIAL  (262144/*1024*256*/)  //若buf采用环形缓冲区时，最好是2的次方
+#define   RCV_SIZE_SPECIAL  (1024*256)  //若buf采用环形缓冲区时，最好是2的次方
 
 //服务器做为客户机时:BUFFER大小
 #define   CLIENT_SND_SIZE   (1024*128)
