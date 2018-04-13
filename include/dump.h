@@ -136,7 +136,7 @@ void DisableSetUnhandledExceptionFilter()
 {
 	void* addr = (void*)GetProcAddress(LoadLibrary("kernel32.dll"), "SetUnhandledExceptionFilter");
 
-	if (addr)
+	if (addr && !IsBadReadPtr(addr, sizeof(void*)))
 	{
 		unsigned char code[16];
 		int size = 0;
@@ -147,9 +147,10 @@ void DisableSetUnhandledExceptionFilter()
 		code[size++] = 0x00;
 
 		DWORD dwOldFlag, dwTempFlag;
-		VirtualProtect(addr, size, PAGE_READWRITE, &dwOldFlag);
+		if (VirtualProtectEx(GetCurrentProcess(), addr, size, PAGE_EXECUTE_READWRITE, &dwOldFlag) == 0)
+			return;
 		WriteProcessMemory(GetCurrentProcess(), addr, code, size, NULL);
-		VirtualProtect(addr, size, dwOldFlag, &dwTempFlag);
+		VirtualProtectEx(GetCurrentProcess(), addr, size, dwOldFlag, &dwTempFlag);
 	}
 }
 

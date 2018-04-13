@@ -179,7 +179,7 @@ void CMainMgr::ResetScript()
 
 void CMainMgr::OnEvent(int timerID, void *data)
 {
-	Log("----------CMainMgr::OnEvent timerID=%d,data=%d,time=%d", timerID, (int)data, time(0));//whb
+	//Log("----------CMainMgr::OnEvent timerID=%d,data=%d,time=%d", timerID, (int)data, time(0));//whb
 	if (timerID > timer_db_begin && timerID < timer_db_end)
 	{
 

@@ -176,11 +176,11 @@ int main()
 
 bool SendTestData(CNetMgrC *pClient, int &nSendNum)
 {
-	BYTE byCount = share_rand() % 15 + 15;
+	int nCount = share_rand() % 15 + 15;
 	//BYTE byCount = 9;//whb
 	CTestMsg test;
 
-	for (int i = 0; i < byCount; i++)
+	for (int i = 0; i < nCount; i++)
 	{
 		test.buf[i] = share_rand() % 26 + 'a';
 	}
@@ -195,10 +195,10 @@ bool SendTestData(CNetMgrC *pClient, int &nSendNum)
 		char bufTmp[10] = { 0 };
 		itoa(sendSumTimes_, bufTmp, 10);
 		addCount = strlen(bufTmp);
-		sprintf_s(&test.buf[byCount], sizeof(test.buf), "%s", bufTmp);
+		sprintf_s(&test.buf[nCount], sizeof(test.buf), "%s", bufTmp);
 	}
 
-	int nSize = sizeof(CNetMsgHead) + byCount + addCount;
+	int nSize = sizeof(CNetMsgHead)+nCount + addCount;
 	if (!pClient->SendData(&test, nSize))
 	{
 		Log(LOG_THREAD, "client send data error.\n");

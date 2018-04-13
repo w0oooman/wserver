@@ -87,7 +87,9 @@ bool CLogicServer::Init()
 
 bool CLogicServer::Start()
 {
+	Log("connecting GateServer");
 	if (!CClientCKernelMgr::Start()) return false;
+	Log("connecting LoginServer");
 	if (!m_pLogicServerLogin->Start()) return false;
 	return true;
 }

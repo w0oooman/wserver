@@ -73,9 +73,6 @@
     <ClCompile Include="..\..\include\IniParser.cpp">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="DBManager.cpp">
-      <Filter>DB</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MysqlDBProcess.h">
@@ -164,9 +161,6 @@
     </ClInclude>
     <ClInclude Include="..\..\include\UserData.h">
       <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="DBManager.h">
-      <Filter>DB</Filter>
     </ClInclude>
     <ClInclude Include="..\..\include\IniParser.h">
       <Filter>include</Filter>

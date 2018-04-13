@@ -531,7 +531,8 @@ void* CLockFreeMgr::POPFront()
 bool CLockFreeMgr::AddData(ULLONG llConnectID, const void* pData, DWORD dwSize, BYTE byQueueType, WORD wDBType /*= 0*/)
 {
 	tagQueueData* pAllQueueData = CQueueBase::AddData(llConnectID, pData, dwSize, byQueueType, wDBType);
-	if (NULL == pAllQueueData) return false;
+	if (NULL == pAllQueueData) 
+		return false;
 
 	if (!PUSHBack(pAllQueueData))
 	{

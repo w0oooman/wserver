@@ -209,12 +209,12 @@ BOOL Log_Logic(CFileHandle *handle, const char* szFormat, va_list header, bool b
 	DWORD &len = handle->m_len;
 	time_t NowTime = ::time(0);
 
-	if (NowTime >= handle->m_time + 1)
+	//if (NowTime >= handle->m_time + 1)
 	{
 		const char* temp = "=>";
 		const char* timeptr = GetStringTime();
 		int value = LOG_MAXBUFFER - len - lentemp * 3;
-		sprintf_s(handle->m_buf + len, value > 0 ? value : 0, "%s%s\n", temp, timeptr);
+		sprintf_s(handle->m_buf + len, value > 0 ? value : 0, "%s%s  ", temp, timeptr);
 		len += strlen(handle->m_buf + len);
 		handle->m_time = NowTime;
 	}

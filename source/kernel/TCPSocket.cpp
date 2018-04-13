@@ -98,7 +98,9 @@ bool CTCPSocket::IsValidRoundIndex(DWORD dwRoundIndex)const
 {
 	if (0 == dwRoundIndex || dwRoundIndex != dwRoundIndex_)
 	{
-		//Log(LOG_THREAD, "..........no equal  %d,%d,%d\n", dwRoundIndex, dwRoundIndex_, socket_);//whb
+#ifdef DEBUG_TEST
+		Log(LOG_THREAD, "..........no equal  %d,%d,%d\n", dwRoundIndex, dwRoundIndex_, socket_);
+#endif
 		return false;
 	}
 		
@@ -116,6 +118,7 @@ void CTCPSocket::PushSendList(void* pSendData, DWORD dwSendLen)
 	tagSData tagSendData;
 	tagSendData.buf = new char[dwSendLen];
 	tagSendData.len = dwSendLen;
+	tagSendData.nowpos = 0;
 	memcpy(tagSendData.buf, (char*)pSendData, dwSendLen);
 	List_.PUSHBack(tagSendData);
 }
@@ -319,14 +322,13 @@ bool CTCPSocket::WSASendData()
 		else if (bIsListHaveData_)
 		{
 			tagSData tagSendData;
-			if (List_.POPFront(&tagSendData))
+			if (List_.Front(&tagSendData))
 			{
-				SendOverLPData_.wsabuf.buf = tagSendData.buf;
-				SendOverLPData_.wsabuf.len = tagSendData.len;
+				SendOverLPData_.wsabuf.buf = tagSendData.buf + tagSendData.nowpos;
+				SendOverLPData_.wsabuf.len = tagSendData.len - tagSendData.nowpos;
 				SendOverLPData_.roundindex = dwRoundIndex_;
 				SendOverLPData_.issendbuff = 0;
 				bSending_ = true;
-				if (List_.GetCount() == 0) bIsListHaveData_ = false;
 			}
 			else
 			{
@@ -342,8 +344,9 @@ bool CTCPSocket::WSASendData()
 			&&WSAGetLastError() != WSA_IO_PENDING)
 		{
 			bSending_ = false;
-
-			Log(LOG_THREAD, "WSASendData close.\n");//whb
+#ifdef DEBUG_TEST
+			Log(LOG_THREAD, "WSASendData close.\n");
+#endif
 
 			pNetMgr_->CloseSocket(this,dwRoundIndex_);
 
@@ -368,7 +371,9 @@ bool CTCPSocket::OnRecvComplete(DWORD dwRoundIndex)
 	if (nCount <= 0)
 	{
 		pNetMgr_->CloseSocket(this, dwRoundIndex_);
-		Log(LOG_THREAD, "OnRecvComplete <=0.ID=%d", WSAGetLastError());//whb
+#ifdef DEBUG_TEST
+		Log(LOG_THREAD, "OnRecvComplete <=0.ID=%d", WSAGetLastError());
+#endif
 		return false;
 	}
 
@@ -473,7 +478,7 @@ bool CTCPSocket::OnRecvCompleteCircle(DWORD dwRoundIndex)
 
 					if (!pNetMgr_->OnNetMessage(CONNECTID_MIX(dwIndex_, dwRoundIndex_), recvBuf_, dwSize))     throw "数据处理失败!";
 
-					//whb test
+#ifdef DEBUG_TEST
 					if (Len < dwSize)
 					{
 						MessageBox(NULL, TEXT("Len<dwSize"), TEXT("error"), MB_OK);
@@ -482,7 +487,7 @@ bool CTCPSocket::OnRecvCompleteCircle(DWORD dwRoundIndex)
 					{
 						MessageBox(NULL, TEXT("dwPos>dwTotalRecvLen_"), TEXT("error"), MB_OK);
 					}
-
+#endif
 					Len -= dwSize;
 					dwPos += dwSize;
 					m_dwRecvEnd += dwSize;
@@ -519,7 +524,7 @@ bool CTCPSocket::OnSendComplete(DWORD dwSendCount, NETOVERLAPPED* pNetOL)
 		return false;
 	}
 
-	//whb test
+#ifdef DEBUG_TEST
 	static DWORD dwTime = 0;
 	static int i = 0; i++;
 	if (1 == i)
@@ -531,6 +536,7 @@ bool CTCPSocket::OnSendComplete(DWORD dwSendCount, NETOVERLAPPED* pNetOL)
 		DWORD tt = GetTickCount() - dwTime;
 		Log("send complete i = %d,time:  %d分%d秒%d毫秒\n",i, tt / 1000 / 60, tt / 1000 % 60, tt % 1000);
 	}
+#endif
 
 	/* buff */
 	if (pNetOL->issendbuff)
@@ -545,7 +551,24 @@ bool CTCPSocket::OnSendComplete(DWORD dwSendCount, NETOVERLAPPED* pNetOL)
 	/* list */
 	else
 	{
-		delete pNetOL->wsabuf.buf;
+		if (dwSendCount == pNetOL->wsabuf.len)
+		{
+			List_.POPFront();
+			if (List_.GetCount() == 0) bIsListHaveData_ = false;
+		}
+		else if (dwSendCount < pNetOL->wsabuf.len)
+		{
+			tagSendData *pSendData;
+			List_.FrontPData(&pSendData);
+			pSendData->nowpos += dwSendCount;
+			delete pNetOL->wsabuf.buf;
+		}
+		else
+		{
+			Log("OnSendComplete send count > buflen");
+			return false;
+		}
+		
 		return WSASendData();
 	}
 

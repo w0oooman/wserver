@@ -1,25 +1,37 @@
-f:\mytest\mytest\testcpp\server\server - 单锁\kernel\debug\vc120.pdb
-f:\mytest\mytest\testcpp\server\server - 单锁\kernel\debug\vc120.idb
-f:\mytest\mytest\testcpp\server\server - 单锁\kernel\debug\log.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\kernel\debug\lock.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\kernel\debug\kernelmgr.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\kernel\debug\netbase.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\kernel\debug\neterror.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\kernel\debug\netmgr.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\kernel\debug\queuemsg.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\kernel\debug\socketarray.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\kernel\debug\tcpsocket.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\kernel\debug\wheeltimer.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\bin\kernel.lib
-f:\mytest\mytest\testcpp\server\server - 单锁\bin\kernel.exp
-f:\mytest\mytest\testcpp\server\server - 单锁\bin\kernel.ilk
-f:\mytest\mytest\testcpp\server\server - 单锁\bin\kernel.dll
-f:\mytest\mytest\testcpp\server\server - 单锁\bin\kernel.pdb
-f:\mytest\mytest\testcpp\server\server - 单锁\kernel\../bin\kernel.dll
-f:\mytest\mytest\testcpp\server\server - 单锁\kernel\debug\kernel.tlog\cl.command.1.tlog
-f:\mytest\mytest\testcpp\server\server - 单锁\kernel\debug\kernel.tlog\cl.read.1.tlog
-f:\mytest\mytest\testcpp\server\server - 单锁\kernel\debug\kernel.tlog\cl.write.1.tlog
-f:\mytest\mytest\testcpp\server\server - 单锁\kernel\debug\kernel.tlog\kernel.write.1u.tlog
-f:\mytest\mytest\testcpp\server\server - 单锁\kernel\debug\kernel.tlog\link.command.1.tlog
-f:\mytest\mytest\testcpp\server\server - 单锁\kernel\debug\kernel.tlog\link.read.1.tlog
-f:\mytest\mytest\testcpp\server\server - 单锁\kernel\debug\kernel.tlog\link.write.1.tlog
+../../bin/kernel.pdb
+E:\study\vs2010\wserver-master\wserver-master\bin\kernel.exp
+E:\study\vs2010\wserver-master\wserver-master\bin\kernel.lib
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\BIN\KERNEL.PDB
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\BIN\WIN32\KERNEL.DLL
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\BIN\WIN32\KERNEL.ILK
+E:\study\vs2010\wserver-master\wserver-master\source\kernel\Debug\cl.command.1.tlog
+E:\study\vs2010\wserver-master\wserver-master\source\kernel\Debug\CL.read.1.tlog
+E:\study\vs2010\wserver-master\wserver-master\source\kernel\Debug\CL.write.1.tlog
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\KERNEL\DEBUG\KERNEL.DLL.EMBED.MANIFEST
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\KERNEL\DEBUG\KERNEL.DLL.EMBED.MANIFEST.RES
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\KERNEL\DEBUG\KERNEL.DLL.INTERMEDIATE.MANIFEST
+E:\study\vs2010\wserver-master\wserver-master\source\kernel\Debug\kernel.write.1.tlog
+E:\study\vs2010\wserver-master\wserver-master\source\kernel\Debug\kernel_manifest.rc
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\KERNEL\DEBUG\KERNELMGR.OBJ
+E:\study\vs2010\wserver-master\wserver-master\source\kernel\Debug\link.command.1.tlog
+E:\study\vs2010\wserver-master\wserver-master\source\kernel\Debug\link.read.1.tlog
+E:\study\vs2010\wserver-master\wserver-master\source\kernel\Debug\link.write.1.tlog
+E:\study\vs2010\wserver-master\wserver-master\source\kernel\Debug\link-cvtres.read.1.tlog
+E:\study\vs2010\wserver-master\wserver-master\source\kernel\Debug\link-cvtres.write.1.tlog
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\KERNEL\DEBUG\LOCK.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\KERNEL\DEBUG\LOG.OBJ
+E:\study\vs2010\wserver-master\wserver-master\source\kernel\Debug\mt.command.1.tlog
+E:\study\vs2010\wserver-master\wserver-master\source\kernel\Debug\mt.read.1.tlog
+E:\study\vs2010\wserver-master\wserver-master\source\kernel\Debug\mt.write.1.tlog
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\KERNEL\DEBUG\NETBASE.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\KERNEL\DEBUG\NETERROR.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\KERNEL\DEBUG\NETMGR.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\KERNEL\DEBUG\QUEUEMSG.OBJ
+E:\study\vs2010\wserver-master\wserver-master\source\kernel\Debug\rc.command.1.tlog
+E:\study\vs2010\wserver-master\wserver-master\source\kernel\Debug\rc.read.1.tlog
+E:\study\vs2010\wserver-master\wserver-master\source\kernel\Debug\rc.write.1.tlog
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\KERNEL\DEBUG\SOCKETARRAY.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\KERNEL\DEBUG\TCPSOCKET.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\KERNEL\DEBUG\TIMERMGR.OBJ
+E:\study\vs2010\wserver-master\wserver-master\source\kernel\Debug\vc100.idb
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\KERNEL\DEBUG\VC100.PDB

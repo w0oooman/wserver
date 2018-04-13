@@ -91,42 +91,58 @@ bool CServerLogicHandle::OnMsgHandle(ULLONG llConnectID, const void* pData, DWOR
 		static DWORD dwTime = 0;
 		i++;
 
-		bool ret = false;
-		ret = m_pMainMgr->SendData(llConnectID, pMsgHead, dwSize);
-		//ret = m_pMainMgr->SendBatchData(pMsgHead, dwSize);
-
-		char buf[1024] = {0};
-		memcpy(buf, (char*)(pMsgHead+1), pMsgHead->size_-sizeof(CNetMsgHead));
-		printf("------%s-----sum=%d\n", buf, i);
-		//HandleDBData(pData,pMsgHead->dwSize,dwIndex,dwRoundIndex,db_get_login_times);
-
-		if (!ret)
+		/* 测试发送大数据 whb */
+		char buf[33 * 1024] = {0};
+		CNetMsgHead *pMsgHeadTmp = (CNetMsgHead*)buf;
+		pMsgHeadTmp->protocol_ = CNetMsgHead::NETMSG_MY_TEST;
+		int nn = 32 * 1024;
+		char* pStart = (char*)(pMsgHeadTmp + 1);
+		for (int i = 0; i < nn; i++){
+			pStart[i] = 'x';
+		}
+		for (int i = 0; i < 5; i++)
 		{
-			Log("SendData error,ID=%d", GetLastError());
-			break;
+			m_pMainMgr->SendData(llConnectID, pMsgHeadTmp, sizeof(CNetMsgHead));
+			m_pMainMgr->SendData(llConnectID, pMsgHeadTmp, sizeof(CNetMsgHead)+nn);
 		}
 
-		static int  nTestNums = 0;
-		if (1 == i)
-		{
-			CIniParser parser;
-			char  LogicIP[64];
-			
-			if (!parser.Open(SERVER_CONFIG)){
-				Log("open error...");
-			}
-			else
-			{
-				nTestNums = parser.GetIniInt("gateway", "user_test_nums", 1);
-			}
 
-			dwTime = GetTickCount();
-		}
-		if (nTestNums*100 == i)
-		{
-			DWORD tt = GetTickCount() - dwTime;
-			Log("all  %d分%d秒%d毫秒\n", tt / 1000 / 60, tt / 1000 % 60, tt % 1000);
-		}
+		//bool ret = false;
+		//ret = m_pMainMgr->SendData(llConnectID, pMsgHead, dwSize);
+		//////ret = m_pMainMgr->SendBatchData(pMsgHead, dwSize);
+
+		//char buf[1024] = {0};
+		//memcpy(buf, (char*)(pMsgHead+1), pMsgHead->size_-sizeof(CNetMsgHead));
+		//printf("------%s-----sum=%d\n", buf, i);
+		////HandleDBData(pData,pMsgHead->dwSize,dwIndex,dwRoundIndex,db_get_login_times);
+
+		//if (!ret)
+		//{
+		//	Log("SendData error,ID=%d", GetLastError());
+		//	break;
+		//}
+
+		//static int  nTestNums = 0;
+		//if (1 == i)
+		//{
+		//	CIniParser parser;
+		//	char  LogicIP[64];
+		//	
+		//	if (!parser.Open(SERVER_CONFIG)){
+		//		Log("open error...");
+		//	}
+		//	else
+		//	{
+		//		nTestNums = parser.GetIniInt("gateway", "user_test_nums", 1);
+		//	}
+
+		//	dwTime = GetTickCount();
+		//}
+		//if (nTestNums*100 == i)
+		//{
+		//	DWORD tt = GetTickCount() - dwTime;
+		//	Log("all  %d分%d秒%d毫秒\n", tt / 1000 / 60, tt / 1000 % 60, tt % 1000);
+		//}
 	}
 		break;
 	}

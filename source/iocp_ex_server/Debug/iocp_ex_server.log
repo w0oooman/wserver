@@ -1,35 +1,47 @@
-﻿Build started 2016/10/11 10:47:51.
-     1>Project "F:\MyTest\myTest\testCPP\server\server - 单锁\iocp_ex_server\iocp_ex_server.vcxproj" on node 2 (Build target(s)).
-     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(364,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1193,5): warning MSB8012: TargetPath(F:\MyTest\myTest\testCPP\server\server - 单锁\iocp_ex_server\../bin\iocp_ex_server.exe) does not match the Linker's OutputFile property value (F:\MyTest\myTest\testCPP\server\server - 单锁\bin\server.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
-     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1195,5): warning MSB8012: TargetName(iocp_ex_server) does not match the Linker's OutputFile property value (server). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
-     1>Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"../bin\server.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib lib/win32/vld.lib winmm.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"../bin\iocp_ex_server.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"../lib" /MACHINE:X86 Debug\common.obj
-         Debug\Log.obj
-         Debug\DistriClientHandle.obj
-         Debug\DistriServerHandle.obj
-         Debug\LuaManager.obj
-         Debug\MainMgr.obj
-         Debug\MysqlDBProcess.obj
-         Debug\MySqlHandle.obj
-         Debug\Player.obj
-         Debug\PlayerMgr.obj
-         Debug\ServerLogicHandle.obj
-         Debug\SqlServerHandle.obj
-         Debug\main.obj
-         "F:\MyTest\myTest\testCPP\server\server - 单锁\bin\kernel.lib"
-         "F:\MyTest\myTest\testCPP\server\server - 单锁\bin\SqlEngine.lib"
-         lua.lib(lstate.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
-     1>LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
-     1>common.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
-     1>msvcrt.lib(MSVCR120.dll) : error LNK2005: _strncmp already defined in LIBCMTD.lib(strncmp.obj)
-     1>msvcrt.lib(MSVCR120.dll) : error LNK2005: _strchr already defined in LIBCMTD.lib(strchr.obj)
-     1>msvcrt.lib(MSVCR120.dll) : error LNK2005: _memchr already defined in LIBCMTD.lib(memchr.obj)
-     1>msvcrt.lib(MSVCR120.dll) : error LNK2005: _strrchr already defined in LIBCMTD.lib(strrchr.obj)
-     1>LIBCMTD.lib(crt0init.obj) : warning LNK4098: defaultlib 'msvcrt.lib' conflicts with use of other libs; use /NODEFAULTLIB:library
-     1>../bin\server.exe : fatal error LNK1169: one or more multiply defined symbols found
-     1>Done Building Project "F:\MyTest\myTest\testCPP\server\server - 单锁\iocp_ex_server\iocp_ex_server.vcxproj" (Build target(s)) -- FAILED.
+﻿生成启动时间为 2018-4-7 13:55:48。
+     1>项目“E:\study\vs2010\wserver-master\wserver-master\source\iocp_ex_server\iocp_ex_server.vcxproj”在节点 3 上(build 个目标)。
+       项目文件包含 ToolsVersion="12.0" 设置，而此版本的 MSBuild 不支持该工具版本。该项目将视为包含 ToolsVersion="4.0" 设置。
+     1>项目“E:\study\vs2010\wserver-master\wserver-master\source\iocp_ex_server\iocp_ex_server.vcxproj”(1)正在节点 2 上生成“E:\study\vs2010\wserver-master\wserver-master\source\kernel\kernel.vcxproj”(2) (GetTargetPath 个目标)。
+       项目文件包含 ToolsVersion="12.0" 设置，而此版本的 MSBuild 不支持该工具版本。该项目将视为包含 ToolsVersion="4.0" 设置。
+     2>已完成生成项目“E:\study\vs2010\wserver-master\wserver-master\source\kernel\kernel.vcxproj”(GetTargetPath 个目标)的操作。
+     1>项目“E:\study\vs2010\wserver-master\wserver-master\source\iocp_ex_server\iocp_ex_server.vcxproj”(1)正在节点 3 上生成“E:\study\vs2010\wserver-master\wserver-master\source\lua\lua.vcxproj”(3) (GetTargetPath 个目标)。
+       项目文件包含 ToolsVersion="12.0" 设置，而此版本的 MSBuild 不支持该工具版本。该项目将视为包含 ToolsVersion="4.0" 设置。
+     3>已完成生成项目“E:\study\vs2010\wserver-master\wserver-master\source\lua\lua.vcxproj”(GetTargetPath 个目标)的操作。
+     1>项目“E:\study\vs2010\wserver-master\wserver-master\source\iocp_ex_server\iocp_ex_server.vcxproj”(1)正在节点 3 上生成“E:\study\vs2010\wserver-master\wserver-master\source\lua\lua.vcxproj”(3:2) (GetNativeManifest 个目标)。
+       项目文件包含 ToolsVersion="12.0" 设置，而此版本的 MSBuild 不支持该工具版本。该项目将视为包含 ToolsVersion="4.0" 设置。
+     3>已完成生成项目“E:\study\vs2010\wserver-master\wserver-master\source\lua\lua.vcxproj”(GetNativeManifest 个目标)的操作。
+     1>项目“E:\study\vs2010\wserver-master\wserver-master\source\iocp_ex_server\iocp_ex_server.vcxproj”(1)正在节点 2 上生成“E:\study\vs2010\wserver-master\wserver-master\source\kernel\kernel.vcxproj”(2:2) (GetNativeManifest 个目标)。
+       项目文件包含 ToolsVersion="12.0" 设置，而此版本的 MSBuild 不支持该工具版本。该项目将视为包含 ToolsVersion="4.0" 设置。
+     2>已完成生成项目“E:\study\vs2010\wserver-master\wserver-master\source\kernel\kernel.vcxproj”(GetNativeManifest 个目标)的操作。
+     1>InitializeBuildStatus:
+         正在创建“Debug/test_server.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+     1>项目“E:\study\vs2010\wserver-master\wserver-master\source\iocp_ex_server\iocp_ex_server.vcxproj”(1)正在节点 2 上生成“E:\study\vs2010\wserver-master\wserver-master\source\kernel\kernel.vcxproj”(2:3) (GetResolvedLinkLibs 个目标)。
+       项目文件包含 ToolsVersion="12.0" 设置，而此版本的 MSBuild 不支持该工具版本。该项目将视为包含 ToolsVersion="4.0" 设置。
+     1>项目“E:\study\vs2010\wserver-master\wserver-master\source\iocp_ex_server\iocp_ex_server.vcxproj”(1)正在节点 3 上生成“E:\study\vs2010\wserver-master\wserver-master\source\lua\lua.vcxproj”(3:3) (GetResolvedLinkLibs 个目标)。
+       项目文件包含 ToolsVersion="12.0" 设置，而此版本的 MSBuild 不支持该工具版本。该项目将视为包含 ToolsVersion="4.0" 设置。
+     2>已完成生成项目“E:\study\vs2010\wserver-master\wserver-master\source\kernel\kernel.vcxproj”(GetResolvedLinkLibs 个目标)的操作。
+     3>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: Output 目录未以斜杠结尾。此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Output 目录。
+     3>已完成生成项目“E:\study\vs2010\wserver-master\wserver-master\source\lua\lua.vcxproj”(GetResolvedLinkLibs 个目标)的操作。
+     1>ManifestResourceCompile:
+         所有输出均为最新。
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(E:\study\vs2010\wserver-master\wserver-master\source\iocp_ex_server\../../bin/test_server.exe) 与 Linker 的 OutputFile 属性值(E:\study\vs2010\wserver-master\wserver-master\bin\Win32\test_server\test_server.exe)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Link.OutputFile) 中指定的值匹配。
+       Link:
+         所有输出均为最新。
+       Manifest:
+         所有输出均为最新。
+     1>项目“E:\study\vs2010\wserver-master\wserver-master\source\iocp_ex_server\iocp_ex_server.vcxproj”(1)正在节点 3 上生成“E:\study\vs2010\wserver-master\wserver-master\source\lua\lua.vcxproj”(3:4) (GetCopyToOutputDirectoryItems 个目标)。
+       项目文件包含 ToolsVersion="12.0" 设置，而此版本的 MSBuild 不支持该工具版本。该项目将视为包含 ToolsVersion="4.0" 设置。
+     1>项目“E:\study\vs2010\wserver-master\wserver-master\source\iocp_ex_server\iocp_ex_server.vcxproj”(1)正在节点 2 上生成“E:\study\vs2010\wserver-master\wserver-master\source\kernel\kernel.vcxproj”(2:4) (GetCopyToOutputDirectoryItems 个目标)。
+       项目文件包含 ToolsVersion="12.0" 设置，而此版本的 MSBuild 不支持该工具版本。该项目将视为包含 ToolsVersion="4.0" 设置。
+     2>已完成生成项目“E:\study\vs2010\wserver-master\wserver-master\source\kernel\kernel.vcxproj”(GetCopyToOutputDirectoryItems 个目标)的操作。
+     3>已完成生成项目“E:\study\vs2010\wserver-master\wserver-master\source\lua\lua.vcxproj”(GetCopyToOutputDirectoryItems 个目标)的操作。
+     1>FinalizeBuildStatus:
+         正在删除文件“Debug/test_server.unsuccessfulbuild”。
+         正在对“Debug/test_server.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“E:\study\vs2010\wserver-master\wserver-master\source\iocp_ex_server\iocp_ex_server.vcxproj”(build 个目标)的操作。
 
-Build FAILED.
+生成成功。
 
-Time Elapsed 00:00:00.54
+已用时间 00:00:00.26

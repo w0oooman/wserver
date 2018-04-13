@@ -142,7 +142,7 @@ bool CGatewayServer::OnNormalMsgHandle(ULLONG llConnectID, const void* pData, DW
 	case CNetMsgHead::NETMSG_SEND_SCRIPT:        //脚本消息
 	case CNetMsgHead::NETMSG_MY_TEST:
 	{
-		SendData2LogicServer(llConnectID, pMsgHead, dwSize);
+		return SendData2LogicServer(llConnectID, pMsgHead, dwSize);
 	}break;
 	default:
 		Log("unhandle msg:%d", pMsgHead->protocol_);
@@ -191,7 +191,7 @@ void CGatewayServer::SendVersionError(ULLONG llConnectID)
 	SendData(llConnectID, &VersionError, sizeof(CDVersionErrorMsg));
 }
 
-void CGatewayServer::SendData2LogicServer(ULLONG llConnectID, CNetMsgHead *pNetMsgHead, DWORD dwSize)
+bool CGatewayServer::SendData2LogicServer(ULLONG llConnectID, CNetMsgHead *pNetMsgHead, DWORD dwSize)
 {
 	//分发给玩家所在的逻辑服务器
 	if (m_pGatewayServerLogic->GetMaxCount() > 1)
@@ -200,6 +200,11 @@ void CGatewayServer::SendData2LogicServer(ULLONG llConnectID, CNetMsgHead *pNetM
 		if (pUserGateWayInfo)
 		{
 			m_pGatewayServerLogic->SendDataByIndex(pUserGateWayInfo->wServerIndex, pNetMsgHead, dwSize);
+		}
+		else
+		{
+			Log("SendData2LogicServer not find session.");
+			return false;
 		}
 	}
 	//只有一个逻辑服务器
@@ -222,4 +227,5 @@ void CGatewayServer::SendData2LogicServer(ULLONG llConnectID, CNetMsgHead *pNetM
 
 		m_pGatewayServerLogic->SendData(pNetMsgHead, dwSize);
 	}
+	return true;
 }

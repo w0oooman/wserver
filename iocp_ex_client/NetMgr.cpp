@@ -284,7 +284,7 @@ bool CNetMgrC::OnNetMessage(char* pMsgData, DWORD dwMsgLen)
 	g_temp++;
 	CNetMsgHead* pNetMsg = (CNetMsgHead*)pMsgData;
 
-	char buf[MAX_MESSAGE_LENGTH+1]={0};
+	char buf[MAX_SEND_LIMIT + 1] = { 0 };
 	memcpy(buf, pMsgData + sizeof(CNetMsgHead), dwMsgLen - sizeof(CNetMsgHead));
 	if (pNetMsg->protocol_ != CNetMsgHead::NETMSG_CONNECT_SUCESS)
 	{
@@ -292,7 +292,8 @@ bool CNetMgrC::OnNetMessage(char* pMsgData, DWORD dwMsgLen)
 		static int nNum = 0;
 		static DWORD dwTime = GetTickCount();
 		nNum++;
-		//cout << "******" << nNum << "_" << dwMsgLen - sizeof(CNetMsgHead) << "_******" << buf << endl;
+		//cout << "----------" << buf << "---" << nNum << "----------" << dwMsgLen - sizeof(CNetMsgHead) << endl;
+		cout << "----------" << nNum << "----------" << dwMsgLen << endl;
 		//Log("*****%d_%d_******%s", nNum, dwMsgLen - sizeof(CNetMsgHead), buf);
 
 

@@ -19,7 +19,7 @@
 //发送或每次从缓冲区读取的最大长度
 #define   MAX_MESSAGE_LENGTH    2048
 //最大发送限制
-#define   MAX_SEND_LIMIT  (32768/*1024*32*/)
+#define   MAX_SEND_LIMIT  (1024*32)
 
 //普通客户端连接时:服务器发送最大buffer
 #define   SND_SIZE        (1024*4)

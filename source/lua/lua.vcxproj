@@ -19,11 +19,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\dtoa.c" />
-    <ClCompile Include="..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\fpconv.c" />
-    <ClCompile Include="..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\g_fmt.c" />
-    <ClCompile Include="..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\lua_cjson.c" />
-    <ClCompile Include="..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\strbuf.c" />
     <ClCompile Include="..\..\3rd\lua-5.3.3\src\lapi.c" />
     <ClCompile Include="..\..\3rd\lua-5.3.3\src\lauxlib.c" />
     <ClCompile Include="..\..\3rd\lua-5.3.3\src\lbaselib.c" />
@@ -62,9 +57,6 @@
     <ClCompile Include="..\..\3rd\lua-5.3.3\src\lzio.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\dtoa_config.h" />
-    <ClInclude Include="..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\fpconv.h" />
-    <ClInclude Include="..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\strbuf.h" />
     <ClInclude Include="..\..\3rd\lua-5.3.3\src\lapi.h" />
     <ClInclude Include="..\..\3rd\lua-5.3.3\src\lauxlib.h" />
     <ClInclude Include="..\..\3rd\lua-5.3.3\src\lcode.h" />
@@ -104,7 +96,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v100</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -144,11 +136,11 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>../lib</OutDir>
+    <OutDir>../../lib</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>../../lib/$(Platform)/</OutDir>
+    <OutDir>../../lib/</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

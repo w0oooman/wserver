@@ -1,12 +1,22 @@
-﻿Build started 2018/1/18 17:58:45.
-     1>Project "F:\MyTest\myTest\testCPP\server\2\server_redis_git\source\kernel\kernel.vcxproj" on node 2 (Build target(s)).
+﻿生成启动时间为 2018/4/11 22:38:33。
+     1>项目“E:\study\vs2010\wserver-master\source\kernel\kernel.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../../include /Zi /nologo /W3 /WX- /sdl /Od /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D KERNEL_EXPORTS /D _CRT_SECURE_NO_WARNINGS /D _WINDLL /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\include\Log.cpp
-         Log.cpp
-     1>..\..\include\Log.cpp(394): warning C4018: '<' : signed/unsigned mismatch
-     1>..\..\include\Log.cpp(403): warning C4018: '<' : signed/unsigned mismatch
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../../include /Zi /nologo /W3 /WX- /sdl /Od /Oi /Oy- /GL /D _CRT_SECURE_NO_WARNINGS /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D KERNEL_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt NetMgr.cpp
+         NetMgr.cpp
+     1>E:\study\vs2010\wserver-master\include\NetError.h(10): warning C4251: “CNetErr::m_strErrorinfo”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“CNetErr”的客户端使用
+     1>E:\study\vs2010\wserver-master\include\TimerMgr.h(59): warning C4251: “CTimerMgr::timerIDmap_”: class“std::unordered_map<int,int,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>”需要有 dll 接口由 class“CTimerMgr”的客户端使用
+                 with
+                 [
+                     _Kty=int
+         ,            _Ty=int
+                 ]
+     1>e:\study\vs2010\wserver-master\source\kernel\QueueMsg.h(59): warning C4200: 使用了非标准扩展 : 结构/联合中的零大小数组
+                 当 UDT 包含大小为零的数组时，无法生成复制构造函数或副本赋值运算符
+     1>NetMgr.cpp(40): warning C4018: “<”: 有符号/无符号不匹配
+     1>NetMgr.cpp(47): warning C4018: “<”: 有符号/无符号不匹配
+     1>NetMgr.cpp(170): warning C4018: “<”: 有符号/无符号不匹配
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\bin\Win32\kernel.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\..\bin\Win32\kernel.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\lib\Win32\kernel.lib" /MACHINE:X86 /SAFESEH /DLL Release\Log.obj
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\bin\Win32\kernel.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\..\bin\Win32\kernel.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\lib\kernel.lib" /MACHINE:X86 /SAFESEH /DLL Release\Log.obj
          Release\lock.obj
          Release\KernelMgr.obj
          Release\NetBase.obj
@@ -16,12 +26,12 @@
          Release\SocketArray.obj
          Release\TCPSocket.obj
          Release\TimerMgr.obj
-            Creating library ..\..\lib\Win32\kernel.lib and object ..\..\lib\Win32\kernel.exp
-         Generating code
-         Finished generating code
-         kernel.vcxproj -> F:\MyTest\myTest\testCPP\server\2\server_redis_git\source\kernel\..\..\bin\Win32\kernel.dll
-     1>Done Building Project "F:\MyTest\myTest\testCPP\server\2\server_redis_git\source\kernel\kernel.vcxproj" (Build target(s)).
+            正在创建库 ..\..\lib\kernel.lib 和对象 ..\..\lib\kernel.exp
+         正在生成代码
+         已完成代码的生成
+         kernel.vcxproj -> E:\study\vs2010\wserver-master\source\kernel\..\..\bin\Win32\kernel.dll
+     1>已完成生成项目“E:\study\vs2010\wserver-master\source\kernel\kernel.vcxproj”(Build 个目标)的操作。
 
-Build succeeded.
+生成成功。
 
-Time Elapsed 00:00:02.72
+已用时间 00:00:02.17

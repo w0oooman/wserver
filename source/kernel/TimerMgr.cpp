@@ -122,7 +122,7 @@ int CTimerMgr::AddEvent(int timerID, int interval, TimerCallBackFunc func/* = NU
 
 void CTimerMgr::OnEvent(int timerID)
 {
-	Log(LOG_THREAD, "-----OnEvent timerID = ¡¾%d¡¿---- time(0)=¡¾%d¡¿", timerID, GetTickCount64());
+	Log(LOG_THREAD, "-----OnEvent timerID = ¡¾%d¡¿---- time(0)=¡¾%d¡¿", timerID, GetTickCount());
 }
 
 bool CTimerMgr::RemoveEvent(int timerID)

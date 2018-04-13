@@ -215,7 +215,7 @@ public:
 class CTestMsg : public CNetMsgHead
 {
 public:
-	char buf[100];
+	char buf[200];
 	CTestMsg() : CNetMsgHead(CNetMsgHead::NETMSG_MY_TEST){ memset(buf, 0, sizeof(buf)); }
 	virtual ~CTestMsg(){}
 };

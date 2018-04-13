@@ -93,7 +93,7 @@ int main()
 
 		CMainMgr  MainMgr;
 		if (!MainMgr.Init(nLimitConnect, nLogicPort)) throw "NetMgr.Init error!";
-		if (!MainMgr.UseMySql()) throw "usemysql error!";
+		//if (!MainMgr.UseMySql()) throw "usemysql error!"; //whb
 		if (!MainMgr.UseLua()) throw "usemylua error!";
 		cout << "starting..." << endl;
 		if (!MainMgr.Start()) throw "NetMgr.Start() error!";
@@ -140,8 +140,8 @@ int main()
 		//	printf("catch (...)");
 		//}
 
-		//while (1) share_sleep(2000);
-		system("pause");
+		while (1) share_sleep(2000);
+		//system("pause");
 
 	}
 	catch (CNetErr& err){ 

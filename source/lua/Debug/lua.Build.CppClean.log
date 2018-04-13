@@ -1,45 +1,46 @@
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\vc120.pdb
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\vc120.idb
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\llex.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\lmathlib.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\lmem.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\loadlib.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\lobject.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\lopcodes.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\loslib.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\lparser.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\lstate.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\lstring.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\lstrlib.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\ltable.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\ltablib.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\ltm.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\lua.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\luac.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\lundump.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\lutf8lib.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\lvm.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\lzio.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\lapi.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\lauxlib.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\lbaselib.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\lbitlib.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\lcode.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\lcorolib.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\lctype.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\ldblib.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\ldebug.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\ldo.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\ldump.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\lfunc.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\lgc.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\linit.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\liolib.obj
-f:\mytest\mytest\testcpp\server\server - 单锁\lib\lua.lib
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\../lib\lua.lib
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\lua.tlog\cl.command.1.tlog
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\lua.tlog\cl.read.1.tlog
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\lua.tlog\cl.write.1.tlog
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\lua.tlog\lib-link.read.1.tlog
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\lua.tlog\lib-link.write.1.tlog
-f:\mytest\mytest\testcpp\server\server - 单锁\lua\debug\lua.tlog\lib.command.1.tlog
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\LIB\LUA.LIB
+E:\study\vs2010\wserver-master\wserver-master\source\lua\../../lib\lua.lib
+E:\study\vs2010\wserver-master\wserver-master\source\lua\Debug\cl.command.1.tlog
+E:\study\vs2010\wserver-master\wserver-master\source\lua\Debug\CL.read.1.tlog
+E:\study\vs2010\wserver-master\wserver-master\source\lua\Debug\CL.write.1.tlog
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LAPI.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LAUXLIB.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LBASELIB.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LBITLIB.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LCODE.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LCOROLIB.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LCTYPE.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LDBLIB.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LDEBUG.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LDO.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LDUMP.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LFUNC.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LGC.OBJ
+E:\study\vs2010\wserver-master\wserver-master\source\lua\Debug\lib.command.1.tlog
+E:\study\vs2010\wserver-master\wserver-master\source\lua\Debug\Lib-link.read.1.tlog
+E:\study\vs2010\wserver-master\wserver-master\source\lua\Debug\Lib-link.write.1.tlog
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LINIT.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LIOLIB.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LLEX.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LMATHLIB.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LMEM.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LOADLIB.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LOBJECT.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LOPCODES.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LOSLIB.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LPARSER.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LSERIALIZE.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LSTATE.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LSTRING.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LSTRLIB.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LTABLE.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LTABLIB.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LTM.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LUA.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LUAC.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LUNDUMP.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LUTF8LIB.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LVM.OBJ
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\LZIO.OBJ
+E:\study\vs2010\wserver-master\wserver-master\source\lua\Debug\vc100.idb
+E:\STUDY\VS2010\WSERVER-MASTER\WSERVER-MASTER\SOURCE\LUA\DEBUG\VC100.PDB

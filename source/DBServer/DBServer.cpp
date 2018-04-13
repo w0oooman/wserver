@@ -49,7 +49,7 @@ bool CDBServer::Init(DWORD dwMaxCount, DWORD dwListenPort)
 
 		m_pDBmanager = new CDBManager;
 		if (!m_pDBmanager->InitRedis(szRedisIP, nRedisPort)) throw "InitRedis error.";
-		if (!m_pDBmanager->InitDB(szDBAccount, szDBPwd, szDBIP, szDBName)) throw "InitDB error";
+		//if (!m_pDBmanager->InitDB(szDBAccount, szDBPwd, szDBIP, szDBName)) throw "InitDB error"; //db链接暂时注释 whb
 
 		if (!CKernelMgr::Init(dwMaxCount, dwListenPort)) throw "DB server kernel init error.";
 
@@ -67,7 +67,7 @@ bool CDBServer::Start()
 {
 	try
 	{
-		m_pDBmanager->LoadUserData();
+		//m_pDBmanager->LoadUserData();//db链接暂时注释 whb
 
 		if (!CKernelMgr::Start()) throw "gate server kernel start error.";
 	}

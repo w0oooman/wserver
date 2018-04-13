@@ -26,8 +26,9 @@ typedef struct OverLappedStruct NETOVERLAPPED;
 
 typedef struct tagSendData
 {
-	char *buf;
 	DWORD len;
+	DWORD nowpos;
+	char *buf;
 }
 tagSData;
 

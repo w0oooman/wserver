@@ -43,7 +43,7 @@ public:
 	void SendVersionError(ULLONG llConnectID);
 
 	//发送数据到逻辑服
-	void SendData2LogicServer(ULLONG llConnectID, CNetMsgHead *pNetMsgHead, DWORD dwSize);
+	bool SendData2LogicServer(ULLONG llConnectID, CNetMsgHead *pNetMsgHead, DWORD dwSize);
 };
 
 

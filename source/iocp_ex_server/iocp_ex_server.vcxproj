@@ -30,7 +30,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>MultiByte</CharacterSet>
     <UseOfMfc>false</UseOfMfc>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v100</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -71,9 +71,9 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <LibraryPath>../mysql/lib/opt;../lib;$(LibraryPath)</LibraryPath>
-    <OutDir>../bin</OutDir>
-    <IntDir>$(Configuration)\</IntDir>
+    <LibraryPath>../mysql/lib/opt;../../lib;$(LibraryPath)</LibraryPath>
+    <OutDir>../../bin/</OutDir>
+    <IntDir>$(Configuration)/</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -96,15 +96,17 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <AdditionalIncludeDirectories>../proto_file;../include/;../mysql/include;../serialize;../3rd/lua-5.3.3/src</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>../proto_file;../../include/;../mysql/include;../serialize;../../3rd/lua-5.3.3/src</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);lib/win32/vld.lib;winmm.lib</AdditionalDependencies>
-      <ImportLibrary>../lib</ImportLibrary>
-      <OutputFile>$(OutputPath)server.exe</OutputFile>
+      <ImportLibrary>../../lib/</ImportLibrary>
+      <OutputFile>$(OutDir)$(Platform)/$(ProjectName)/$(TargetName)$(TargetExt)</OutputFile>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -180,7 +182,6 @@ copy ..\..\bin\$(Platform)\kernel.pdb ..\..\bin\$(Platform)\test_server\</Comman
     <ClCompile Include="..\..\include\common.cpp" />
     <ClCompile Include="..\..\include\IniParser.cpp" />
     <ClCompile Include="..\..\include\Log.cpp" />
-    <ClCompile Include="DBManager.cpp" />
     <ClCompile Include="DistriClientHandle.cpp" />
     <ClCompile Include="DistriServerHandle.cpp" />
     <ClCompile Include="LuaManager.cpp" />
@@ -216,7 +217,6 @@ copy ..\..\bin\$(Platform)\kernel.pdb ..\..\bin\$(Platform)\test_server\</Comman
     <ClInclude Include="..\serialize\Serializer.h" />
     <ClInclude Include="..\serialize\variant.h" />
     <ClInclude Include="..\serialize\Xcpt.h" />
-    <ClInclude Include="DBManager.h" />
     <ClInclude Include="DistriClientHandle.h" />
     <ClInclude Include="DistriServerHandle.h" />
     <ClInclude Include="LuaManager.h" />

@@ -1,0 +1,13 @@
+﻿生成启动时间为 2018/4/9 21:48:45。
+     1>项目“E:\study\vs2010\wserver-master2\wserver-master\source\test_kernel\test_kernel.vcxproj”在节点 2 上(Build 个目标)。
+     1>Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\bin\Win32\test_kernel\test_kernel.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\..\bin\Win32\test_kernel\test_kernel.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"../../lib" /MACHINE:X86 /SAFESEH Release\IniParser.obj
+         Release\Log.obj
+         Release\TestKernel.obj
+         Release\test_kernel.obj
+     1>LINK : fatal error LNK1181: 无法打开输入文件“kernel32.lib”
+     1>已完成生成项目“E:\study\vs2010\wserver-master2\wserver-master\source\test_kernel\test_kernel.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:03.18

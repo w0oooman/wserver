@@ -1,0 +1,21 @@
+﻿生成启动时间为 2018-4-7 19:17:20。
+     1>项目“E:\study\vs2010\wserver-master\wserver-master\source\test_kernel\test_kernel.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\test_kernel.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+       ManifestResourceCompile:
+         所有输出均为最新。
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(E:\study\vs2010\wserver-master\wserver-master\source\test_kernel\../../bin/test_kernel.exe) 与 Linker 的 OutputFile 属性值(E:\study\vs2010\wserver-master\wserver-master\bin\Win32\test_kernel\test_kernel.exe)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Link.OutputFile) 中指定的值匹配。
+       Link:
+         所有输出均为最新。
+       Manifest:
+         所有输出均为最新。
+       FinalizeBuildStatus:
+         正在删除文件“Debug\test_kernel.unsuccessfulbuild”。
+         正在对“Debug\test_kernel.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“E:\study\vs2010\wserver-master\wserver-master\source\test_kernel\test_kernel.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.12

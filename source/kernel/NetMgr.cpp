@@ -525,7 +525,7 @@ bool CNetMgr::SendData(void* pAllMsgData, DWORD dwAllMsgLen)
 	}
 	else
 	{
-		Log(LOG_THREAD, "¡¾ error ¡¿: call SendData para miss.");
+		Log(LOG_THREAD, "¡¾ error ¡¿: call SendData para miss. need call SendData with 3 para.");
 	}
 
 	return false;
@@ -839,7 +839,24 @@ bool CClientNetMgr::OnSendComplete(DWORD dwSendCount, NETOVERLAPPED* pNetOL)
 	//list
 	else
 	{
-		delete pNetOL->wsabuf.buf;
+		if (dwSendCount == pNetOL->wsabuf.len)
+		{
+			List_.POPFront();
+			if (List_.GetCount() == 0) bIsListHaveData_ = false;
+		}
+		else if (dwSendCount < pNetOL->wsabuf.len)
+		{
+			tagSendData *pSendData;
+			List_.FrontPData(&pSendData);
+			pSendData->nowpos += dwSendCount;
+			delete pNetOL->wsabuf.buf;
+		}
+		else
+		{
+			Log("client OnSendComplete send count > buflen");
+			return false;
+		}
+
 		return WSASendData();
 	}
 
@@ -862,13 +879,12 @@ bool CClientNetMgr::WSASendData()
 		else if (bIsListHaveData_)
 		{
 			tagSData tagSendData;
-			if (List_.POPFront(&tagSendData))
+			if (List_.Front(&tagSendData))
 			{
-				SendOverLPData_.wsabuf.buf = tagSendData.buf;
-				SendOverLPData_.wsabuf.len = tagSendData.len;
+				SendOverLPData_.wsabuf.buf = tagSendData.buf + tagSendData.nowpos;
+				SendOverLPData_.wsabuf.len = tagSendData.len - tagSendData.nowpos;
 				SendOverLPData_.issendbuff = 0;
 				bSending_ = true;
-				if (List_.GetCount() == 0) bIsListHaveData_ = false;
 			}
 			else
 			{
@@ -904,6 +920,7 @@ void CClientNetMgr::PushSendList(void* pSendData, DWORD dwSendLen)
 	tagSData tagSendData;
 	tagSendData.buf = new char[dwSendLen];
 	tagSendData.len = dwSendLen;
+	tagSendData.nowpos = 0;
 	memcpy(tagSendData.buf, (char*)pSendData, dwSendLen);
 	List_.PUSHBack(tagSendData);
 }

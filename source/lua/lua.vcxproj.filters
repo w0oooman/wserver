@@ -4,9 +4,6 @@
     <Filter Include="lua">
       <UniqueIdentifier>{b23fae18-8104-4695-be41-2bd0bdf3f076}</UniqueIdentifier>
     </Filter>
-    <Filter Include="lua cjson">
-      <UniqueIdentifier>{b926f9b7-e34c-4ee6-bb5f-b40655987b7c}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\3rd\lua-5.3.3\src\lapi.c">
@@ -114,21 +111,6 @@
     <ClCompile Include="..\..\3rd\lua-5.3.3\src\lzio.c">
       <Filter>lua</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\lua_cjson.c">
-      <Filter>lua cjson</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\dtoa.c">
-      <Filter>lua cjson</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\fpconv.c">
-      <Filter>lua cjson</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\g_fmt.c">
-      <Filter>lua cjson</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\strbuf.c">
-      <Filter>lua cjson</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\3rd\lua-5.3.3\src\lserialize.c">
       <Filter>lua</Filter>
     </ClCompile>
@@ -211,15 +193,6 @@
     </ClInclude>
     <ClInclude Include="..\..\3rd\lua-5.3.3\src\lzio.h">
       <Filter>lua</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\dtoa_config.h">
-      <Filter>lua cjson</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\fpconv.h">
-      <Filter>lua cjson</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\3rd\lua-5.3.3\lua-cjson-2.1.0\strbuf.h">
-      <Filter>lua cjson</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

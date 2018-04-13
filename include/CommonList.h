@@ -67,6 +67,26 @@ public:
 		count_--;
 		return true;
 	}
+	bool Front(TYPE* data)
+	{
+		if (&head_ == head_.next_)
+		{
+			return false;
+		}
+
+		*data = head_.next_->data_;
+		return true;
+	}
+	bool FrontPData(TYPE** data)
+	{
+		if (&head_ == head_.next_)
+		{
+			return false;
+		}
+
+		*data = &head_.next_->data_;
+		return true;
+	}
 	DWORD GetCount()
 	{
 		return count_;

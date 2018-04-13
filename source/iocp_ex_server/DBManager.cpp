@@ -5,11 +5,11 @@ using namespace std;
 
 #ifdef _MSC_VER
 #ifdef _WIN64
-#pragma comment(lib, "..\\3rd\\redis-3.0\\bin\\x64\\hiredis.lib")
-#pragma comment(lib, "..\\3rd\\redis-3.0\\bin\\x64\\Win32_Interop.lib")
-#else
-#pragma comment(lib, "..\\3rd\\redis-3.0\\bin\\Win32\\hiredis.lib")
-#pragma comment(lib, "..\\3rd\\redis-3.0\\bin\\Win32\\Win32_Interop.lib")
+#pragma comment(lib, "..\\..\\3rd\\redis-3.0\\bin\\x64\\hiredis.lib")
+#pragma comment(lib, "..\\..\\3rd\\redis-3.0\\bin\\x64\\Win32_Interop.lib")
+#elif defined _WIN32
+#pragma comment(lib, "..\\..\\3rd\\redis-3.0\\bin\\Win32\\hiredis.lib")
+#pragma comment(lib, "..\\..\\3rd\\redis-3.0\\bin\\Win32\\Win32_Interop.lib")
 #endif
 #endif
 
